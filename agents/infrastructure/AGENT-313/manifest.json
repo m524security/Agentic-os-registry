@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-313",
+  "name": "Prerequisite Inspector",
+  "category": "infrastructure",
+  "group": "Environment / Setup",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Inspect setup prerequisites",
+  "specialist_method": "Check platform, capacity, versions, access and external dependencies",
+  "skills": [
+    "Inspect setup prerequisites",
+    "Check platform, capacity, versions, access and external dependencies"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: inspect setup prerequisites"
+  ],
+  "verification": [
+    "Report distinguishes missing, incompatible and unverified requirements",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "2dc61bf27865360d1ebc741f41d02be3cb13f869a4dfad89767185bc2ba3486a",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Inspect prerequisites before work begins: OS, runtimes, tools, access, disk and network, and report what is missing.",
+  "field_rules": [
+    "Pin and record versions.",
+    "Check prerequisites first.",
+    "Rehearse the rollback."
+  ]
+}

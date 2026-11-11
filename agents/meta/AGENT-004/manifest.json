@@ -1,0 +1,74 @@
+{
+  "id": "AGENT-004",
+  "name": "Ambiguity Resolver",
+  "category": "meta",
+  "group": "Brain / Meta Agents",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Resolve consequential ambiguity",
+  "specialist_method": "Enumerate interpretations and ask only questions that change execution",
+  "skills": [
+    "Resolve consequential ambiguity",
+    "Enumerate interpretations and ask only questions that change execution"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "registry_read",
+    "task_state_read",
+    "task_state_write"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: resolve consequential ambiguity"
+  ],
+  "verification": [
+    "Chosen interpretation records evidence or an explicit assumption",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "4711477abfe0c8fbbec6b264d42fd5c12ed6c72fbe4740f097c2f53855ff618f",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/department-routing/SKILL.md",
+    "skills/specialist-role-contracts/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/explicit-invocation/SKILL.md",
+    "skills/calibrated-reasoning/SKILL.md",
+    "skills/clear-communication/SKILL.md"
+  ],
+  "specialist_focus": "Resolve ambiguity: list the plausible readings, pick the one that is cheapest to verify or most consistent with context, and ask a single sharp question only when the choice is consequential.",
+  "field_rules": [
+    "Decompose only when outputs can be checked independently.",
+    "Pass evidence and constraints with every handoff.",
+    "Done means the goal's test passed, not that subtasks returned."
+  ]
+}

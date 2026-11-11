@@ -1,0 +1,3917 @@
+[
+  {
+    "id": "AGENT-000",
+    "name": "Executive Activation Brain",
+    "category": "meta",
+    "mission": "Activate the smallest sufficient set of specialists as tasks become ready",
+    "manifest_path": "agents/meta/AGENT-000/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-000/system-prompt.md",
+    "system_prompt_sha256": "a5b943240934f4c5190e9af6ad0aa8fdb91d6311856644bda6964f7a3cf136ed"
+  },
+  {
+    "id": "AGENT-001",
+    "name": "Master Orchestrator / Brain",
+    "category": "meta",
+    "mission": "Coordinate the complete user goal",
+    "manifest_path": "agents/meta/AGENT-001/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-001/system-prompt.md",
+    "system_prompt_sha256": "3113ef8f57bc36d67237e58c76131a5ed46982c676012538001834f8bf8eae6d"
+  },
+  {
+    "id": "AGENT-002",
+    "name": "User Intent Interpreter",
+    "category": "meta",
+    "mission": "Recover the user's intended outcome",
+    "manifest_path": "agents/meta/AGENT-002/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-002/system-prompt.md",
+    "system_prompt_sha256": "cec46cb5b0c88326f87548b85473960ade3076583e43ef02339db9ce537aa2c6"
+  },
+  {
+    "id": "AGENT-003",
+    "name": "Requirement Extractor",
+    "category": "meta",
+    "mission": "Extract testable requirements",
+    "manifest_path": "agents/meta/AGENT-003/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-003/system-prompt.md",
+    "system_prompt_sha256": "b0cad0e791c9a649e3b41f49a080e481346b3171d7d722f4aecac89e287c9a15"
+  },
+  {
+    "id": "AGENT-004",
+    "name": "Ambiguity Resolver",
+    "category": "meta",
+    "mission": "Resolve consequential ambiguity",
+    "manifest_path": "agents/meta/AGENT-004/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-004/system-prompt.md",
+    "system_prompt_sha256": "4711477abfe0c8fbbec6b264d42fd5c12ed6c72fbe4740f097c2f53855ff618f"
+  },
+  {
+    "id": "AGENT-005",
+    "name": "Goal Formalizer",
+    "category": "meta",
+    "mission": "Convert intent into measurable goals",
+    "manifest_path": "agents/meta/AGENT-005/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-005/system-prompt.md",
+    "system_prompt_sha256": "e4e09d966649f18caca78bcc11662de850c2eaa83b55d8095ef9c1e5698d6258"
+  },
+  {
+    "id": "AGENT-006",
+    "name": "Task Decomposer",
+    "category": "meta",
+    "mission": "Decompose work into executable tasks",
+    "manifest_path": "agents/meta/AGENT-006/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-006/system-prompt.md",
+    "system_prompt_sha256": "cface36b99059c9562c32710fee8d37069f7a38daf8ceab7ae0ef5a44a2551b5"
+  },
+  {
+    "id": "AGENT-007",
+    "name": "Strategic Planner",
+    "category": "meta",
+    "mission": "Choose an execution strategy",
+    "manifest_path": "agents/meta/AGENT-007/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-007/system-prompt.md",
+    "system_prompt_sha256": "037ab0ffd4c4ec5db5e91edc12b9f18ddaddc3c4bd70f6284d5d2470dbedf4ec"
+  },
+  {
+    "id": "AGENT-008",
+    "name": "Dynamic Replanner",
+    "category": "meta",
+    "mission": "Adapt an active plan to new evidence",
+    "manifest_path": "agents/meta/AGENT-008/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-008/system-prompt.md",
+    "system_prompt_sha256": "66be16c4c53452f8e35ceda87a297a6ae9b97565ea813181159bbbc577346ecc"
+  },
+  {
+    "id": "AGENT-009",
+    "name": "Agent Router",
+    "category": "meta",
+    "mission": "Route a task to the right specialist",
+    "manifest_path": "agents/meta/AGENT-009/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-009/system-prompt.md",
+    "system_prompt_sha256": "2ac968aea328634caa74fb5e99d8fba9d36c2788fe0ea29d6da04e3d70ca13b1"
+  },
+  {
+    "id": "AGENT-010",
+    "name": "Agent Spawn Manager",
+    "category": "meta",
+    "mission": "Manage specialist lifecycle",
+    "manifest_path": "agents/meta/AGENT-010/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-010/system-prompt.md",
+    "system_prompt_sha256": "8c76a7a89c42a4c2278c43791d8f973b5ba5383668d616fa0a449e52444f1a02"
+  },
+  {
+    "id": "AGENT-011",
+    "name": "Parallel-Agent Manager",
+    "category": "meta",
+    "mission": "Coordinate concurrent specialists",
+    "manifest_path": "agents/meta/AGENT-011/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-011/system-prompt.md",
+    "system_prompt_sha256": "94cd2d1811cc567f1298585765df06801324d163677babbe8dc2119f82e3bedb"
+  },
+  {
+    "id": "AGENT-012",
+    "name": "Dependency/DAG Manager",
+    "category": "meta",
+    "mission": "Maintain a dependency graph",
+    "manifest_path": "agents/meta/AGENT-012/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-012/system-prompt.md",
+    "system_prompt_sha256": "04321b14fffafb730e7d072bc10415ae239bc9e7de016f1df986b62aacd45f4e"
+  },
+  {
+    "id": "AGENT-013",
+    "name": "Priority Scheduler",
+    "category": "meta",
+    "mission": "Schedule work by priority",
+    "manifest_path": "agents/meta/AGENT-013/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-013/system-prompt.md",
+    "system_prompt_sha256": "b1af04748b8bab11d91448ebc1e933abc33cffec3a37ca24b8f77a5740a09a19"
+  },
+  {
+    "id": "AGENT-014",
+    "name": "Compute Usage Manager",
+    "category": "meta",
+    "mission": "Allocate task compute and spending",
+    "manifest_path": "agents/meta/AGENT-014/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-014/system-prompt.md",
+    "system_prompt_sha256": "b907f517bbe966e3b6b437b6301473e3c3133b0bcdc286f4a59dfd1631b5e548"
+  },
+  {
+    "id": "AGENT-015",
+    "name": "Termination/Completion Judge",
+    "category": "meta",
+    "mission": "Judge whether work is complete",
+    "manifest_path": "agents/meta/AGENT-015/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-015/system-prompt.md",
+    "system_prompt_sha256": "b10d1c3e2e82efcc40d6193fdaecf33fda8c5c8790d2bceeaa09e6c7bc3371f9"
+  },
+  {
+    "id": "AGENT-016",
+    "name": "Working-Memory Agent",
+    "category": "memory-learning",
+    "mission": "Maintain current task state",
+    "manifest_path": "agents/memory-learning/AGENT-016/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-016/system-prompt.md",
+    "system_prompt_sha256": "9bd66785198b40bbeb09798633caff72fb9dba5ca140c878fbc77e1f038ddf76"
+  },
+  {
+    "id": "AGENT-017",
+    "name": "Long-Term Memory Agent",
+    "category": "memory-learning",
+    "mission": "Maintain durable authorized knowledge",
+    "manifest_path": "agents/memory-learning/AGENT-017/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-017/system-prompt.md",
+    "system_prompt_sha256": "38c8775502afd0957abf7e147e82588d8065d85fe02b4ce6cccf0e6796745b89"
+  },
+  {
+    "id": "AGENT-018",
+    "name": "Episodic Memory Agent",
+    "category": "memory-learning",
+    "mission": "Record meaningful task episodes",
+    "manifest_path": "agents/memory-learning/AGENT-018/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-018/system-prompt.md",
+    "system_prompt_sha256": "ce1b34371b5d9fbfefe822bf26f26a4cd28c742fd9a111af01033a5fcdd67ed1"
+  },
+  {
+    "id": "AGENT-019",
+    "name": "Semantic Memory Agent",
+    "category": "memory-learning",
+    "mission": "Maintain reusable factual knowledge",
+    "manifest_path": "agents/memory-learning/AGENT-019/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-019/system-prompt.md",
+    "system_prompt_sha256": "72a940cb381c655aefe75c8e43e8aec5230e069a4bfd90cb932fbd87c53ded0a"
+  },
+  {
+    "id": "AGENT-020",
+    "name": "Session Summarizer",
+    "category": "memory-learning",
+    "mission": "Summarize a session for continuity",
+    "manifest_path": "agents/memory-learning/AGENT-020/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-020/system-prompt.md",
+    "system_prompt_sha256": "f8d8cd66cecfec59e8ec8318148de917d8f538b5a6fc270871a3bc5348df0ac3"
+  },
+  {
+    "id": "AGENT-021",
+    "name": "Context Retrieval Agent",
+    "category": "memory-learning",
+    "mission": "Retrieve relevant prior context",
+    "manifest_path": "agents/memory-learning/AGENT-021/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-021/system-prompt.md",
+    "system_prompt_sha256": "ae777e23ac3ef2c13324db9999c59dc315b32f014ebc9426e3343d5bd0c79782"
+  },
+  {
+    "id": "AGENT-022",
+    "name": "Context Compression Agent",
+    "category": "memory-learning",
+    "mission": "Compress context without losing decisions",
+    "manifest_path": "agents/memory-learning/AGENT-022/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-022/system-prompt.md",
+    "system_prompt_sha256": "2aeb4aef9e1cda29f32707d57a6188168a079cd7d721cfdf709d8c6b760c4c49"
+  },
+  {
+    "id": "AGENT-023",
+    "name": "Token Optimizer",
+    "category": "memory-learning",
+    "mission": "Reduce token consumption",
+    "manifest_path": "agents/memory-learning/AGENT-023/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-023/system-prompt.md",
+    "system_prompt_sha256": "5cdc2f6b78c7093275095dd4eaba8a7202cffa7577fb575fa7c746f3a60b4260"
+  },
+  {
+    "id": "AGENT-024",
+    "name": "Knowledge-Graph Agent",
+    "category": "memory-learning",
+    "mission": "Maintain a knowledge graph",
+    "manifest_path": "agents/memory-learning/AGENT-024/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-024/system-prompt.md",
+    "system_prompt_sha256": "011c201d066d9c1ad562553742156f709db81cbf68b222bc9cc681c2ba7f7b82"
+  },
+  {
+    "id": "AGENT-025",
+    "name": "Reflection/Learning Agent",
+    "category": "memory-learning",
+    "mission": "Learn from observed outcomes",
+    "manifest_path": "agents/memory-learning/AGENT-025/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-025/system-prompt.md",
+    "system_prompt_sha256": "de1e175f39f8e39e7dffc1dfd9532619343a15b7cae10589a73b77751f2dc1ae"
+  },
+  {
+    "id": "AGENT-026",
+    "name": "Software Architect",
+    "category": "software-engineering",
+    "mission": "Design software architecture",
+    "manifest_path": "agents/software-engineering/AGENT-026/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-026/system-prompt.md",
+    "system_prompt_sha256": "62402709b708e824debcbfa2f3a29eb2417ff7b2b3b840cc17759e9462f26591"
+  },
+  {
+    "id": "AGENT-027",
+    "name": "Coding Agent",
+    "category": "software-engineering",
+    "mission": "Implement a bounded coding task",
+    "manifest_path": "agents/software-engineering/AGENT-027/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-027/system-prompt.md",
+    "system_prompt_sha256": "87f4d59c4f6fd8a5bbf835cf0824f5c4690f1d2745792273289964f2cedb697e"
+  },
+  {
+    "id": "AGENT-028",
+    "name": "Codebase Exploration Agent",
+    "category": "software-engineering",
+    "mission": "Explore an unfamiliar codebase",
+    "manifest_path": "agents/software-engineering/AGENT-028/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-028/system-prompt.md",
+    "system_prompt_sha256": "a0879c42f3aa41f30d40cd175840f35105a898106a5996582e2a340f978c6a7f"
+  },
+  {
+    "id": "AGENT-029",
+    "name": "Repository Understanding Agent",
+    "category": "software-engineering",
+    "mission": "Explain repository structure and operation",
+    "manifest_path": "agents/software-engineering/AGENT-029/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-029/system-prompt.md",
+    "system_prompt_sha256": "feef06536d663cefc8fc2dedecb80dfaea588dad0846b8f632c25d5b465fdcb6"
+  },
+  {
+    "id": "AGENT-030",
+    "name": "Feature Implementation Agent",
+    "category": "software-engineering",
+    "mission": "Implement an end-user feature",
+    "manifest_path": "agents/software-engineering/AGENT-030/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-030/system-prompt.md",
+    "system_prompt_sha256": "9e54c01d26ea3668b4c2c5c8a8dfab4ae22c4c402f901dab2d835b126c2e3b5f"
+  },
+  {
+    "id": "AGENT-031",
+    "name": "Debugging Agent",
+    "category": "software-engineering",
+    "mission": "Find and fix a software defect",
+    "manifest_path": "agents/software-engineering/AGENT-031/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-031/system-prompt.md",
+    "system_prompt_sha256": "a07033cee22101a328b0ff2ed2a0f9bb6ed83fd46ce0144ef1f47909a82659b1"
+  },
+  {
+    "id": "AGENT-032",
+    "name": "Refactoring Agent",
+    "category": "software-engineering",
+    "mission": "Improve code structure safely",
+    "manifest_path": "agents/software-engineering/AGENT-032/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-032/system-prompt.md",
+    "system_prompt_sha256": "4ddc7bc94689b52ac6cf670f2589cd2373a380cc14a89024b6f7db10f6ed82cf"
+  },
+  {
+    "id": "AGENT-033",
+    "name": "Code Review Agent",
+    "category": "software-engineering",
+    "mission": "Review a proposed code change",
+    "manifest_path": "agents/software-engineering/AGENT-033/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-033/system-prompt.md",
+    "system_prompt_sha256": "fc91da8affbd39b453db59001e83a12207bb325b2a5e86a0a46540e0f98b7f7e"
+  },
+  {
+    "id": "AGENT-034",
+    "name": "Unit-Test Generator",
+    "category": "software-engineering",
+    "mission": "Design meaningful unit tests",
+    "manifest_path": "agents/software-engineering/AGENT-034/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-034/system-prompt.md",
+    "system_prompt_sha256": "8ad523e386d36f09143cdd82861471fffbba09ad0bd55e78be84f2188c4ca7e5"
+  },
+  {
+    "id": "AGENT-035",
+    "name": "Integration-Test Agent",
+    "category": "software-engineering",
+    "mission": "Verify component integrations",
+    "manifest_path": "agents/software-engineering/AGENT-035/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-035/system-prompt.md",
+    "system_prompt_sha256": "b75c98ece042435964e481d8570e97ced8a4aaa663412f8906e651b2e2570286"
+  },
+  {
+    "id": "AGENT-036",
+    "name": "E2E Testing Agent",
+    "category": "software-engineering",
+    "mission": "Verify complete user journeys",
+    "manifest_path": "agents/software-engineering/AGENT-036/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-036/system-prompt.md",
+    "system_prompt_sha256": "33d22627ab62a7bf0092803df2ec335186378618b35fe9b50caa41583b052429"
+  },
+  {
+    "id": "AGENT-037",
+    "name": "Regression Testing Agent",
+    "category": "software-engineering",
+    "mission": "Detect behavioral regressions",
+    "manifest_path": "agents/software-engineering/AGENT-037/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-037/system-prompt.md",
+    "system_prompt_sha256": "28626f40934ff99f2c8bf49f10731727761de1cd293af38eae5b50334d7e0343"
+  },
+  {
+    "id": "AGENT-038",
+    "name": "Build/Compile Agent",
+    "category": "software-engineering",
+    "mission": "Produce and diagnose compiled builds",
+    "manifest_path": "agents/software-engineering/AGENT-038/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-038/system-prompt.md",
+    "system_prompt_sha256": "ee6363103959bab79fa58bba43894e8944a93ad3c60db310a6249b3bbe810fe2"
+  },
+  {
+    "id": "AGENT-039",
+    "name": "Dependency Manager",
+    "category": "software-engineering",
+    "mission": "Manage project dependencies",
+    "manifest_path": "agents/software-engineering/AGENT-039/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-039/system-prompt.md",
+    "system_prompt_sha256": "86d03f4540fef71a1e176abd482223bb4df6c8cbcb013f62d59b03239437c993"
+  },
+  {
+    "id": "AGENT-040",
+    "name": "Package/Environment Agent",
+    "category": "software-engineering",
+    "mission": "Prepare a project execution environment",
+    "manifest_path": "agents/software-engineering/AGENT-040/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-040/system-prompt.md",
+    "system_prompt_sha256": "42142bb26b13e966f7430973df91d813a3a7d6724439743d54379f3f443965f9"
+  },
+  {
+    "id": "AGENT-041",
+    "name": "Git Agent",
+    "category": "software-engineering",
+    "mission": "Perform scoped version-control work",
+    "manifest_path": "agents/software-engineering/AGENT-041/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-041/system-prompt.md",
+    "system_prompt_sha256": "12da8798f2e5d0b5317be985eea8e5b2224182bb05adaa6674d67a5631394646"
+  },
+  {
+    "id": "AGENT-042",
+    "name": "GitHub/PR Agent",
+    "category": "software-engineering",
+    "mission": "Prepare reviewable pull requests",
+    "manifest_path": "agents/software-engineering/AGENT-042/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-042/system-prompt.md",
+    "system_prompt_sha256": "17ca4a4615dfbd6e066dc1e283b68c0cd8b16a1783c329a4577770154ab0d9b6"
+  },
+  {
+    "id": "AGENT-043",
+    "name": "CI/CD Agent",
+    "category": "software-engineering",
+    "mission": "Design reliable delivery pipelines",
+    "manifest_path": "agents/software-engineering/AGENT-043/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-043/system-prompt.md",
+    "system_prompt_sha256": "e521579b00ad690d30bf6a830b842d3f2be8650d997fa0fd9e9c86708199e672"
+  },
+  {
+    "id": "AGENT-044",
+    "name": "Deployment Agent",
+    "category": "software-engineering",
+    "mission": "Deploy an authorized software release",
+    "manifest_path": "agents/software-engineering/AGENT-044/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-044/system-prompt.md",
+    "system_prompt_sha256": "866635aaaca674ee964a87970313fc03c0431e3f8f0a42b340b9e0406fbff72f"
+  },
+  {
+    "id": "AGENT-045",
+    "name": "Performance/Profiling Agent",
+    "category": "software-engineering",
+    "mission": "Diagnose application performance",
+    "manifest_path": "agents/software-engineering/AGENT-045/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-045/system-prompt.md",
+    "system_prompt_sha256": "3fcacfad7aedda42ee97b1d9d13843fe1c4be8b61d070d1e175c0cbba955ebcf"
+  },
+  {
+    "id": "AGENT-046",
+    "name": "Browser Agent",
+    "category": "computer-tools",
+    "mission": "Complete browser-based tasks",
+    "manifest_path": "agents/computer-tools/AGENT-046/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-046/system-prompt.md",
+    "system_prompt_sha256": "9497dc2a9f6df083a315f617dbae4678933c12b584f81dc9ddcdc56fb0751d21"
+  },
+  {
+    "id": "AGENT-047",
+    "name": "Computer-Use Agent",
+    "category": "computer-tools",
+    "mission": "Operate a computer interface",
+    "manifest_path": "agents/computer-tools/AGENT-047/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-047/system-prompt.md",
+    "system_prompt_sha256": "9933fd6722cc770f6b5a1fb6ad7639ad219135a47c2b138a675e99d5dcdcf079"
+  },
+  {
+    "id": "AGENT-048",
+    "name": "GUI/Vision Navigation Agent",
+    "category": "computer-tools",
+    "mission": "Navigate visual interfaces",
+    "manifest_path": "agents/computer-tools/AGENT-048/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-048/system-prompt.md",
+    "system_prompt_sha256": "8b9a1a6ba0814f2f654e2ae88e7bbcb4fdb0d90434f7963b69118303b68901f2"
+  },
+  {
+    "id": "AGENT-049",
+    "name": "Terminal/Shell Agent",
+    "category": "computer-tools",
+    "mission": "Run shell operations reliably",
+    "manifest_path": "agents/computer-tools/AGENT-049/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-049/system-prompt.md",
+    "system_prompt_sha256": "d92229926fc07f8f27ba02e50c88fffd3c3c68fb9401d01a3647045dcafe65f4"
+  },
+  {
+    "id": "AGENT-050",
+    "name": "File-System Agent",
+    "category": "computer-tools",
+    "mission": "Manage user files and directories",
+    "manifest_path": "agents/computer-tools/AGENT-050/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-050/system-prompt.md",
+    "system_prompt_sha256": "865eeba36f09940f62590d3af3767380d35d836efd9847ef73e21092eb4dab4b"
+  },
+  {
+    "id": "AGENT-051",
+    "name": "HTTP/API Agent",
+    "category": "computer-tools",
+    "mission": "Interact with HTTP APIs",
+    "manifest_path": "agents/computer-tools/AGENT-051/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-051/system-prompt.md",
+    "system_prompt_sha256": "e008dc6f1c9cd082554c7cd6dace6e60b1d663b31487cd73c55f1732f7070697"
+  },
+  {
+    "id": "AGENT-052",
+    "name": "MCP Agent",
+    "category": "computer-tools",
+    "mission": "Coordinate MCP tool interactions",
+    "manifest_path": "agents/computer-tools/AGENT-052/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-052/system-prompt.md",
+    "system_prompt_sha256": "a279fa16437673ce6d77c63f7161babd95688e1fdcc74b721565744949dcd216"
+  },
+  {
+    "id": "AGENT-053",
+    "name": "External-Tool Discovery Agent",
+    "category": "computer-tools",
+    "mission": "Discover an external tool capability",
+    "manifest_path": "agents/computer-tools/AGENT-053/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-053/system-prompt.md",
+    "system_prompt_sha256": "bc6f4e7d674c7394417a7a5f7d48632539f4fe01f5209e5c369045a03b7ec28d"
+  },
+  {
+    "id": "AGENT-054",
+    "name": "API Discovery Agent",
+    "category": "computer-tools",
+    "mission": "Discover an API's usable contract",
+    "manifest_path": "agents/computer-tools/AGENT-054/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-054/system-prompt.md",
+    "system_prompt_sha256": "7f0de0b0dd133ae148eeb9569abbb5fb757ad8e4d735569170f15a91a1cbe280"
+  },
+  {
+    "id": "AGENT-055",
+    "name": "Authentication/Session Agent",
+    "category": "computer-tools",
+    "mission": "Manage authorized authentication state",
+    "manifest_path": "agents/computer-tools/AGENT-055/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-055/system-prompt.md",
+    "system_prompt_sha256": "1827cc4fdbcc9a8bf6148d26012a6afa2d87ab411ee607d7d82330c771a5b101"
+  },
+  {
+    "id": "AGENT-056",
+    "name": "Form/Workflow Automation Agent",
+    "category": "computer-tools",
+    "mission": "Automate a form or workflow",
+    "manifest_path": "agents/computer-tools/AGENT-056/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-056/system-prompt.md",
+    "system_prompt_sha256": "1767bae7c09ba06ce2aecc66224439f7f984eb2690ecacca2642e88031d43955"
+  },
+  {
+    "id": "AGENT-057",
+    "name": "Sandbox Execution Agent",
+    "category": "computer-tools",
+    "mission": "Execute code within isolation",
+    "manifest_path": "agents/computer-tools/AGENT-057/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-057/system-prompt.md",
+    "system_prompt_sha256": "df9f7168c88ec96396535bdae023f7667b7bec26236506dbeef0913dcedff932"
+  },
+  {
+    "id": "AGENT-058",
+    "name": "General Research Agent",
+    "category": "research-science",
+    "mission": "Research a factual question",
+    "manifest_path": "agents/research-science/AGENT-058/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-058/system-prompt.md",
+    "system_prompt_sha256": "c4922d0fee31009e4a24f8a62bf7bb5c26da116a071726083507e57c90c4c486"
+  },
+  {
+    "id": "AGENT-059",
+    "name": "Deep-Research Agent",
+    "category": "research-science",
+    "mission": "Investigate a complex research problem",
+    "manifest_path": "agents/research-science/AGENT-059/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-059/system-prompt.md",
+    "system_prompt_sha256": "546e5838f5dddc92c97f93a2a61366ec90533f7022ca7efc74922bd59f822380"
+  },
+  {
+    "id": "AGENT-060",
+    "name": "Search Strategy Agent",
+    "category": "research-science",
+    "mission": "Design an effective search strategy",
+    "manifest_path": "agents/research-science/AGENT-060/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-060/system-prompt.md",
+    "system_prompt_sha256": "d72b7d8c5602fddf333637ae40b1b511e05359177e361ac94dd94210d8335252"
+  },
+  {
+    "id": "AGENT-061",
+    "name": "Literature-Review Agent",
+    "category": "research-science",
+    "mission": "Synthesize a research literature",
+    "manifest_path": "agents/research-science/AGENT-061/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-061/system-prompt.md",
+    "system_prompt_sha256": "68c7fecbb3675ff2878b049e36a6198b505f9018df25c1fe45711856ed2d6fb4"
+  },
+  {
+    "id": "AGENT-062",
+    "name": "Academic-Paper Finder",
+    "category": "research-science",
+    "mission": "Find relevant academic papers",
+    "manifest_path": "agents/research-science/AGENT-062/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-062/system-prompt.md",
+    "system_prompt_sha256": "8df9afe27e9feb8455a5f3d63d49542cb0a4800517da6bedc776c5c86bb3688e"
+  },
+  {
+    "id": "AGENT-063",
+    "name": "Paper Reader/Extractor",
+    "category": "research-science",
+    "mission": "Extract a paper's actual findings",
+    "manifest_path": "agents/research-science/AGENT-063/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-063/system-prompt.md",
+    "system_prompt_sha256": "f6e75e98dbf79f098883bfa3a793c5feb44c700e4e815258d911455a770eafa9"
+  },
+  {
+    "id": "AGENT-064",
+    "name": "Citation Agent",
+    "category": "research-science",
+    "mission": "Create accurate citations",
+    "manifest_path": "agents/research-science/AGENT-064/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-064/system-prompt.md",
+    "system_prompt_sha256": "8361a78ef20d76d98037780451d6c31a0cd7b4ecaf1d089b9bd4fab0a762509b"
+  },
+  {
+    "id": "AGENT-065",
+    "name": "Hypothesis Generator",
+    "category": "research-science",
+    "mission": "Generate falsifiable hypotheses",
+    "manifest_path": "agents/research-science/AGENT-065/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-065/system-prompt.md",
+    "system_prompt_sha256": "59d19f886512d7950fd90e47861e2cd88e66245b693f332176f77d00ac1db09f"
+  },
+  {
+    "id": "AGENT-066",
+    "name": "Experiment Designer",
+    "category": "research-science",
+    "mission": "Design an informative experiment",
+    "manifest_path": "agents/research-science/AGENT-066/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-066/system-prompt.md",
+    "system_prompt_sha256": "cee63c2ce7f2db17543802e0afa8c0bafefacec84c6fd92016ab672937a3cb69"
+  },
+  {
+    "id": "AGENT-067",
+    "name": "Scientific Critic",
+    "category": "research-science",
+    "mission": "Critique scientific reasoning",
+    "manifest_path": "agents/research-science/AGENT-067/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-067/system-prompt.md",
+    "system_prompt_sha256": "bdf66d691e5f27e198b9d157577e30eda3ac4d46e442c5b504d0deb35720af1b"
+  },
+  {
+    "id": "AGENT-068",
+    "name": "Simulation Agent",
+    "category": "research-science",
+    "mission": "Model and simulate a system",
+    "manifest_path": "agents/research-science/AGENT-068/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-068/system-prompt.md",
+    "system_prompt_sha256": "507aa44283b3d4b45d8d415263dbdf4026c59e51e46d7b35e643147af2a70206"
+  },
+  {
+    "id": "AGENT-069",
+    "name": "Statistical Analysis Agent",
+    "category": "research-science",
+    "mission": "Analyze data statistically",
+    "manifest_path": "agents/research-science/AGENT-069/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-069/system-prompt.md",
+    "system_prompt_sha256": "75591c2b81d5cc63a8b4b0ad8fc9e3c09a33a62b239481e82a2511c754c0e7af"
+  },
+  {
+    "id": "AGENT-070",
+    "name": "Reproducibility Agent",
+    "category": "research-science",
+    "mission": "Make a scientific result reproducible",
+    "manifest_path": "agents/research-science/AGENT-070/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-070/system-prompt.md",
+    "system_prompt_sha256": "c31633e173f94ebd898fd10fb0e0cdd977ad7a248e696a9d2d8fbe2ceec1e20a"
+  },
+  {
+    "id": "AGENT-071",
+    "name": "Scientific Report Writer",
+    "category": "research-science",
+    "mission": "Write a scientific report",
+    "manifest_path": "agents/research-science/AGENT-071/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-071/system-prompt.md",
+    "system_prompt_sha256": "4db94996ae9fc7a449d7797d00979bbec10ba768ba5489afafe4a3ec0d83a1f8"
+  },
+  {
+    "id": "AGENT-072",
+    "name": "Data Analyst",
+    "category": "data-knowledge",
+    "mission": "Analyze a business or research dataset",
+    "manifest_path": "agents/data-knowledge/AGENT-072/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-072/system-prompt.md",
+    "system_prompt_sha256": "069a4ba67de14508948b40c03cd4a04c61bbc0ae800333109790b9510d2efa68"
+  },
+  {
+    "id": "AGENT-073",
+    "name": "SQL Agent",
+    "category": "data-knowledge",
+    "mission": "Write and inspect SQL",
+    "manifest_path": "agents/data-knowledge/AGENT-073/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-073/system-prompt.md",
+    "system_prompt_sha256": "9a1dac81df575e824e6a609cede8455ef152ad40887fd123b88a5e5d5ba53ecc"
+  },
+  {
+    "id": "AGENT-074",
+    "name": "Database Agent",
+    "category": "data-knowledge",
+    "mission": "Design or maintain databases",
+    "manifest_path": "agents/data-knowledge/AGENT-074/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-074/system-prompt.md",
+    "system_prompt_sha256": "8db8232eb6fd3c05f43bc48f564c69d92a46bf8c4fc176e994e6fdaacacca1e0"
+  },
+  {
+    "id": "AGENT-075",
+    "name": "Data Engineering Agent",
+    "category": "data-knowledge",
+    "mission": "Design dependable data systems",
+    "manifest_path": "agents/data-knowledge/AGENT-075/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-075/system-prompt.md",
+    "system_prompt_sha256": "cccfcdfa693d7581a349d86b49aa27097458dc55960d6e4ccb5295c172a5edee"
+  },
+  {
+    "id": "AGENT-076",
+    "name": "ETL/Pipeline Agent",
+    "category": "data-knowledge",
+    "mission": "Implement data transformation pipelines",
+    "manifest_path": "agents/data-knowledge/AGENT-076/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-076/system-prompt.md",
+    "system_prompt_sha256": "b33da78b2be21e141ddbedb692824e0fb2dd85f18d469140b6d9b80788129444"
+  },
+  {
+    "id": "AGENT-077",
+    "name": "Data Cleaning Agent",
+    "category": "data-knowledge",
+    "mission": "Clean data transparently",
+    "manifest_path": "agents/data-knowledge/AGENT-077/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-077/system-prompt.md",
+    "system_prompt_sha256": "1e7a5397ac43908b0711229dc8e38138ce4b80c129c8012fa4bf45fffc01593e"
+  },
+  {
+    "id": "AGENT-078",
+    "name": "Visualization Agent",
+    "category": "data-knowledge",
+    "mission": "Visualize data clearly",
+    "manifest_path": "agents/data-knowledge/AGENT-078/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-078/system-prompt.md",
+    "system_prompt_sha256": "6f910004d66f4cd2c48000b29a95d6d565e6d9ca38a5782dffd49536c469a81e"
+  },
+  {
+    "id": "AGENT-079",
+    "name": "RAG Agent",
+    "category": "data-knowledge",
+    "mission": "Build grounded retrieval-augmented answers",
+    "manifest_path": "agents/data-knowledge/AGENT-079/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-079/system-prompt.md",
+    "system_prompt_sha256": "bdaa586279461befc6a9eba56c79fe8bed00da7666409f25a46ad1c74de79547"
+  },
+  {
+    "id": "AGENT-080",
+    "name": "Vector Retrieval Agent",
+    "category": "data-knowledge",
+    "mission": "Retrieve semantically relevant vectors",
+    "manifest_path": "agents/data-knowledge/AGENT-080/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-080/system-prompt.md",
+    "system_prompt_sha256": "912a542a9f28c8d9f964cafddbf0f9239a7b4a758baaeef2a6cb4aea20c8b422"
+  },
+  {
+    "id": "AGENT-081",
+    "name": "Knowledge-Base Agent",
+    "category": "data-knowledge",
+    "mission": "Maintain a usable knowledge base",
+    "manifest_path": "agents/data-knowledge/AGENT-081/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-081/system-prompt.md",
+    "system_prompt_sha256": "2808e6630a33b626262ac5b500d5af133b2670142b14d193fb7c962418c06a01"
+  },
+  {
+    "id": "AGENT-082",
+    "name": "Structured-Extraction Agent",
+    "category": "data-knowledge",
+    "mission": "Extract structured information",
+    "manifest_path": "agents/data-knowledge/AGENT-082/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-082/system-prompt.md",
+    "system_prompt_sha256": "03f0940b4685e1f39680a1615f1f58a6863d3324d7c15aa560f8c0f5effe6cff"
+  },
+  {
+    "id": "AGENT-083",
+    "name": "Security Orchestrator",
+    "category": "cybersecurity",
+    "mission": "Coordinate an authorized security review",
+    "manifest_path": "agents/cybersecurity/AGENT-083/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-083/system-prompt.md",
+    "system_prompt_sha256": "dbd24a3113fe2cb005d167ee088f285ceabea7509ea825dc5c104b3dad2b2eaf"
+  },
+  {
+    "id": "AGENT-084",
+    "name": "Threat-Modeling Agent",
+    "category": "cybersecurity",
+    "mission": "Model threats to an existing system",
+    "manifest_path": "agents/cybersecurity/AGENT-084/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-084/system-prompt.md",
+    "system_prompt_sha256": "7a7302f2c62e51353a0c5a7d6e45d875a865f8bd3373657282086f37b12ba707"
+  },
+  {
+    "id": "AGENT-085",
+    "name": "Attack-Surface Mapper",
+    "category": "cybersecurity",
+    "mission": "Map a system's attack surface",
+    "manifest_path": "agents/cybersecurity/AGENT-085/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-085/system-prompt.md",
+    "system_prompt_sha256": "3868cea88bbfdf2a12d7f3bd6b6bb08e080558e5c2cf405e575962e2f29d73d3"
+  },
+  {
+    "id": "AGENT-086",
+    "name": "Secure-Code Review Agent",
+    "category": "cybersecurity",
+    "mission": "Review code for security defects",
+    "manifest_path": "agents/cybersecurity/AGENT-086/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-086/system-prompt.md",
+    "system_prompt_sha256": "e82f751d693ac6d0cd557d64843d5ec4b134cafabe1c09f79ba5e0c8871c1d33"
+  },
+  {
+    "id": "AGENT-087",
+    "name": "Vulnerability Discovery Agent",
+    "category": "cybersecurity",
+    "mission": "Discover potential vulnerabilities",
+    "manifest_path": "agents/cybersecurity/AGENT-087/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-087/system-prompt.md",
+    "system_prompt_sha256": "3a9cdf4be94674b3550c65a2202ae4dd985175c9b1f44bedb849d2ccdc5089d5"
+  },
+  {
+    "id": "AGENT-088",
+    "name": "Vulnerability Validation Agent",
+    "category": "cybersecurity",
+    "mission": "Validate individual vulnerability candidates",
+    "manifest_path": "agents/cybersecurity/AGENT-088/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-088/system-prompt.md",
+    "system_prompt_sha256": "11216754dd26b11e5e8d673ed933e0378221f225ecdd3226fce97210a458c6a1"
+  },
+  {
+    "id": "AGENT-089",
+    "name": "Dependency/Supply-Chain Security Agent",
+    "category": "cybersecurity",
+    "mission": "Assess dependency and supply-chain security",
+    "manifest_path": "agents/cybersecurity/AGENT-089/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-089/system-prompt.md",
+    "system_prompt_sha256": "f2d0253a83ec2a7a586b7b02201f944834d5d4c860bb165814d0f83fa369e45e"
+  },
+  {
+    "id": "AGENT-090",
+    "name": "Secrets Detection Agent",
+    "category": "cybersecurity",
+    "mission": "Detect accidentally committed secrets",
+    "manifest_path": "agents/cybersecurity/AGENT-090/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-090/system-prompt.md",
+    "system_prompt_sha256": "cbe9d5e2977445c571e0de9b6a44c3fbf7dc140068641b7f5cc2b9d3f3a47033"
+  },
+  {
+    "id": "AGENT-091",
+    "name": "SAST Agent",
+    "category": "cybersecurity",
+    "mission": "Run static security analysis",
+    "manifest_path": "agents/cybersecurity/AGENT-091/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-091/system-prompt.md",
+    "system_prompt_sha256": "775f38672062356cb6785a74dfe719288d15a5925b3edf36b5cb437253a6d797"
+  },
+  {
+    "id": "AGENT-092",
+    "name": "Fuzzing Agent",
+    "category": "cybersecurity",
+    "mission": "Fuzz software in a controlled harness",
+    "manifest_path": "agents/cybersecurity/AGENT-092/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-092/system-prompt.md",
+    "system_prompt_sha256": "56d58d8319e6e23903cbf64966aeee530d8e70acaa579eaa43d63250af04b1e3"
+  },
+  {
+    "id": "AGENT-093",
+    "name": "Security Patch Agent",
+    "category": "cybersecurity",
+    "mission": "Remediate a confirmed security defect",
+    "manifest_path": "agents/cybersecurity/AGENT-093/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-093/system-prompt.md",
+    "system_prompt_sha256": "e4480ee04269dc41c711a25a1a27abec8dda4beb7a45c1682212ddda0972c84c"
+  },
+  {
+    "id": "AGENT-094",
+    "name": "Security Verification Agent",
+    "category": "cybersecurity",
+    "mission": "Verify security remediation",
+    "manifest_path": "agents/cybersecurity/AGENT-094/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-094/system-prompt.md",
+    "system_prompt_sha256": "8a062d55638a931c94ea82d387e41dbc41240e15bb003b021dbaacfb20698343"
+  },
+  {
+    "id": "AGENT-095",
+    "name": "Prompt-Injection Detector",
+    "category": "cybersecurity",
+    "mission": "Detect direct instruction attacks against agents",
+    "manifest_path": "agents/cybersecurity/AGENT-095/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-095/system-prompt.md",
+    "system_prompt_sha256": "3eb348948fbb17b8fd692c401deb48f174a0d84d3b73dbc3fc77a58276e78d2e"
+  },
+  {
+    "id": "AGENT-096",
+    "name": "Agent Permission Controller",
+    "category": "cybersecurity",
+    "mission": "Control agent permission requests",
+    "manifest_path": "agents/cybersecurity/AGENT-096/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-096/system-prompt.md",
+    "system_prompt_sha256": "ed73241774407b090e56d4b1dcc992adf8a41d79d8d18340ed19caffc055b407"
+  },
+  {
+    "id": "AGENT-097",
+    "name": "Sandbox/Containment Agent",
+    "category": "cybersecurity",
+    "mission": "Design containment for risky execution",
+    "manifest_path": "agents/cybersecurity/AGENT-097/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-097/system-prompt.md",
+    "system_prompt_sha256": "5527240801a53a9dc0ea1746706283cf1aa60134a04b84eb2d65bd6a9c73e7a0"
+  },
+  {
+    "id": "AGENT-098",
+    "name": "SOC/Incident Analysis Agent",
+    "category": "cybersecurity",
+    "mission": "Analyze a security incident",
+    "manifest_path": "agents/cybersecurity/AGENT-098/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-098/system-prompt.md",
+    "system_prompt_sha256": "18d0b8a235c69adba892449966d637903d357b19aec6aef0785bf505da95438d"
+  },
+  {
+    "id": "AGENT-099",
+    "name": "Threat-Intelligence Agent",
+    "category": "cybersecurity",
+    "mission": "Assess strategic threat intelligence",
+    "manifest_path": "agents/cybersecurity/AGENT-099/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-099/system-prompt.md",
+    "system_prompt_sha256": "e2144d2c1e8d745e0cab6eea398680412e9c88954977b266cd4eff8f11f5d481"
+  },
+  {
+    "id": "AGENT-100",
+    "name": "Security Report Agent",
+    "category": "cybersecurity",
+    "mission": "Report security assessment results",
+    "manifest_path": "agents/cybersecurity/AGENT-100/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-100/system-prompt.md",
+    "system_prompt_sha256": "e45e89d0393cdcd49f30e0e2aad92ec75707ffc78d72edf913393a91186a8c33"
+  },
+  {
+    "id": "AGENT-101",
+    "name": "Document Reader",
+    "category": "computer-tools",
+    "mission": "Read documents accurately",
+    "manifest_path": "agents/computer-tools/AGENT-101/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-101/system-prompt.md",
+    "system_prompt_sha256": "4eb26d1b47d4749981d4bb82954633c15edfb8fabaddaf3db7a746f04ed722a8"
+  },
+  {
+    "id": "AGENT-102",
+    "name": "PDF Agent",
+    "category": "computer-tools",
+    "mission": "Work with PDF content and layout",
+    "manifest_path": "agents/computer-tools/AGENT-102/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-102/system-prompt.md",
+    "system_prompt_sha256": "cbfa9ffc51fb57d3522c589121d01b75251951ad06a0f1bd90950abc3bf8ce9a"
+  },
+  {
+    "id": "AGENT-103",
+    "name": "Spreadsheet Agent",
+    "category": "computer-tools",
+    "mission": "Build or analyze spreadsheets",
+    "manifest_path": "agents/computer-tools/AGENT-103/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-103/system-prompt.md",
+    "system_prompt_sha256": "3388a8c4a121b02597a5c03ef632d0cac22515e4feb4006ed8df6ff5f8e33838"
+  },
+  {
+    "id": "AGENT-104",
+    "name": "Presentation Agent",
+    "category": "computer-tools",
+    "mission": "Create coherent presentations",
+    "manifest_path": "agents/computer-tools/AGENT-104/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-104/system-prompt.md",
+    "system_prompt_sha256": "1620c23a3be83c98284e59de8e2d648db6e4cd1c4dbb29795b83984e2f1441f8"
+  },
+  {
+    "id": "AGENT-105",
+    "name": "OCR/Document-Vision Agent",
+    "category": "computer-tools",
+    "mission": "Recover text from document images",
+    "manifest_path": "agents/computer-tools/AGENT-105/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-105/system-prompt.md",
+    "system_prompt_sha256": "f7c421cc8f91a711ad0af8e1e2c40a2d4bbe3b54334bfb7adedfe01caed0696d"
+  },
+  {
+    "id": "AGENT-106",
+    "name": "Image Understanding Agent",
+    "category": "computer-tools",
+    "mission": "Interpret supplied images",
+    "manifest_path": "agents/computer-tools/AGENT-106/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-106/system-prompt.md",
+    "system_prompt_sha256": "cbebc63c8feaebf3e54ab4ab3e766d057c0bf81809be4183d1f2d1797d325867"
+  },
+  {
+    "id": "AGENT-107",
+    "name": "Image Generation Agent",
+    "category": "computer-tools",
+    "mission": "Create images from a visual brief",
+    "manifest_path": "agents/computer-tools/AGENT-107/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-107/system-prompt.md",
+    "system_prompt_sha256": "ca73336c349eab01954a5800ac3de04494aea58a30c03020f281d044d8b0ffe2"
+  },
+  {
+    "id": "AGENT-108",
+    "name": "Audio Agent",
+    "category": "computer-tools",
+    "mission": "Analyze or process audio",
+    "manifest_path": "agents/computer-tools/AGENT-108/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-108/system-prompt.md",
+    "system_prompt_sha256": "419035b38af85f52bbdb96e6a968902e7436ad421bb2fba1f1fd60f1efc4749a"
+  },
+  {
+    "id": "AGENT-109",
+    "name": "Speech/Voice Agent",
+    "category": "computer-tools",
+    "mission": "Transcribe or produce speech",
+    "manifest_path": "agents/computer-tools/AGENT-109/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-109/system-prompt.md",
+    "system_prompt_sha256": "d2cbc0fbdbf50a941b975159c5b38033882508019ca347b8a5fd75a8208fb7e8"
+  },
+  {
+    "id": "AGENT-110",
+    "name": "Video Understanding Agent",
+    "category": "computer-tools",
+    "mission": "Understand video sequences",
+    "manifest_path": "agents/computer-tools/AGENT-110/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-110/system-prompt.md",
+    "system_prompt_sha256": "3a5531c8de84632a6ec22d0b3a9c2daacd70efcfc0f171320220d564fa3010aa"
+  },
+  {
+    "id": "AGENT-111",
+    "name": "General Verifier",
+    "category": "verification-recovery",
+    "mission": "Independently verify a result",
+    "manifest_path": "agents/verification-recovery/AGENT-111/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-111/system-prompt.md",
+    "system_prompt_sha256": "637def42e5dae618f1568b2c538be4490527f454a8e7e6c1c541a214344384d1"
+  },
+  {
+    "id": "AGENT-112",
+    "name": "Fact Checker",
+    "category": "verification-recovery",
+    "mission": "Check factual assertions",
+    "manifest_path": "agents/verification-recovery/AGENT-112/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-112/system-prompt.md",
+    "system_prompt_sha256": "83e4340db81b4c0b0e159ca747479117aa3f8b21d270891859fa76fca63d3153"
+  },
+  {
+    "id": "AGENT-113",
+    "name": "Source/Citation Verifier",
+    "category": "verification-recovery",
+    "mission": "Verify sources and citations",
+    "manifest_path": "agents/verification-recovery/AGENT-113/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-113/system-prompt.md",
+    "system_prompt_sha256": "642c449c9f7c742a9051900753ef992cee79a8d427eaf974e8de19674bda604a"
+  },
+  {
+    "id": "AGENT-114",
+    "name": "Logical Consistency Checker",
+    "category": "verification-recovery",
+    "mission": "Check internal logical consistency",
+    "manifest_path": "agents/verification-recovery/AGENT-114/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-114/system-prompt.md",
+    "system_prompt_sha256": "38c63c79bca1dd089d432bfc1b2ac248b5bc28c42ae8151469476891a98242e9"
+  },
+  {
+    "id": "AGENT-115",
+    "name": "Requirement-Satisfaction Judge",
+    "category": "verification-recovery",
+    "mission": "Judge requirement satisfaction",
+    "manifest_path": "agents/verification-recovery/AGENT-115/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-115/system-prompt.md",
+    "system_prompt_sha256": "02ec54b8ae9bfc2127865f613dd70d06a3aa6cc7003acc687c5b26e481215024"
+  },
+  {
+    "id": "AGENT-116",
+    "name": "Critic Agent",
+    "category": "verification-recovery",
+    "mission": "Critique the quality of a result",
+    "manifest_path": "agents/verification-recovery/AGENT-116/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-116/system-prompt.md",
+    "system_prompt_sha256": "2fc9da6c182e349666034dce790b071963ba535656b32dabbcde7f2efff71fd2"
+  },
+  {
+    "id": "AGENT-117",
+    "name": "Adversarial Critic",
+    "category": "verification-recovery",
+    "mission": "Challenge a proposed solution adversarially",
+    "manifest_path": "agents/verification-recovery/AGENT-117/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-117/system-prompt.md",
+    "system_prompt_sha256": "9c21dae15067afda9249a0d526a5fe163b6504084c068873400858cad0feba3a"
+  },
+  {
+    "id": "AGENT-118",
+    "name": "Hallucination/Grounding Checker",
+    "category": "verification-recovery",
+    "mission": "Detect unsupported generated claims",
+    "manifest_path": "agents/verification-recovery/AGENT-118/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-118/system-prompt.md",
+    "system_prompt_sha256": "f198b32f5646e6f06cec249650bbea7cd5f23889b3873d5c71f282684624185e"
+  },
+  {
+    "id": "AGENT-119",
+    "name": "Result Comparator",
+    "category": "verification-recovery",
+    "mission": "Compare candidate results fairly",
+    "manifest_path": "agents/verification-recovery/AGENT-119/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-119/system-prompt.md",
+    "system_prompt_sha256": "339e1cc2c8e95e10afcefade76cf7d3fcd29f210725722e55ef3867deb52729c"
+  },
+  {
+    "id": "AGENT-120",
+    "name": "Final QA Agent",
+    "category": "verification-recovery",
+    "mission": "Perform final delivery quality assurance",
+    "manifest_path": "agents/verification-recovery/AGENT-120/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-120/system-prompt.md",
+    "system_prompt_sha256": "34dee7a6a43e16bc8d5d467471c4daf4a58f5f2b6265aaf6ec2b101f330dbec9"
+  },
+  {
+    "id": "AGENT-121",
+    "name": "Failure Detector",
+    "category": "verification-recovery",
+    "mission": "Detect task failures promptly",
+    "manifest_path": "agents/verification-recovery/AGENT-121/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-121/system-prompt.md",
+    "system_prompt_sha256": "8865daf658ec965e71ae49ac68e0244b37da012cbd9c55e3004ee7c1e033848a"
+  },
+  {
+    "id": "AGENT-122",
+    "name": "Root-Cause Analyzer",
+    "category": "verification-recovery",
+    "mission": "Identify underlying failure causes",
+    "manifest_path": "agents/verification-recovery/AGENT-122/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-122/system-prompt.md",
+    "system_prompt_sha256": "e01d3646f854b30c44f237cd01a0929e11072c2c6de7c1e7831c1ef6f3bb7b4f"
+  },
+  {
+    "id": "AGENT-123",
+    "name": "Retry Controller",
+    "category": "verification-recovery",
+    "mission": "Manage bounded retries",
+    "manifest_path": "agents/verification-recovery/AGENT-123/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-123/system-prompt.md",
+    "system_prompt_sha256": "d119e69d67d789ce7195fd02075e18d77484dea9e6db188b6812082b540d0e6e"
+  },
+  {
+    "id": "AGENT-124",
+    "name": "Alternative-Strategy Generator",
+    "category": "verification-recovery",
+    "mission": "Find viable alternative strategies",
+    "manifest_path": "agents/verification-recovery/AGENT-124/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-124/system-prompt.md",
+    "system_prompt_sha256": "6fcbb3ca632fe14fd547a6ec30e3fe3852675ecb412398eb0bc186a832b58277"
+  },
+  {
+    "id": "AGENT-125",
+    "name": "Replanning Agent",
+    "category": "verification-recovery",
+    "mission": "Recover a failed workflow through replanning",
+    "manifest_path": "agents/verification-recovery/AGENT-125/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-125/system-prompt.md",
+    "system_prompt_sha256": "c95eb6f4d9b6cdfc3c6b597fc122a83573580a722da7b25e3c9a7736fb0feba4"
+  },
+  {
+    "id": "AGENT-126",
+    "name": "Tool-Failure Recovery Agent",
+    "category": "verification-recovery",
+    "mission": "Recover from tool failures",
+    "manifest_path": "agents/verification-recovery/AGENT-126/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-126/system-prompt.md",
+    "system_prompt_sha256": "38125d87397736ddb5dcc394ac17bbf0f1282b1fe969126137ef2821215ac642"
+  },
+  {
+    "id": "AGENT-127",
+    "name": "Model-Fallback Agent",
+    "category": "verification-recovery",
+    "mission": "Select a model fallback",
+    "manifest_path": "agents/verification-recovery/AGENT-127/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-127/system-prompt.md",
+    "system_prompt_sha256": "8353fde0fc0a8b8704474e9eed5f447481a2f592c587ec50c1612fd08d596a96"
+  },
+  {
+    "id": "AGENT-128",
+    "name": "Context-Recovery Agent",
+    "category": "verification-recovery",
+    "mission": "Recover lost task context",
+    "manifest_path": "agents/verification-recovery/AGENT-128/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-128/system-prompt.md",
+    "system_prompt_sha256": "e05e3d544a21c84f0a88df83cfb80e5cd4b42575c03ca2794765cc97bc6601b3"
+  },
+  {
+    "id": "AGENT-129",
+    "name": "Checkpoint/Rollback Agent",
+    "category": "verification-recovery",
+    "mission": "Manage task checkpoints and rollback",
+    "manifest_path": "agents/verification-recovery/AGENT-129/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-129/system-prompt.md",
+    "system_prompt_sha256": "ddb6e0bca0f3341a1444d5c721c792e773e8a75a2bd849c2ceca1e06a298a06e"
+  },
+  {
+    "id": "AGENT-130",
+    "name": "Deadlock/Loop Detector",
+    "category": "verification-recovery",
+    "mission": "Detect deadlocks and repeated loops",
+    "manifest_path": "agents/verification-recovery/AGENT-130/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-130/system-prompt.md",
+    "system_prompt_sha256": "2e48b7b3d2ee3a4fecee6efb8d3918c459e04fc5cad1b805ef196d8e5a946cd5"
+  },
+  {
+    "id": "AGENT-131",
+    "name": "Observability Agent",
+    "category": "infrastructure",
+    "mission": "Define system observability",
+    "manifest_path": "agents/infrastructure/AGENT-131/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-131/system-prompt.md",
+    "system_prompt_sha256": "b50211686d2f536f0af672a820122488f1a8cb0a631eb372132093dc863e677f"
+  },
+  {
+    "id": "AGENT-132",
+    "name": "Logging Agent",
+    "category": "infrastructure",
+    "mission": "Design useful application logging",
+    "manifest_path": "agents/infrastructure/AGENT-132/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-132/system-prompt.md",
+    "system_prompt_sha256": "3f87e417a6e71fae9a6638499b918db1e840fc922e49b30504e2f63da50dcb4c"
+  },
+  {
+    "id": "AGENT-133",
+    "name": "Trace Analyzer",
+    "category": "infrastructure",
+    "mission": "Analyze distributed execution traces",
+    "manifest_path": "agents/infrastructure/AGENT-133/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-133/system-prompt.md",
+    "system_prompt_sha256": "ac2eda096176526a6778e82d96ad95a133469fc96e3ebc6db827eb348a448c49"
+  },
+  {
+    "id": "AGENT-134",
+    "name": "Cost Monitor",
+    "category": "infrastructure",
+    "mission": "Monitor operational cost",
+    "manifest_path": "agents/infrastructure/AGENT-134/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-134/system-prompt.md",
+    "system_prompt_sha256": "8aa6c2d2238fac5a6f6a6baee463af7e8316fa0387f87d61953a98e34f69b6fa"
+  },
+  {
+    "id": "AGENT-135",
+    "name": "Latency Optimizer",
+    "category": "infrastructure",
+    "mission": "Reduce workflow latency",
+    "manifest_path": "agents/infrastructure/AGENT-135/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-135/system-prompt.md",
+    "system_prompt_sha256": "7088914f566a00ab084b0959c001f159b07779cfdcf5f4961365bf1b6c873f59"
+  },
+  {
+    "id": "AGENT-136",
+    "name": "Model Selector",
+    "category": "infrastructure",
+    "mission": "Choose an appropriate model",
+    "manifest_path": "agents/infrastructure/AGENT-136/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-136/system-prompt.md",
+    "system_prompt_sha256": "99f7c8f1820b74d937125e1037df1d1cf2fcb40eef15d57faae3ed18f47f9e27"
+  },
+  {
+    "id": "AGENT-137",
+    "name": "Tool Selector",
+    "category": "infrastructure",
+    "mission": "Choose the best available tool",
+    "manifest_path": "agents/infrastructure/AGENT-137/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-137/system-prompt.md",
+    "system_prompt_sha256": "85d05fb77d717133f46fc3c894f990ee02c599aab531ba180749687b0bfd6645"
+  },
+  {
+    "id": "AGENT-138",
+    "name": "Resource Allocator",
+    "category": "infrastructure",
+    "mission": "Allocate infrastructure resources",
+    "manifest_path": "agents/infrastructure/AGENT-138/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-138/system-prompt.md",
+    "system_prompt_sha256": "487c080ee80989354c0b73619b07f344c0ccd1506647e7e3625f15b29a83cb51"
+  },
+  {
+    "id": "AGENT-139",
+    "name": "Health Monitor",
+    "category": "infrastructure",
+    "mission": "Monitor service health",
+    "manifest_path": "agents/infrastructure/AGENT-139/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-139/system-prompt.md",
+    "system_prompt_sha256": "c56682587e390cee0a4135f9f6793f89f7de9224cfc67bb36aa8bee1d75eff88"
+  },
+  {
+    "id": "AGENT-140",
+    "name": "Evaluation/Benchmark Agent",
+    "category": "infrastructure",
+    "mission": "Evaluate system performance and quality",
+    "manifest_path": "agents/infrastructure/AGENT-140/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-140/system-prompt.md",
+    "system_prompt_sha256": "115c4e39fa18712669af0739231f6ff8cf433c66f7da05c692c9243964ac93b3"
+  },
+  {
+    "id": "AGENT-141",
+    "name": "Line Necessity Agent",
+    "category": "software-engineering",
+    "mission": "Assess whether a code line is necessary",
+    "manifest_path": "agents/software-engineering/AGENT-141/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-141/system-prompt.md",
+    "system_prompt_sha256": "2f1019eb510d5e35ec93dcb9175c3f13446ad7e823e8ec5cc2896ddc71fa867b"
+  },
+  {
+    "id": "AGENT-142",
+    "name": "Line Explanation Agent",
+    "category": "software-engineering",
+    "mission": "Explain individual lines of code",
+    "manifest_path": "agents/software-engineering/AGENT-142/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-142/system-prompt.md",
+    "system_prompt_sha256": "f67187a16f71c23f6ed9fa7765fd6fd7e05d7c2adc4afb057cc2d7a5516f691c"
+  },
+  {
+    "id": "AGENT-143",
+    "name": "Deletion Agent",
+    "category": "software-engineering",
+    "mission": "Remove demonstrably unnecessary code",
+    "manifest_path": "agents/software-engineering/AGENT-143/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-143/system-prompt.md",
+    "system_prompt_sha256": "2b875dcfb016b1e49a52bfb22b3df2a49724e54d8dd138bd3c08b34f3296bec8"
+  },
+  {
+    "id": "AGENT-144",
+    "name": "Anti-Overengineering Agent",
+    "category": "software-engineering",
+    "mission": "Prevent unnecessary engineering complexity",
+    "manifest_path": "agents/software-engineering/AGENT-144/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-144/system-prompt.md",
+    "system_prompt_sha256": "83a42337b86029a17a4df6a267109afe24a07b9c3ce112edec1df71ead9e1911"
+  },
+  {
+    "id": "AGENT-145",
+    "name": "Simplification Agent",
+    "category": "software-engineering",
+    "mission": "Simplify a software solution",
+    "manifest_path": "agents/software-engineering/AGENT-145/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-145/system-prompt.md",
+    "system_prompt_sha256": "eb5b65bbee8ef00bd4e0aff868970d8ae17474c0b2969a21f069189e457517d8"
+  },
+  {
+    "id": "AGENT-146",
+    "name": "Abstraction Justification Agent",
+    "category": "software-engineering",
+    "mission": "Judge the need for an abstraction",
+    "manifest_path": "agents/software-engineering/AGENT-146/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-146/system-prompt.md",
+    "system_prompt_sha256": "0d04108db069ccab19d82b524a7de1788ec44794b85e660f83e41bbddc71fa11"
+  },
+  {
+    "id": "AGENT-147",
+    "name": "Dependency Necessity Agent",
+    "category": "software-engineering",
+    "mission": "Judge whether a dependency is necessary",
+    "manifest_path": "agents/software-engineering/AGENT-147/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-147/system-prompt.md",
+    "system_prompt_sha256": "2a307c2c8c96f7e291b53de7e535e555d9f6c829bea275190873d295e5d8d270"
+  },
+  {
+    "id": "AGENT-148",
+    "name": "Complexity Limit Agent",
+    "category": "software-engineering",
+    "mission": "Manage software complexity limits",
+    "manifest_path": "agents/software-engineering/AGENT-148/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-148/system-prompt.md",
+    "system_prompt_sha256": "dabf8a55714b83e30fa6a91bb7f8ef8a0505ba345a53c0d95a552f926c634b79"
+  },
+  {
+    "id": "AGENT-149",
+    "name": "Minimal Implementation Agent",
+    "category": "software-engineering",
+    "mission": "Build the smallest complete implementation",
+    "manifest_path": "agents/software-engineering/AGENT-149/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-149/system-prompt.md",
+    "system_prompt_sha256": "5f836220542e1681a4484683c00dea94acc7034f2b0a66c67ffe3816143e4c35"
+  },
+  {
+    "id": "AGENT-150",
+    "name": "Code Duplication/Consolidation Agent",
+    "category": "software-engineering",
+    "mission": "Consolidate duplicated code appropriately",
+    "manifest_path": "agents/software-engineering/AGENT-150/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-150/system-prompt.md",
+    "system_prompt_sha256": "cc08d13470eceb798c02e345f4012776bd16f5eb819b44d6e87cef6090475139"
+  },
+  {
+    "id": "AGENT-151",
+    "name": "Execution Trace Explainer",
+    "category": "software-engineering",
+    "mission": "Explain an execution trace",
+    "manifest_path": "agents/software-engineering/AGENT-151/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-151/system-prompt.md",
+    "system_prompt_sha256": "0ee5c80fd5764435fc137f2ae68372e231af945e242f1402fd221ed5621888f2"
+  },
+  {
+    "id": "AGENT-152",
+    "name": "Variable Provenance Agent",
+    "category": "software-engineering",
+    "mission": "Trace variable origins and transformations",
+    "manifest_path": "agents/software-engineering/AGENT-152/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-152/system-prompt.md",
+    "system_prompt_sha256": "0f1e73d293b622090932c39b5b860adb36b1fe6cae5526fa0d75d05568ced02e"
+  },
+  {
+    "id": "AGENT-153",
+    "name": "Function Contract Agent",
+    "category": "software-engineering",
+    "mission": "Specify function contracts",
+    "manifest_path": "agents/software-engineering/AGENT-153/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-153/system-prompt.md",
+    "system_prompt_sha256": "422a88cb506a359da9548ff1b5c3d480fffdece6588ad554bc65576ef546818a"
+  },
+  {
+    "id": "AGENT-154",
+    "name": "Dependency Graph Explainer",
+    "category": "software-engineering",
+    "mission": "Explain dependency relationships",
+    "manifest_path": "agents/software-engineering/AGENT-154/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-154/system-prompt.md",
+    "system_prompt_sha256": "f5f17d4782893c03eb5a9663f430bbf084e6c75cb05163b798798eeb934114ab"
+  },
+  {
+    "id": "AGENT-155",
+    "name": "State Mutation Tracker",
+    "category": "software-engineering",
+    "mission": "Track state mutations",
+    "manifest_path": "agents/software-engineering/AGENT-155/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-155/system-prompt.md",
+    "system_prompt_sha256": "c1e058dbf7d8357b988338c5f075ecd98b5f983ec5c866e6dbf747ff2d30d165"
+  },
+  {
+    "id": "AGENT-156",
+    "name": "Side-Effect Agent",
+    "category": "software-engineering",
+    "mission": "Analyze side effects",
+    "manifest_path": "agents/software-engineering/AGENT-156/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-156/system-prompt.md",
+    "system_prompt_sha256": "67620eaa874561a29e2dfc99e66f2a0880d3cfa1db405a2f681cfe1e4c739d88"
+  },
+  {
+    "id": "AGENT-157",
+    "name": "Error-Path Explainer",
+    "category": "software-engineering",
+    "mission": "Explain error propagation",
+    "manifest_path": "agents/software-engineering/AGENT-157/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-157/system-prompt.md",
+    "system_prompt_sha256": "305cc49587adc3faca5e8048a437f5c4ea49ccb7b52af64fd2bb2a2f60dfffc2"
+  },
+  {
+    "id": "AGENT-158",
+    "name": "Teach Me This Codebase Agent",
+    "category": "software-engineering",
+    "mission": "Teach a codebase to a learner",
+    "manifest_path": "agents/software-engineering/AGENT-158/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-158/system-prompt.md",
+    "system_prompt_sha256": "540081914a6d3b39b266d1f35e7b470bd1ed51693717dc40348d6833237438a4"
+  },
+  {
+    "id": "AGENT-159",
+    "name": "Assumption Hunter",
+    "category": "verification-recovery",
+    "mission": "Find hidden assumptions",
+    "manifest_path": "agents/verification-recovery/AGENT-159/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-159/system-prompt.md",
+    "system_prompt_sha256": "c58da08f4024393db6b8888ca7a43f8c2507a5360d44f3e9ceabffc3ef841cb2"
+  },
+  {
+    "id": "AGENT-160",
+    "name": "Unknown-Unknown Hunter",
+    "category": "verification-recovery",
+    "mission": "Explore overlooked risk categories",
+    "manifest_path": "agents/verification-recovery/AGENT-160/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-160/system-prompt.md",
+    "system_prompt_sha256": "ba3647a42d12f9106f4e9a19bb513a66638ddb6dc9914e628f79e95fe138d2d9"
+  },
+  {
+    "id": "AGENT-161",
+    "name": "Requirement Gap Agent",
+    "category": "verification-recovery",
+    "mission": "Find gaps between requirements and implementation",
+    "manifest_path": "agents/verification-recovery/AGENT-161/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-161/system-prompt.md",
+    "system_prompt_sha256": "2789bee1a45d148ea776ec37d4d7e6e330c1c2aef19bac96885e239d776d0f49"
+  },
+  {
+    "id": "AGENT-162",
+    "name": "Environment Gap Agent",
+    "category": "verification-recovery",
+    "mission": "Find environmental prerequisites that are missing",
+    "manifest_path": "agents/verification-recovery/AGENT-162/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-162/system-prompt.md",
+    "system_prompt_sha256": "d2a889c3ccfe2c51c4198c6d8aecd5a7212a75b27e66187c67454a8a69090ca3"
+  },
+  {
+    "id": "AGENT-163",
+    "name": "Contradiction Hunter",
+    "category": "verification-recovery",
+    "mission": "Find contradictions across artifacts",
+    "manifest_path": "agents/verification-recovery/AGENT-163/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-163/system-prompt.md",
+    "system_prompt_sha256": "dd785549e86f773536bddfc33754ff263f3965f29e4edc8607540f146912ef60"
+  },
+  {
+    "id": "AGENT-164",
+    "name": "Missing Requirement Agent",
+    "category": "verification-recovery",
+    "mission": "Identify necessary but unstated requirements",
+    "manifest_path": "agents/verification-recovery/AGENT-164/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-164/system-prompt.md",
+    "system_prompt_sha256": "f6bc61924f910744d741b51eef536ff941134ab6f4e4feae917228d184fb3c32"
+  },
+  {
+    "id": "AGENT-165",
+    "name": "Boundary-Condition Hunter",
+    "category": "verification-recovery",
+    "mission": "Find boundary-condition failures",
+    "manifest_path": "agents/verification-recovery/AGENT-165/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-165/system-prompt.md",
+    "system_prompt_sha256": "762994d9ee717f499de1250241c1c8e1cade57f6597764df075e5536aea8f818"
+  },
+  {
+    "id": "AGENT-166",
+    "name": "Counterexample Generator",
+    "category": "verification-recovery",
+    "mission": "Construct counterexamples to claims",
+    "manifest_path": "agents/verification-recovery/AGENT-166/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-166/system-prompt.md",
+    "system_prompt_sha256": "8cd50f36bc7de6665789aac73ec7a5af3a82c59759112a9bf04d752f36b0fa15"
+  },
+  {
+    "id": "AGENT-167",
+    "name": "Reality Verification Agent",
+    "category": "verification-recovery",
+    "mission": "Verify claims against actual system state",
+    "manifest_path": "agents/verification-recovery/AGENT-167/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-167/system-prompt.md",
+    "system_prompt_sha256": "285e20f66a2b4750440b7abb3e7bd7170c9f175745bf4bc7b2aed8d723258766"
+  },
+  {
+    "id": "AGENT-168",
+    "name": "Evidence Collector",
+    "category": "verification-recovery",
+    "mission": "Collect evidence for task conclusions",
+    "manifest_path": "agents/verification-recovery/AGENT-168/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-168/system-prompt.md",
+    "system_prompt_sha256": "2e5d9e4cef5f864ea7b9c2efc126cd85a0d1ee5dddbd795f27a4ea1792424e6e"
+  },
+  {
+    "id": "AGENT-169",
+    "name": "Claim-to-Evidence Mapper",
+    "category": "verification-recovery",
+    "mission": "Map claims to evidence",
+    "manifest_path": "agents/verification-recovery/AGENT-169/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-169/system-prompt.md",
+    "system_prompt_sha256": "c1484ecc6b3368d5e90b4a08278791794ca51670539a7dc92aac2755b3f62bd7"
+  },
+  {
+    "id": "AGENT-170",
+    "name": "Deployment Reality Agent",
+    "category": "verification-recovery",
+    "mission": "Verify deployment in its real target",
+    "manifest_path": "agents/verification-recovery/AGENT-170/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-170/system-prompt.md",
+    "system_prompt_sha256": "ae5a1778e545b32d49fc115ce0cd283a2f5c2c508322a88ec71e0d4938ed9cae"
+  },
+  {
+    "id": "AGENT-171",
+    "name": "User-Intent Confirmation Agent",
+    "category": "verification-recovery",
+    "mission": "Confirm alignment with user intent",
+    "manifest_path": "agents/verification-recovery/AGENT-171/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-171/system-prompt.md",
+    "system_prompt_sha256": "6ba2868fd7d409355f39a389fca32ccab85573055007714d947aaa8fd0f3d767"
+  },
+  {
+    "id": "AGENT-172",
+    "name": "False-Success Detector",
+    "category": "verification-recovery",
+    "mission": "Detect misleading success signals",
+    "manifest_path": "agents/verification-recovery/AGENT-172/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-172/system-prompt.md",
+    "system_prompt_sha256": "8f6106dfcaad938054f27909635b5fd1c0d521429d36f432df8679079ec86aa3"
+  },
+  {
+    "id": "AGENT-173",
+    "name": "Agent Necessity Agent",
+    "category": "meta",
+    "mission": "Judge whether a new agent is needed",
+    "manifest_path": "agents/meta/AGENT-173/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-173/system-prompt.md",
+    "system_prompt_sha256": "09020bfe1f0d86f9975eaf0c24305968f3557d18b733599be2110279d3d5098b"
+  },
+  {
+    "id": "AGENT-174",
+    "name": "Agent Merger",
+    "category": "meta",
+    "mission": "Merge overlapping agent responsibilities",
+    "manifest_path": "agents/meta/AGENT-174/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-174/system-prompt.md",
+    "system_prompt_sha256": "1fe5cf392272d8527d25b8a3e51596c2408b38f8f090de4612d4c755b4d0019a"
+  },
+  {
+    "id": "AGENT-175",
+    "name": "Agent Splitter",
+    "category": "meta",
+    "mission": "Split an overbroad agent role",
+    "manifest_path": "agents/meta/AGENT-175/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-175/system-prompt.md",
+    "system_prompt_sha256": "f5d8a39427f33a93fa3d4cafc737933c7d216382987d2b67d4b47312af80b168"
+  },
+  {
+    "id": "AGENT-176",
+    "name": "Tool-vs-Agent Judge",
+    "category": "meta",
+    "mission": "Choose between a tool and an agent",
+    "manifest_path": "agents/meta/AGENT-176/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-176/system-prompt.md",
+    "system_prompt_sha256": "d4893beaf0fe41cad9ade0a620344c8c78dc8256835eaea6dffd5ac36be80318"
+  },
+  {
+    "id": "AGENT-177",
+    "name": "Workflow-vs-Agent Judge",
+    "category": "meta",
+    "mission": "Choose between a workflow and an agent",
+    "manifest_path": "agents/meta/AGENT-177/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-177/system-prompt.md",
+    "system_prompt_sha256": "33d475c544a766ff238b803a2afe7c28c60c5953f2a3e6e3daa7442010126637"
+  },
+  {
+    "id": "AGENT-178",
+    "name": "Agent ROI Evaluator",
+    "category": "meta",
+    "mission": "Evaluate agent return on investment",
+    "manifest_path": "agents/meta/AGENT-178/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-178/system-prompt.md",
+    "system_prompt_sha256": "f46a4d18187e7bd4108bf2c884c6cbc5032d3170ab2b3b9beef847b783e26978"
+  },
+  {
+    "id": "AGENT-179",
+    "name": "Skill Discovery/Creation Agent",
+    "category": "meta",
+    "mission": "Discover or specify a missing skill",
+    "manifest_path": "agents/meta/AGENT-179/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-179/system-prompt.md",
+    "system_prompt_sha256": "60b5f7ebadfe4a20122afc8815c08bee7044b7fda1712fe857c7955feac5a7fe"
+  },
+  {
+    "id": "AGENT-180",
+    "name": "Architecture Pruning Agent",
+    "category": "meta",
+    "mission": "Prune unnecessary architecture",
+    "manifest_path": "agents/meta/AGENT-180/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-180/system-prompt.md",
+    "system_prompt_sha256": "2a62a5a9322220111c79e2c6882be426e837047dfead938071f3376c5540f745"
+  },
+  {
+    "id": "AGENT-181",
+    "name": "OS Orchestrator",
+    "category": "os-systems",
+    "mission": "Coordinate operating-system administration",
+    "manifest_path": "agents/os-systems/AGENT-181/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-181/system-prompt.md",
+    "system_prompt_sha256": "564ec70f447d3fb0329d6971a9850b7c3b095cf9eb6fd9f682fd1cca94024f6e"
+  },
+  {
+    "id": "AGENT-182",
+    "name": "Linux Expert",
+    "category": "os-systems",
+    "mission": "Diagnose and administer Linux systems",
+    "manifest_path": "agents/os-systems/AGENT-182/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-182/system-prompt.md",
+    "system_prompt_sha256": "0ad3da0d0760958b175c513129c420bb0167ceac0a52982197cf8f99eb8aba71"
+  },
+  {
+    "id": "AGENT-183",
+    "name": "Windows Expert",
+    "category": "os-systems",
+    "mission": "Diagnose and administer Windows systems",
+    "manifest_path": "agents/os-systems/AGENT-183/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-183/system-prompt.md",
+    "system_prompt_sha256": "b64e0ac572dc2eab660d1ebde337bc5eee2e64d40ad1553b850c4434594e6ee6"
+  },
+  {
+    "id": "AGENT-184",
+    "name": "macOS Expert",
+    "category": "os-systems",
+    "mission": "Diagnose and administer macOS systems",
+    "manifest_path": "agents/os-systems/AGENT-184/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-184/system-prompt.md",
+    "system_prompt_sha256": "6ecaccc075d934454fb25c981bf01a2ae376542df7d057936f042d7f3ddb5257"
+  },
+  {
+    "id": "AGENT-185",
+    "name": "Kernel Analysis Agent",
+    "category": "os-systems",
+    "mission": "Analyze kernel-level behavior",
+    "manifest_path": "agents/os-systems/AGENT-185/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-185/system-prompt.md",
+    "system_prompt_sha256": "5c398767efc15083eef007d3b2c08206d39c7498a35c2597c28b133a5bf77471"
+  },
+  {
+    "id": "AGENT-186",
+    "name": "Process Analyzer",
+    "category": "os-systems",
+    "mission": "Analyze operating-system processes",
+    "manifest_path": "agents/os-systems/AGENT-186/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-186/system-prompt.md",
+    "system_prompt_sha256": "96ae1c6675131930e364a17519d2db82b6a1e58da4a25fa8a6ab55e02b779f7f"
+  },
+  {
+    "id": "AGENT-187",
+    "name": "Service/Daemon Agent",
+    "category": "os-systems",
+    "mission": "Manage services and daemons",
+    "manifest_path": "agents/os-systems/AGENT-187/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-187/system-prompt.md",
+    "system_prompt_sha256": "2af440d1ffa85ec8671bdd8e16081153d3e0c5d75efb1faa8af4c5ce924251a6"
+  },
+  {
+    "id": "AGENT-188",
+    "name": "Filesystem Agent",
+    "category": "os-systems",
+    "mission": "Diagnose filesystem behavior",
+    "manifest_path": "agents/os-systems/AGENT-188/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-188/system-prompt.md",
+    "system_prompt_sha256": "2e295502b9ed19c94acf3594a417134c76e8c71041175b2a8dff99a590b590c9"
+  },
+  {
+    "id": "AGENT-189",
+    "name": "Storage Agent",
+    "category": "os-systems",
+    "mission": "Analyze storage capacity and reliability",
+    "manifest_path": "agents/os-systems/AGENT-189/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-189/system-prompt.md",
+    "system_prompt_sha256": "4a9be61bd36ff39b361876421e0a06c606139b95f0900217b4e42f43aed539f1"
+  },
+  {
+    "id": "AGENT-190",
+    "name": "Memory/CPU Profiler",
+    "category": "os-systems",
+    "mission": "Profile CPU and memory pressure",
+    "manifest_path": "agents/os-systems/AGENT-190/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-190/system-prompt.md",
+    "system_prompt_sha256": "07f1b0acd33db438c644f6fd8fa901aedabc22f2da2acb4094769c7c9a0d9a8c"
+  },
+  {
+    "id": "AGENT-191",
+    "name": "Network Configuration Agent",
+    "category": "os-systems",
+    "mission": "Configure host networking",
+    "manifest_path": "agents/os-systems/AGENT-191/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-191/system-prompt.md",
+    "system_prompt_sha256": "7d2e571491bb1ae7f3f90d2364011ecbebbacb0e4f36773a3ff9b8b1c5340278"
+  },
+  {
+    "id": "AGENT-192",
+    "name": "Package Manager Agent",
+    "category": "os-systems",
+    "mission": "Manage operating-system packages",
+    "manifest_path": "agents/os-systems/AGENT-192/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-192/system-prompt.md",
+    "system_prompt_sha256": "45584cb3318ddb8d5f03ff8a26acccd6f56b63fa3b7dbd5ff1c205ae4145f097"
+  },
+  {
+    "id": "AGENT-193",
+    "name": "Shell Automation Agent",
+    "category": "os-systems",
+    "mission": "Automate shell workflows",
+    "manifest_path": "agents/os-systems/AGENT-193/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-193/system-prompt.md",
+    "system_prompt_sha256": "3dbbb8b1d593ae66c5a0950df29d6ef84a46f54ea1e46cee5df4d7322332cc7a"
+  },
+  {
+    "id": "AGENT-194",
+    "name": "Environment/Runtime Agent",
+    "category": "os-systems",
+    "mission": "Resolve runtime environment problems",
+    "manifest_path": "agents/os-systems/AGENT-194/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-194/system-prompt.md",
+    "system_prompt_sha256": "10cc6f18aa2b6f89e9aeb260a6df241cba221b3cac552f53fa9d47b760c8490e"
+  },
+  {
+    "id": "AGENT-195",
+    "name": "Container Agent",
+    "category": "os-systems",
+    "mission": "Build and operate containers",
+    "manifest_path": "agents/os-systems/AGENT-195/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-195/system-prompt.md",
+    "system_prompt_sha256": "00f449c3179906a921735d70946540af39ad567602700d3ddcbce911130854ce"
+  },
+  {
+    "id": "AGENT-196",
+    "name": "VM/Hypervisor Agent",
+    "category": "os-systems",
+    "mission": "Manage virtual-machine environments",
+    "manifest_path": "agents/os-systems/AGENT-196/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-196/system-prompt.md",
+    "system_prompt_sha256": "addd3f5b8dae270e007e4a69a1b2c0565916b85d67e51e2a82d2905e6304bc6f"
+  },
+  {
+    "id": "AGENT-197",
+    "name": "OS Hardening Agent",
+    "category": "os-systems",
+    "mission": "Harden operating-system configuration",
+    "manifest_path": "agents/os-systems/AGENT-197/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-197/system-prompt.md",
+    "system_prompt_sha256": "94abb5dd69aa9a8e3ca07500ea4203fe7f801b12f78e24b6209680c849856549"
+  },
+  {
+    "id": "AGENT-198",
+    "name": "OS Troubleshooter",
+    "category": "os-systems",
+    "mission": "Troubleshoot cross-component OS failures",
+    "manifest_path": "agents/os-systems/AGENT-198/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-198/system-prompt.md",
+    "system_prompt_sha256": "9ece0ea52e38c0102e6c5584dadd95c6f6ec770ff3841dc76c7ca31a42aa5e37"
+  },
+  {
+    "id": "AGENT-199",
+    "name": "OS Performance Agent",
+    "category": "os-systems",
+    "mission": "Optimize operating-system performance",
+    "manifest_path": "agents/os-systems/AGENT-199/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-199/system-prompt.md",
+    "system_prompt_sha256": "61c5afc2190e44815667c273ad52333681277d81c94689b9db41bafe2fc6c88b"
+  },
+  {
+    "id": "AGENT-200",
+    "name": "OS Recovery Agent",
+    "category": "os-systems",
+    "mission": "Recover an operating system",
+    "manifest_path": "agents/os-systems/AGENT-200/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-200/system-prompt.md",
+    "system_prompt_sha256": "4b5db77a4ff75dff8e5bb0647aa62934b0db48461d4a3f68a490945bf7bcac50"
+  },
+  {
+    "id": "AGENT-201",
+    "name": "Recon Orchestrator",
+    "category": "cybersecurity",
+    "mission": "Coordinate authorized reconnaissance",
+    "manifest_path": "agents/cybersecurity/AGENT-201/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-201/system-prompt.md",
+    "system_prompt_sha256": "aaf588be18b02c003f8363d08b13ecc04ad82d6cc24dc4ac86ae07c87650451c"
+  },
+  {
+    "id": "AGENT-202",
+    "name": "Scope/Authorization Agent",
+    "category": "cybersecurity",
+    "mission": "Verify assessment authorization and scope",
+    "manifest_path": "agents/cybersecurity/AGENT-202/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-202/system-prompt.md",
+    "system_prompt_sha256": "490cb3c9aac9393a3691485d17dcd56574f2115e03aab4bec309dcecb809bbcd"
+  },
+  {
+    "id": "AGENT-203",
+    "name": "Passive Recon Agent",
+    "category": "cybersecurity",
+    "mission": "Collect passive reconnaissance evidence",
+    "manifest_path": "agents/cybersecurity/AGENT-203/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-203/system-prompt.md",
+    "system_prompt_sha256": "5e403d976dc34ea45443233a01c35b4178ac6372999bf1bc4bd955aefc5b5626"
+  },
+  {
+    "id": "AGENT-204",
+    "name": "Asset Discovery Agent",
+    "category": "cybersecurity",
+    "mission": "Discover assets within authorized scope",
+    "manifest_path": "agents/cybersecurity/AGENT-204/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-204/system-prompt.md",
+    "system_prompt_sha256": "7e8d9d88f37d9b73dc34fd53a91711b6f08e68c5ddae5771251f3060c864ae10"
+  },
+  {
+    "id": "AGENT-205",
+    "name": "Domain Recon Agent",
+    "category": "cybersecurity",
+    "mission": "Map domain-related infrastructure",
+    "manifest_path": "agents/cybersecurity/AGENT-205/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-205/system-prompt.md",
+    "system_prompt_sha256": "4fbe2cedc8eb661682005624143dbcf043610e0c0a9952de8a9675d2a7139a0b"
+  },
+  {
+    "id": "AGENT-206",
+    "name": "DNS Analysis Agent",
+    "category": "cybersecurity",
+    "mission": "Analyze DNS exposure and configuration",
+    "manifest_path": "agents/cybersecurity/AGENT-206/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-206/system-prompt.md",
+    "system_prompt_sha256": "7da4b5f0e4185aafb08ac242f541138366fbfd775c378db8701047cc8600b6ad"
+  },
+  {
+    "id": "AGENT-207",
+    "name": "Subdomain Inventory Agent",
+    "category": "cybersecurity",
+    "mission": "Maintain an authorized subdomain inventory",
+    "manifest_path": "agents/cybersecurity/AGENT-207/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-207/system-prompt.md",
+    "system_prompt_sha256": "b6655a3698e5b7876074268976ee6f507b15caf4049f7a188ff67a2e93a2d1e7"
+  },
+  {
+    "id": "AGENT-208",
+    "name": "Certificate/TLS Recon Agent",
+    "category": "cybersecurity",
+    "mission": "Inventory certificate and TLS exposure",
+    "manifest_path": "agents/cybersecurity/AGENT-208/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-208/system-prompt.md",
+    "system_prompt_sha256": "e1814106be34b79834e95e274efc63286d823402eb1297eb4c306f14a4c04ae5"
+  },
+  {
+    "id": "AGENT-209",
+    "name": "IP/Network Inventory Agent",
+    "category": "cybersecurity",
+    "mission": "Inventory IP addresses and networks",
+    "manifest_path": "agents/cybersecurity/AGENT-209/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-209/system-prompt.md",
+    "system_prompt_sha256": "89804acf1d23ff1b7e425184c1bf3bc1d174207ce7fb17e96ae7e3a58d938c8b"
+  },
+  {
+    "id": "AGENT-210",
+    "name": "ASN/Infrastructure Agent",
+    "category": "cybersecurity",
+    "mission": "Analyze ASN and infrastructure relationships",
+    "manifest_path": "agents/cybersecurity/AGENT-210/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-210/system-prompt.md",
+    "system_prompt_sha256": "7061dfc7e00907c4faa6a6b7ded1225e4cf542bce083e70402c971017b77f5b7"
+  },
+  {
+    "id": "AGENT-211",
+    "name": "Cloud Asset Recon Agent",
+    "category": "cybersecurity",
+    "mission": "Inventory authorized cloud assets",
+    "manifest_path": "agents/cybersecurity/AGENT-211/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-211/system-prompt.md",
+    "system_prompt_sha256": "56a58001e5886b6ec9020447e295cfe8bfc88643d3153ee001909198c81fe8cc"
+  },
+  {
+    "id": "AGENT-212",
+    "name": "Web Recon Agent",
+    "category": "cybersecurity",
+    "mission": "Map a web application's visible surface",
+    "manifest_path": "agents/cybersecurity/AGENT-212/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-212/system-prompt.md",
+    "system_prompt_sha256": "b9407b5ece15968bc273aaddb048d4f399210af4e0d331d92bf32cffa9ca555c"
+  },
+  {
+    "id": "AGENT-213",
+    "name": "API Recon Agent",
+    "category": "cybersecurity",
+    "mission": "Inventory an API surface",
+    "manifest_path": "agents/cybersecurity/AGENT-213/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-213/system-prompt.md",
+    "system_prompt_sha256": "35aed67d166f1148b3b0b1b32806ec05c51b15c0071a69dfc60875243e00d3e8"
+  },
+  {
+    "id": "AGENT-214",
+    "name": "Technology Fingerprinting Agent",
+    "category": "cybersecurity",
+    "mission": "Identify deployed technologies cautiously",
+    "manifest_path": "agents/cybersecurity/AGENT-214/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-214/system-prompt.md",
+    "system_prompt_sha256": "5a2ca66ff13663843619a91887c5aa82a329432561cdad2276b70b0a9b5d2ba6"
+  },
+  {
+    "id": "AGENT-215",
+    "name": "Endpoint Inventory Agent",
+    "category": "cybersecurity",
+    "mission": "Maintain endpoint inventory",
+    "manifest_path": "agents/cybersecurity/AGENT-215/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-215/system-prompt.md",
+    "system_prompt_sha256": "6c5a25aebdd92b268bcb09cf8a09e6d0ae86aacdc07a3d806376352fa182dc8b"
+  },
+  {
+    "id": "AGENT-216",
+    "name": "OS Recon Agent",
+    "category": "cybersecurity",
+    "mission": "Identify host operating-system exposure",
+    "manifest_path": "agents/cybersecurity/AGENT-216/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-216/system-prompt.md",
+    "system_prompt_sha256": "dd634be566d0234b08f6270240b0ae6df1ba41cf13814fca0d16d59a82698dee"
+  },
+  {
+    "id": "AGENT-217",
+    "name": "Service Inventory Agent",
+    "category": "cybersecurity",
+    "mission": "Inventory exposed services",
+    "manifest_path": "agents/cybersecurity/AGENT-217/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-217/system-prompt.md",
+    "system_prompt_sha256": "60446d41a98c69ba7e90aa650b6aa74c31450bb5d89c43744cefbd90a586d470"
+  },
+  {
+    "id": "AGENT-218",
+    "name": "Port/Protocol Assessment Agent",
+    "category": "cybersecurity",
+    "mission": "Assess permitted ports and protocols",
+    "manifest_path": "agents/cybersecurity/AGENT-218/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-218/system-prompt.md",
+    "system_prompt_sha256": "a944b610f3b00071f31db52b5151bcd49515963a9b09f92ad16bc2187fcee2e3"
+  },
+  {
+    "id": "AGENT-219",
+    "name": "Authentication Surface Agent",
+    "category": "cybersecurity",
+    "mission": "Map authentication entry points",
+    "manifest_path": "agents/cybersecurity/AGENT-219/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-219/system-prompt.md",
+    "system_prompt_sha256": "464ea13b831f9c9ecd8139286d35d0eb7a5bd6237557f93f4f9ddec4dbebb7d2"
+  },
+  {
+    "id": "AGENT-220",
+    "name": "Identity Surface Agent",
+    "category": "cybersecurity",
+    "mission": "Map identity-related exposure",
+    "manifest_path": "agents/cybersecurity/AGENT-220/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-220/system-prompt.md",
+    "system_prompt_sha256": "01ec603d26e6555fa0020ab2e6af14ba24ebb8cc30f276286eff908a905f91a1"
+  },
+  {
+    "id": "AGENT-221",
+    "name": "Email Security Recon Agent",
+    "category": "cybersecurity",
+    "mission": "Assess email security configuration",
+    "manifest_path": "agents/cybersecurity/AGENT-221/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-221/system-prompt.md",
+    "system_prompt_sha256": "7a8be4990b0e8f80db71850709fef686b49f2c9b89bce1a59ff64d1489da3999"
+  },
+  {
+    "id": "AGENT-222",
+    "name": "Repository Exposure Agent",
+    "category": "cybersecurity",
+    "mission": "Find repository exposure",
+    "manifest_path": "agents/cybersecurity/AGENT-222/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-222/system-prompt.md",
+    "system_prompt_sha256": "8be83d46b5ecac866c24d47da7879b440c4b680e83a73a11a55400cef90ad6c2"
+  },
+  {
+    "id": "AGENT-223",
+    "name": "Secret Exposure Agent",
+    "category": "cybersecurity",
+    "mission": "Investigate exposed secret candidates",
+    "manifest_path": "agents/cybersecurity/AGENT-223/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-223/system-prompt.md",
+    "system_prompt_sha256": "ec6f63e7e661d4bced1d8d6b471a1245ab73b94cb3c496d4a907940e5b665a8d"
+  },
+  {
+    "id": "AGENT-224",
+    "name": "Metadata Exposure Agent",
+    "category": "cybersecurity",
+    "mission": "Assess metadata leakage",
+    "manifest_path": "agents/cybersecurity/AGENT-224/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-224/system-prompt.md",
+    "system_prompt_sha256": "3623c26d6553b081fc63833767a71058c1497274070bb4f983d35a5f3845e67d"
+  },
+  {
+    "id": "AGENT-225",
+    "name": "Dependency Exposure Agent",
+    "category": "cybersecurity",
+    "mission": "Map exposed dependency information",
+    "manifest_path": "agents/cybersecurity/AGENT-225/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-225/system-prompt.md",
+    "system_prompt_sha256": "5e6fa882bd910d9d8ad73ea94811d201b23bbbfd02d1233995e871f5fcb452a4"
+  },
+  {
+    "id": "AGENT-226",
+    "name": "Supply-Chain Surface Agent",
+    "category": "cybersecurity",
+    "mission": "Map supply-chain trust boundaries",
+    "manifest_path": "agents/cybersecurity/AGENT-226/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-226/system-prompt.md",
+    "system_prompt_sha256": "e7dbccace52297341c5bd534750a661368ad72dcbd51c55b50dddc969789cf93"
+  },
+  {
+    "id": "AGENT-227",
+    "name": "Mobile Surface Agent",
+    "category": "cybersecurity",
+    "mission": "Map mobile application exposure",
+    "manifest_path": "agents/cybersecurity/AGENT-227/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-227/system-prompt.md",
+    "system_prompt_sha256": "a6f1f27a4022c4fc9bf9d62962a06fc837d262f483592521983f47df0e4ce6af"
+  },
+  {
+    "id": "AGENT-228",
+    "name": "IoT/Embedded Surface Agent",
+    "category": "cybersecurity",
+    "mission": "Map embedded and IoT exposure",
+    "manifest_path": "agents/cybersecurity/AGENT-228/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-228/system-prompt.md",
+    "system_prompt_sha256": "736cffee4576d25ea2fbb8fcc46acb83b3549ead132f41f3eb2141d617ca00c7"
+  },
+  {
+    "id": "AGENT-229",
+    "name": "External Attack-Surface Mapper",
+    "category": "cybersecurity",
+    "mission": "Consolidate external attack-surface findings",
+    "manifest_path": "agents/cybersecurity/AGENT-229/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-229/system-prompt.md",
+    "system_prompt_sha256": "f4626c32eaac57d9788b2e34991af7a4ff76f1378d309ea64d0d16857f168203"
+  },
+  {
+    "id": "AGENT-230",
+    "name": "Recon Evidence/Report Agent",
+    "category": "cybersecurity",
+    "mission": "Document reconnaissance evidence",
+    "manifest_path": "agents/cybersecurity/AGENT-230/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-230/system-prompt.md",
+    "system_prompt_sha256": "45e9184b35e2b7f97738c746bfb02b9d4ddcea9fd24b1a4f266d4bdf88ffa13f"
+  },
+  {
+    "id": "AGENT-231",
+    "name": "Web Security Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess web application security",
+    "manifest_path": "agents/cybersecurity/AGENT-231/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-231/system-prompt.md",
+    "system_prompt_sha256": "336c53e8eee48d94a17f57fe96a9c011c76ad8e443b82c99508ed7a8c1fb6eda"
+  },
+  {
+    "id": "AGENT-232",
+    "name": "API Security Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess API security controls",
+    "manifest_path": "agents/cybersecurity/AGENT-232/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-232/system-prompt.md",
+    "system_prompt_sha256": "9501e0cdb1a7339005e4a48ca0a273f058bae35326051051872014910b86466a"
+  },
+  {
+    "id": "AGENT-233",
+    "name": "Authentication Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess authentication controls",
+    "manifest_path": "agents/cybersecurity/AGENT-233/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-233/system-prompt.md",
+    "system_prompt_sha256": "b7f0185797a6f271c5dae84707aa8bdd35e920d514c6646f3872344e6b5e676a"
+  },
+  {
+    "id": "AGENT-234",
+    "name": "Authorization/Access-Control Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess authorization boundaries",
+    "manifest_path": "agents/cybersecurity/AGENT-234/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-234/system-prompt.md",
+    "system_prompt_sha256": "474a427b9dc0735309a3f84d1f7a5daf76912c0469ab22963c0fb1ba683b37cc"
+  },
+  {
+    "id": "AGENT-235",
+    "name": "Session Security Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess session management",
+    "manifest_path": "agents/cybersecurity/AGENT-235/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-235/system-prompt.md",
+    "system_prompt_sha256": "89dec5ec4be19006e9f92c55a57792521bfcde4cc311f4bda94f5d261302102c"
+  },
+  {
+    "id": "AGENT-236",
+    "name": "Input-Validation Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess input validation boundaries",
+    "manifest_path": "agents/cybersecurity/AGENT-236/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-236/system-prompt.md",
+    "system_prompt_sha256": "ce3d75107c561bc5ec9bb03b6082d92d00b4593ccc31037c77a07f55ed2d1135"
+  },
+  {
+    "id": "AGENT-237",
+    "name": "Injection Detection",
+    "category": "cybersecurity",
+    "mission": "Detect injection weaknesses safely",
+    "manifest_path": "agents/cybersecurity/AGENT-237/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-237/system-prompt.md",
+    "system_prompt_sha256": "b1363f7b4f572c0df69245e2eea558a588f739c9f6c170495329c5b2ed19d15a"
+  },
+  {
+    "id": "AGENT-238",
+    "name": "XSS Analysis",
+    "category": "cybersecurity",
+    "mission": "Analyze script injection risk",
+    "manifest_path": "agents/cybersecurity/AGENT-238/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-238/system-prompt.md",
+    "system_prompt_sha256": "d101cc46c563007ddce29005d50d31561cbad5071f80479ffa5303dd9203058e"
+  },
+  {
+    "id": "AGENT-239",
+    "name": "SSRF Analysis",
+    "category": "cybersecurity",
+    "mission": "Analyze server-side request exposure",
+    "manifest_path": "agents/cybersecurity/AGENT-239/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-239/system-prompt.md",
+    "system_prompt_sha256": "5ba2e97fbe0fda9860b11dac717967f8909e205717c2104895bc3c9dc0774553"
+  },
+  {
+    "id": "AGENT-240",
+    "name": "File/Path Security Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess file and path controls",
+    "manifest_path": "agents/cybersecurity/AGENT-240/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-240/system-prompt.md",
+    "system_prompt_sha256": "8b8c9062479178525583b2a13c6adc3432df98906404ec18bd46f3475a27727f"
+  },
+  {
+    "id": "AGENT-241",
+    "name": "Upload Security Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess file-upload security",
+    "manifest_path": "agents/cybersecurity/AGENT-241/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-241/system-prompt.md",
+    "system_prompt_sha256": "dd1a7a538f100b7a20b410c88e4278da8e87cbaf09868567c1476ae1060beced"
+  },
+  {
+    "id": "AGENT-242",
+    "name": "Cryptographic Configuration Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess cryptographic configuration",
+    "manifest_path": "agents/cybersecurity/AGENT-242/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-242/system-prompt.md",
+    "system_prompt_sha256": "ce7c9b6ea33758a98a18350eb95c254b587f2ae20f119412164b072aa84281a4"
+  },
+  {
+    "id": "AGENT-243",
+    "name": "TLS Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess TLS deployment",
+    "manifest_path": "agents/cybersecurity/AGENT-243/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-243/system-prompt.md",
+    "system_prompt_sha256": "1f9002c281acfa3f46299825c745974bc6cdcb3221c90d24f583467d2435fff5"
+  },
+  {
+    "id": "AGENT-244",
+    "name": "Network Configuration Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess network security configuration",
+    "manifest_path": "agents/cybersecurity/AGENT-244/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-244/system-prompt.md",
+    "system_prompt_sha256": "4797919e291d32c7bd1d0f6bbd44ed869433d8eef9c8ab135f3c96b9ef65d207"
+  },
+  {
+    "id": "AGENT-245",
+    "name": "OS Vulnerability Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess OS vulnerability exposure",
+    "manifest_path": "agents/cybersecurity/AGENT-245/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-245/system-prompt.md",
+    "system_prompt_sha256": "9f50e072903185980df577a8d9ad5712123f806ab5556615bb1b4bd793879643"
+  },
+  {
+    "id": "AGENT-246",
+    "name": "Service Misconfiguration Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess service misconfiguration",
+    "manifest_path": "agents/cybersecurity/AGENT-246/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-246/system-prompt.md",
+    "system_prompt_sha256": "054a5a8388843df4a7f8925eeb488671636bd1ce5c3032a4b3b0ef95a51eadaa"
+  },
+  {
+    "id": "AGENT-247",
+    "name": "Container Security Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess container security",
+    "manifest_path": "agents/cybersecurity/AGENT-247/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-247/system-prompt.md",
+    "system_prompt_sha256": "98ce65991746ce68d30c0c3b8951defa57de6f2cb45248e59b22eba3eeaf86d1"
+  },
+  {
+    "id": "AGENT-248",
+    "name": "Kubernetes Security Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess Kubernetes security",
+    "manifest_path": "agents/cybersecurity/AGENT-248/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-248/system-prompt.md",
+    "system_prompt_sha256": "e974d30d18bdf77cd078709f2a29c99f2a78ecdc8fdc6c6094414ea66aa21e28"
+  },
+  {
+    "id": "AGENT-249",
+    "name": "Cloud Configuration Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess cloud configuration security",
+    "manifest_path": "agents/cybersecurity/AGENT-249/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-249/system-prompt.md",
+    "system_prompt_sha256": "e46bf2236eb3f62fc8332da6806689902b1258a7f81719d79813de9d0d0a68a8"
+  },
+  {
+    "id": "AGENT-250",
+    "name": "IAM Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess identity and access management",
+    "manifest_path": "agents/cybersecurity/AGENT-250/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-250/system-prompt.md",
+    "system_prompt_sha256": "9b9bf9a3da54f4384add814990a5ad26e3164954e7563a6947b9d30c82c5fbc0"
+  },
+  {
+    "id": "AGENT-251",
+    "name": "Database Security Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess database security",
+    "manifest_path": "agents/cybersecurity/AGENT-251/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-251/system-prompt.md",
+    "system_prompt_sha256": "29ea1686795bff1c367775ee9191f04ec05124738836a77c64beec48792f72d2"
+  },
+  {
+    "id": "AGENT-252",
+    "name": "Dependency/CVE Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess dependency vulnerability applicability",
+    "manifest_path": "agents/cybersecurity/AGENT-252/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-252/system-prompt.md",
+    "system_prompt_sha256": "32c746b81fd741abe6199060f57e048b952f17c504a878446d7ab367275b853e"
+  },
+  {
+    "id": "AGENT-253",
+    "name": "Supply-Chain Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess supply-chain assurance",
+    "manifest_path": "agents/cybersecurity/AGENT-253/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-253/system-prompt.md",
+    "system_prompt_sha256": "5b62e2f1b71d52778e5b99132c22e0732fb6a22daa2fde981b6fe22e22ba18b8"
+  },
+  {
+    "id": "AGENT-254",
+    "name": "Secrets Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess secrets handling",
+    "manifest_path": "agents/cybersecurity/AGENT-254/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-254/system-prompt.md",
+    "system_prompt_sha256": "409e16e33d40782d8d18cce5f1cd5adde75b210ab5b0498f43457363f8529452"
+  },
+  {
+    "id": "AGENT-255",
+    "name": "Source-Code SAST Agent",
+    "category": "cybersecurity",
+    "mission": "Perform source-level static security triage",
+    "manifest_path": "agents/cybersecurity/AGENT-255/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-255/system-prompt.md",
+    "system_prompt_sha256": "de1db64a2bd824325500b8dccc5751a2beda91afa3fa7b80b6a1730f64c5bff2"
+  },
+  {
+    "id": "AGENT-256",
+    "name": "Infrastructure-as-Code Security Agent",
+    "category": "cybersecurity",
+    "mission": "Assess infrastructure-as-code security",
+    "manifest_path": "agents/cybersecurity/AGENT-256/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-256/system-prompt.md",
+    "system_prompt_sha256": "f349eef97ab468e367fea93ad9704b44b301ae0fc6ef01d84386e21f65790a96"
+  },
+  {
+    "id": "AGENT-257",
+    "name": "Mobile Security Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess mobile application security",
+    "manifest_path": "agents/cybersecurity/AGENT-257/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-257/system-prompt.md",
+    "system_prompt_sha256": "23c77924bd94d29b2c6c8ab8e407bbb3d406ec754a6c1454c7ff68a2cd835d0c"
+  },
+  {
+    "id": "AGENT-258",
+    "name": "Firmware/Embedded Assessment",
+    "category": "cybersecurity",
+    "mission": "Assess firmware and embedded security",
+    "manifest_path": "agents/cybersecurity/AGENT-258/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-258/system-prompt.md",
+    "system_prompt_sha256": "ff80c0a8ab99ab1c75d7e946f0eee3091f9e3c2f843eecdc28cb8ae25a626a42"
+  },
+  {
+    "id": "AGENT-259",
+    "name": "Vulnerability Correlation Agent",
+    "category": "cybersecurity",
+    "mission": "Correlate vulnerability findings",
+    "manifest_path": "agents/cybersecurity/AGENT-259/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-259/system-prompt.md",
+    "system_prompt_sha256": "3a71b08c50c81eb147aa9df0a3767a40839a37c17aac01d2069a95b65d8e49ec"
+  },
+  {
+    "id": "AGENT-260",
+    "name": "Vulnerability Validation Agent",
+    "category": "cybersecurity",
+    "mission": "Validate correlated assessment findings",
+    "manifest_path": "agents/cybersecurity/AGENT-260/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-260/system-prompt.md",
+    "system_prompt_sha256": "418672d4a6ba44b827d84f042603e3b6ad694d340373b93b7d43b4991360d0ee"
+  },
+  {
+    "id": "AGENT-261",
+    "name": "SOC Orchestrator",
+    "category": "cybersecurity",
+    "mission": "Coordinate security operations",
+    "manifest_path": "agents/cybersecurity/AGENT-261/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-261/system-prompt.md",
+    "system_prompt_sha256": "803f47ce9a165a8f38224182d69fc6d7cb1520293e6bf43e0ea017b5086b2c30"
+  },
+  {
+    "id": "AGENT-262",
+    "name": "Security Telemetry Agent",
+    "category": "cybersecurity",
+    "mission": "Assess security telemetry coverage",
+    "manifest_path": "agents/cybersecurity/AGENT-262/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-262/system-prompt.md",
+    "system_prompt_sha256": "6a3840050ff49005a09865b38a0747043d33b48bcf36da0315cdeef1dc296d10"
+  },
+  {
+    "id": "AGENT-263",
+    "name": "Log Analysis Agent",
+    "category": "cybersecurity",
+    "mission": "Analyze security logs",
+    "manifest_path": "agents/cybersecurity/AGENT-263/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-263/system-prompt.md",
+    "system_prompt_sha256": "64b2fce37e4aff8572f14f7e88ba4a34cc4ab0d3ef000eb77e04415ac2139365"
+  },
+  {
+    "id": "AGENT-264",
+    "name": "SIEM Analysis Agent",
+    "category": "cybersecurity",
+    "mission": "Investigate SIEM detections",
+    "manifest_path": "agents/cybersecurity/AGENT-264/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-264/system-prompt.md",
+    "system_prompt_sha256": "faecf472afe7ca50a54e233916dfa2cffb89347a63d85218af997e3a8d46fc61"
+  },
+  {
+    "id": "AGENT-265",
+    "name": "Alert Triage Agent",
+    "category": "cybersecurity",
+    "mission": "Triage security alerts",
+    "manifest_path": "agents/cybersecurity/AGENT-265/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-265/system-prompt.md",
+    "system_prompt_sha256": "b452f9360868c230fc87a00912b6aff63eb8c4ff1c4b4d4527c100bd65c19f40"
+  },
+  {
+    "id": "AGENT-266",
+    "name": "Detection Engineering Agent",
+    "category": "cybersecurity",
+    "mission": "Engineer detection rules",
+    "manifest_path": "agents/cybersecurity/AGENT-266/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-266/system-prompt.md",
+    "system_prompt_sha256": "90aa97099e795df7173a6b3156ad91900e0d80d7df0e5e08a314cc92a47bb5e6"
+  },
+  {
+    "id": "AGENT-267",
+    "name": "Threat Hunting Agent",
+    "category": "cybersecurity",
+    "mission": "Conduct hypothesis-driven threat hunting",
+    "manifest_path": "agents/cybersecurity/AGENT-267/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-267/system-prompt.md",
+    "system_prompt_sha256": "107103aeeaa0ac837bdfe5477994937a3db3b4e1d19e450993df5797fb64e744"
+  },
+  {
+    "id": "AGENT-268",
+    "name": "Threat Intelligence Agent",
+    "category": "cybersecurity",
+    "mission": "Operationalize threat intelligence for detection",
+    "manifest_path": "agents/cybersecurity/AGENT-268/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-268/system-prompt.md",
+    "system_prompt_sha256": "107bad650ce357cb9576797db81ed535f52072f33434f036d0c4cfa16a07418d"
+  },
+  {
+    "id": "AGENT-269",
+    "name": "IOC Analysis Agent",
+    "category": "cybersecurity",
+    "mission": "Analyze indicators of compromise",
+    "manifest_path": "agents/cybersecurity/AGENT-269/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-269/system-prompt.md",
+    "system_prompt_sha256": "941b6d0bc4888f770b0859d21be4314ece12f10ee5a4e562c916c35c0b19cd3f"
+  },
+  {
+    "id": "AGENT-270",
+    "name": "Malware Analysis Agent",
+    "category": "cybersecurity",
+    "mission": "Analyze suspicious software safely",
+    "manifest_path": "agents/cybersecurity/AGENT-270/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-270/system-prompt.md",
+    "system_prompt_sha256": "13ea5f8ec5b92e967360d9e71be9c76483f231d68df3024d539617451561d054"
+  },
+  {
+    "id": "AGENT-271",
+    "name": "Behavioral Analysis Agent",
+    "category": "cybersecurity",
+    "mission": "Analyze suspicious behavior sequences",
+    "manifest_path": "agents/cybersecurity/AGENT-271/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-271/system-prompt.md",
+    "system_prompt_sha256": "18d704e9acd4b9556c95332cdeb5ad1cf0008c4804ab661e63d579d86e8dea85"
+  },
+  {
+    "id": "AGENT-272",
+    "name": "Endpoint Detection Agent",
+    "category": "cybersecurity",
+    "mission": "Investigate endpoint detections",
+    "manifest_path": "agents/cybersecurity/AGENT-272/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-272/system-prompt.md",
+    "system_prompt_sha256": "b8b3988ed9e9dc6f1496f33c4e03702da62e46b7f676c95054ca31c5cc42c9e7"
+  },
+  {
+    "id": "AGENT-273",
+    "name": "Network Detection Agent",
+    "category": "cybersecurity",
+    "mission": "Investigate network detections",
+    "manifest_path": "agents/cybersecurity/AGENT-273/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-273/system-prompt.md",
+    "system_prompt_sha256": "d5d8279e91de20095e86253d4b950a59349b81acdca92706a1b89dd2602bfbf0"
+  },
+  {
+    "id": "AGENT-274",
+    "name": "Cloud Detection Agent",
+    "category": "cybersecurity",
+    "mission": "Investigate cloud security events",
+    "manifest_path": "agents/cybersecurity/AGENT-274/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-274/system-prompt.md",
+    "system_prompt_sha256": "86ca17b5760a0ac4e0c9c00d6cc8503c0e978cd0fcaacdcad26692a634a53a65"
+  },
+  {
+    "id": "AGENT-275",
+    "name": "Identity Threat Detection Agent",
+    "category": "cybersecurity",
+    "mission": "Detect identity-based threats",
+    "manifest_path": "agents/cybersecurity/AGENT-275/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-275/system-prompt.md",
+    "system_prompt_sha256": "2b0f4766cbe2f26d47c1a4d276c22d4844f2f269e615f2e0884a1f26ef89469f"
+  },
+  {
+    "id": "AGENT-276",
+    "name": "Incident Triage Agent",
+    "category": "cybersecurity",
+    "mission": "Triage a suspected incident",
+    "manifest_path": "agents/cybersecurity/AGENT-276/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-276/system-prompt.md",
+    "system_prompt_sha256": "1a14da0b99b97242b8f8152de9ceb6ced6663375dbb34c9543a21fad4d06d593"
+  },
+  {
+    "id": "AGENT-277",
+    "name": "Incident Response Agent",
+    "category": "cybersecurity",
+    "mission": "Coordinate authorized incident response",
+    "manifest_path": "agents/cybersecurity/AGENT-277/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-277/system-prompt.md",
+    "system_prompt_sha256": "77a58bec495a988f052408afd67b6317fa6bd4df07f874176dbb89e498164f74"
+  },
+  {
+    "id": "AGENT-278",
+    "name": "Forensics Agent",
+    "category": "cybersecurity",
+    "mission": "Analyze forensic evidence",
+    "manifest_path": "agents/cybersecurity/AGENT-278/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-278/system-prompt.md",
+    "system_prompt_sha256": "9f2cc0f0bb42f33e4a61572a05e50eafacb2e4eda5a40afe26eb3063ed35a1d6"
+  },
+  {
+    "id": "AGENT-279",
+    "name": "Containment/Recovery Agent",
+    "category": "cybersecurity",
+    "mission": "Contain and recover compromised systems",
+    "manifest_path": "agents/cybersecurity/AGENT-279/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-279/system-prompt.md",
+    "system_prompt_sha256": "7a001615d73258d33a2556c7c7c18be9f15d833c2def07799628cf21c6b267de"
+  },
+  {
+    "id": "AGENT-280",
+    "name": "Post-Incident Analysis Agent",
+    "category": "cybersecurity",
+    "mission": "Analyze an incident after resolution",
+    "manifest_path": "agents/cybersecurity/AGENT-280/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-280/system-prompt.md",
+    "system_prompt_sha256": "5f6504a2d724c592727e11150f2b46948015b25d9076701f4ef8c1db8e83f549"
+  },
+  {
+    "id": "AGENT-281",
+    "name": "Security Architecture Agent",
+    "category": "cybersecurity",
+    "mission": "Design secure system architecture",
+    "manifest_path": "agents/cybersecurity/AGENT-281/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-281/system-prompt.md",
+    "system_prompt_sha256": "52bed3bb34f76ed6d669bc0258806116607dbf4836bba2a2d9589856b1b4e7d8"
+  },
+  {
+    "id": "AGENT-282",
+    "name": "Threat Modeling Agent",
+    "category": "cybersecurity",
+    "mission": "Threat-model a proposed design",
+    "manifest_path": "agents/cybersecurity/AGENT-282/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-282/system-prompt.md",
+    "system_prompt_sha256": "29d1b4f900aad9757572b259b467d9720cffaddd3313c6fa0d298b546c421bea"
+  },
+  {
+    "id": "AGENT-283",
+    "name": "Secure Design Reviewer",
+    "category": "cybersecurity",
+    "mission": "Review a design for security weaknesses",
+    "manifest_path": "agents/cybersecurity/AGENT-283/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-283/system-prompt.md",
+    "system_prompt_sha256": "95d05476092010583a0596bff7dc7b34ef597d8bc8151ec0e46b17a3b82927aa"
+  },
+  {
+    "id": "AGENT-284",
+    "name": "Secure Code Reviewer",
+    "category": "cybersecurity",
+    "mission": "Review security-sensitive code changes",
+    "manifest_path": "agents/cybersecurity/AGENT-284/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-284/system-prompt.md",
+    "system_prompt_sha256": "d890eb3cc3071a52526db91c16c9a6ac23d11b670a890a1629ad6d393858c7b5"
+  },
+  {
+    "id": "AGENT-285",
+    "name": "Security Requirements Agent",
+    "category": "cybersecurity",
+    "mission": "Specify security requirements",
+    "manifest_path": "agents/cybersecurity/AGENT-285/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-285/system-prompt.md",
+    "system_prompt_sha256": "67c6cd5d4190997d9ac23927c31d880dad921b450555cc61cb1cd87219802ecd"
+  },
+  {
+    "id": "AGENT-286",
+    "name": "Security Test Designer",
+    "category": "cybersecurity",
+    "mission": "Design security verification tests",
+    "manifest_path": "agents/cybersecurity/AGENT-286/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-286/system-prompt.md",
+    "system_prompt_sha256": "ef83e32a823e2465257b1048dae5fd67ecfcf3dad986231f3ef1f65ac046130d"
+  },
+  {
+    "id": "AGENT-287",
+    "name": "Security Regression Agent",
+    "category": "cybersecurity",
+    "mission": "Prevent recurrence of security defects",
+    "manifest_path": "agents/cybersecurity/AGENT-287/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-287/system-prompt.md",
+    "system_prompt_sha256": "4211d502335e5c572b2094bf70bab5187ea318fad5f2be495441256ad66b821e"
+  },
+  {
+    "id": "AGENT-288",
+    "name": "Patch Generation Agent",
+    "category": "cybersecurity",
+    "mission": "Generate a security remediation patch",
+    "manifest_path": "agents/cybersecurity/AGENT-288/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-288/system-prompt.md",
+    "system_prompt_sha256": "d30be53ae312bb52e8f78c2156b0e250a5a91e2d861365841bc0daee96b79175"
+  },
+  {
+    "id": "AGENT-289",
+    "name": "Patch Verification Agent",
+    "category": "cybersecurity",
+    "mission": "Independently verify a security patch",
+    "manifest_path": "agents/cybersecurity/AGENT-289/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-289/system-prompt.md",
+    "system_prompt_sha256": "d226bf4ee9075fde1f25db7e01a3f0c3af606ae61d8171884c65a406544059fc"
+  },
+  {
+    "id": "AGENT-290",
+    "name": "Hardening Agent",
+    "category": "cybersecurity",
+    "mission": "Harden application and service deployments",
+    "manifest_path": "agents/cybersecurity/AGENT-290/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-290/system-prompt.md",
+    "system_prompt_sha256": "f4042df4eb7307208d451a9245fa53f5e6472626d35050b7f313d4b90cd6812f"
+  },
+  {
+    "id": "AGENT-291",
+    "name": "Secrets Management Agent",
+    "category": "cybersecurity",
+    "mission": "Design secure secrets management",
+    "manifest_path": "agents/cybersecurity/AGENT-291/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-291/system-prompt.md",
+    "system_prompt_sha256": "d93e94faccd8a4b6855fc48d7eee35e0e71c33e0cc642af6d04f4048f0641aac"
+  },
+  {
+    "id": "AGENT-292",
+    "name": "PKI/Cryptography Configuration Agent",
+    "category": "cybersecurity",
+    "mission": "Configure PKI and cryptographic lifecycle",
+    "manifest_path": "agents/cybersecurity/AGENT-292/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-292/system-prompt.md",
+    "system_prompt_sha256": "b186e9bb48529cb8b0209531260fe943b866023849a60e7a7bcefab327b5883d"
+  },
+  {
+    "id": "AGENT-293",
+    "name": "Zero-Trust Architecture Agent",
+    "category": "cybersecurity",
+    "mission": "Design least-trust access architecture",
+    "manifest_path": "agents/cybersecurity/AGENT-293/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-293/system-prompt.md",
+    "system_prompt_sha256": "7af256ad8339aa94b64d55f459ca8b94a6edd34dff01dced5b79474ba2312938"
+  },
+  {
+    "id": "AGENT-294",
+    "name": "Security Documentation Agent",
+    "category": "cybersecurity",
+    "mission": "Write maintainable security documentation",
+    "manifest_path": "agents/cybersecurity/AGENT-294/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-294/system-prompt.md",
+    "system_prompt_sha256": "7f6a47a45e86c060ab11e25804f6850d52989710c7c4acf80ebd53d9c3663c82"
+  },
+  {
+    "id": "AGENT-295",
+    "name": "Security Assurance Agent",
+    "category": "cybersecurity",
+    "mission": "Assess security assurance evidence",
+    "manifest_path": "agents/cybersecurity/AGENT-295/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-295/system-prompt.md",
+    "system_prompt_sha256": "2e8244399d4273bc6101e886c584487e372e7cb93d22276fc54e1a797c47bc3f"
+  },
+  {
+    "id": "AGENT-296",
+    "name": "Prompt-Injection Detector",
+    "category": "cybersecurity",
+    "mission": "Detect prompt injection across agent workflows",
+    "manifest_path": "agents/cybersecurity/AGENT-296/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-296/system-prompt.md",
+    "system_prompt_sha256": "2f1c64649f339c9c40cd771f148c4ccde4d09c4b654c379a48c80d91bb602bfb"
+  },
+  {
+    "id": "AGENT-297",
+    "name": "Indirect Prompt-Injection Detector",
+    "category": "cybersecurity",
+    "mission": "Detect injection embedded in external content",
+    "manifest_path": "agents/cybersecurity/AGENT-297/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-297/system-prompt.md",
+    "system_prompt_sha256": "98dfee87a47cde8d768d57d5b2da0c9a2f0ec907c3a6c83560f988276e65cfea"
+  },
+  {
+    "id": "AGENT-298",
+    "name": "Tool-Output Sanitization Agent",
+    "category": "cybersecurity",
+    "mission": "Sanitize tool output for safe consumption",
+    "manifest_path": "agents/cybersecurity/AGENT-298/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-298/system-prompt.md",
+    "system_prompt_sha256": "fa3e2b3ee0448e414484f407cdf8c17849d760baadbbf90294603582f42d0b69"
+  },
+  {
+    "id": "AGENT-299",
+    "name": "Untrusted-Content Classifier",
+    "category": "cybersecurity",
+    "mission": "Classify content trust and origin",
+    "manifest_path": "agents/cybersecurity/AGENT-299/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-299/system-prompt.md",
+    "system_prompt_sha256": "d435fab6d9b84c222f79bea67d6463c3109ce8a0cdec3ea1fa11bab43aee446a"
+  },
+  {
+    "id": "AGENT-300",
+    "name": "Tool Permission Agent",
+    "category": "cybersecurity",
+    "mission": "Evaluate tool-specific permission requests",
+    "manifest_path": "agents/cybersecurity/AGENT-300/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-300/system-prompt.md",
+    "system_prompt_sha256": "f6d871afc01188923c6dd0a7a5f1c1123fa7a6b4f6cf42bfb03f96978c0932ba"
+  },
+  {
+    "id": "AGENT-301",
+    "name": "Least-Privilege Agent",
+    "category": "cybersecurity",
+    "mission": "Reduce excessive capability grants",
+    "manifest_path": "agents/cybersecurity/AGENT-301/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-301/system-prompt.md",
+    "system_prompt_sha256": "d715577e45822e3b9916ae58a7dc74a8e329c74c774fddbc7e89081312111c6a"
+  },
+  {
+    "id": "AGENT-302",
+    "name": "Agent Identity/Authentication Agent",
+    "category": "cybersecurity",
+    "mission": "Design agent identity and authentication",
+    "manifest_path": "agents/cybersecurity/AGENT-302/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-302/system-prompt.md",
+    "system_prompt_sha256": "07de6fe30ece2ea43726ab4894191cc8310775688af36eaf67a33541d6f68d52"
+  },
+  {
+    "id": "AGENT-303",
+    "name": "Inter-Agent Trust Agent",
+    "category": "cybersecurity",
+    "mission": "Evaluate inter-agent trust boundaries",
+    "manifest_path": "agents/cybersecurity/AGENT-303/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-303/system-prompt.md",
+    "system_prompt_sha256": "3209202c11a2859ba744a7f2d98e4ce50d1b0668727e69eb5a99afe88ecd97e9"
+  },
+  {
+    "id": "AGENT-304",
+    "name": "Memory-Poisoning Detector",
+    "category": "cybersecurity",
+    "mission": "Detect attempts to poison persistent memory",
+    "manifest_path": "agents/cybersecurity/AGENT-304/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-304/system-prompt.md",
+    "system_prompt_sha256": "f59db5b514e7c82b8eeaa66d5a2eb77b56b235a25d518fcc33d11e27f0c69428"
+  },
+  {
+    "id": "AGENT-305",
+    "name": "RAG-Poisoning Detector",
+    "category": "cybersecurity",
+    "mission": "Detect retrieval corpus poisoning",
+    "manifest_path": "agents/cybersecurity/AGENT-305/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-305/system-prompt.md",
+    "system_prompt_sha256": "1cc94c6bc16298d932db04f8cfb7b1caa32d70eefc0210eb4d5ab6e8489f7a25"
+  },
+  {
+    "id": "AGENT-306",
+    "name": "Data-Exfiltration Prevention Agent",
+    "category": "cybersecurity",
+    "mission": "Prevent unauthorized data disclosure",
+    "manifest_path": "agents/cybersecurity/AGENT-306/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-306/system-prompt.md",
+    "system_prompt_sha256": "37d5e41d68e3f32f1a25566702c81b16827e9900596e4f0d800b012ddf8b585e"
+  },
+  {
+    "id": "AGENT-307",
+    "name": "Secret-Leak Prevention Agent",
+    "category": "cybersecurity",
+    "mission": "Detect secret leakage in outputs",
+    "manifest_path": "agents/cybersecurity/AGENT-307/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-307/system-prompt.md",
+    "system_prompt_sha256": "aef887d4a0e16fadc498a87a68b50d9b4f48aab87cdc8679db37021907df7f18"
+  },
+  {
+    "id": "AGENT-308",
+    "name": "Agent Behavior Monitor",
+    "category": "cybersecurity",
+    "mission": "Monitor agent behavior for policy deviations",
+    "manifest_path": "agents/cybersecurity/AGENT-308/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-308/system-prompt.md",
+    "system_prompt_sha256": "034c5b3ecb13466be845634e90ac456c59eb65c42b2bf37889e266e28411c826"
+  },
+  {
+    "id": "AGENT-309",
+    "name": "Agent Sandbox Agent",
+    "category": "cybersecurity",
+    "mission": "Specify agent runtime isolation",
+    "manifest_path": "agents/cybersecurity/AGENT-309/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-309/system-prompt.md",
+    "system_prompt_sha256": "83839a394a50fe7bfb1e086dd970bfc2300f7e3708133a29c3d9b21a1902d017"
+  },
+  {
+    "id": "AGENT-310",
+    "name": "AI Security Red-Team/Evaluation Agent",
+    "category": "cybersecurity",
+    "mission": "Evaluate AI security in an authorized test environment",
+    "manifest_path": "agents/cybersecurity/AGENT-310/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-310/system-prompt.md",
+    "system_prompt_sha256": "aa2b9c1d39f8ba166967b29a289bbba070a44ae87599f29919b024b8d57d6a0d"
+  },
+  {
+    "id": "AGENT-311",
+    "name": "Cyber Engagement Controller",
+    "category": "cybersecurity",
+    "mission": "Control a cyber engagement's lifecycle",
+    "manifest_path": "agents/cybersecurity/AGENT-311/manifest.json",
+    "system_prompt_path": "agents/cybersecurity/AGENT-311/system-prompt.md",
+    "system_prompt_sha256": "10cd2b27c0b168f34cb99983b2efbffc56e74004cf1d1c7dc791487de1015048"
+  },
+  {
+    "id": "AGENT-312",
+    "name": "Environment Bootstrap Agent",
+    "category": "infrastructure",
+    "mission": "Bootstrap a working environment",
+    "manifest_path": "agents/infrastructure/AGENT-312/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-312/system-prompt.md",
+    "system_prompt_sha256": "48f4850381d962a9df3e861d2e67dbdf5ae4725c768aba9613aac49a70f933e1"
+  },
+  {
+    "id": "AGENT-313",
+    "name": "Prerequisite Inspector",
+    "category": "infrastructure",
+    "mission": "Inspect setup prerequisites",
+    "manifest_path": "agents/infrastructure/AGENT-313/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-313/system-prompt.md",
+    "system_prompt_sha256": "2dc61bf27865360d1ebc741f41d02be3cb13f869a4dfad89767185bc2ba3486a"
+  },
+  {
+    "id": "AGENT-314",
+    "name": "Runtime Setup Agent",
+    "category": "infrastructure",
+    "mission": "Set up an application runtime",
+    "manifest_path": "agents/infrastructure/AGENT-314/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-314/system-prompt.md",
+    "system_prompt_sha256": "ed4478f71a4e4ac29401d98e3537546899a7279ce647810856d8d22d67762dff"
+  },
+  {
+    "id": "AGENT-315",
+    "name": "Dependency Resolver",
+    "category": "infrastructure",
+    "mission": "Resolve environment dependencies",
+    "manifest_path": "agents/infrastructure/AGENT-315/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-315/system-prompt.md",
+    "system_prompt_sha256": "2f9b747f3e49d59c1dd80469367fe162a9fe63102f33170a18e790ae61f2bd05"
+  },
+  {
+    "id": "AGENT-316",
+    "name": "Environment Reproducer",
+    "category": "infrastructure",
+    "mission": "Reproduce a reported environment",
+    "manifest_path": "agents/infrastructure/AGENT-316/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-316/system-prompt.md",
+    "system_prompt_sha256": "f9a792d8c2cae1f95447f730937f3961c64eeec2176c85444917bb2a1c1efdcb"
+  },
+  {
+    "id": "AGENT-317",
+    "name": "Configuration Agent",
+    "category": "infrastructure",
+    "mission": "Manage application configuration",
+    "manifest_path": "agents/infrastructure/AGENT-317/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-317/system-prompt.md",
+    "system_prompt_sha256": "e7a791bd1aa5a0cc335d93bfd94c0850a961d7264c43ece0eecdeab5b6c94863"
+  },
+  {
+    "id": "AGENT-318",
+    "name": "Secrets Setup Agent",
+    "category": "infrastructure",
+    "mission": "Set up secure secret references",
+    "manifest_path": "agents/infrastructure/AGENT-318/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-318/system-prompt.md",
+    "system_prompt_sha256": "8bfadbffb71af0af5ea2352df608330a6a3ae35210fbf60a73fffd63be68d617"
+  },
+  {
+    "id": "AGENT-319",
+    "name": "Permission Setup Agent",
+    "category": "infrastructure",
+    "mission": "Set up required permissions",
+    "manifest_path": "agents/infrastructure/AGENT-319/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-319/system-prompt.md",
+    "system_prompt_sha256": "3d7e59d81d89f9262633c18cbdfa64ec289257fe356a7245bd960db8c8c86cd2"
+  },
+  {
+    "id": "AGENT-320",
+    "name": "Sandbox Provisioner",
+    "category": "infrastructure",
+    "mission": "Provision an isolated execution workspace",
+    "manifest_path": "agents/infrastructure/AGENT-320/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-320/system-prompt.md",
+    "system_prompt_sha256": "2e270faa547817e8e23cf21d4d1f8cbe88e89c5d96c13bebdf1facf764d5c8a9"
+  },
+  {
+    "id": "AGENT-321",
+    "name": "Workspace Agent",
+    "category": "infrastructure",
+    "mission": "Prepare and manage task workspaces",
+    "manifest_path": "agents/infrastructure/AGENT-321/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-321/system-prompt.md",
+    "system_prompt_sha256": "6cc247a8bdbeaab3cf3b93b3733a33ff4f6d3f3a3a028c685347d445f49b4876"
+  },
+  {
+    "id": "AGENT-322",
+    "name": "Scaffolding Agent",
+    "category": "infrastructure",
+    "mission": "Create a project scaffold",
+    "manifest_path": "agents/infrastructure/AGENT-322/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-322/system-prompt.md",
+    "system_prompt_sha256": "1d1ee9365d0ae3260a824b8e02a6d84f0149ac9f84d60b489ca67df78e702d87"
+  },
+  {
+    "id": "AGENT-323",
+    "name": "Installation Agent",
+    "category": "infrastructure",
+    "mission": "Install software safely",
+    "manifest_path": "agents/infrastructure/AGENT-323/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-323/system-prompt.md",
+    "system_prompt_sha256": "0196da5a76bea0d032d2411be394c0b39bcb14fa74ccbeb43c197bebcc1e62e7"
+  },
+  {
+    "id": "AGENT-324",
+    "name": "Setup Verification Agent",
+    "category": "infrastructure",
+    "mission": "Verify completed setup",
+    "manifest_path": "agents/infrastructure/AGENT-324/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-324/system-prompt.md",
+    "system_prompt_sha256": "04830e005d3a6f2a1fab74157b5d152a4c2109205b1f999fb802735798b757de"
+  },
+  {
+    "id": "AGENT-325",
+    "name": "Environment Repair Agent",
+    "category": "infrastructure",
+    "mission": "Repair a broken environment",
+    "manifest_path": "agents/infrastructure/AGENT-325/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-325/system-prompt.md",
+    "system_prompt_sha256": "c96cf4cbdd87aaa52c256f88c201995484b5fb2440aeedc90a24b9019fb769bf"
+  },
+  {
+    "id": "AGENT-326",
+    "name": "Environment Drift Detector",
+    "category": "infrastructure",
+    "mission": "Detect environment drift",
+    "manifest_path": "agents/infrastructure/AGENT-326/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-326/system-prompt.md",
+    "system_prompt_sha256": "14b9790854e966ba08f9ab2b59cfbf0f49f4652acf7a9e5ef420a00600bd9ad8"
+  },
+  {
+    "id": "AGENT-327",
+    "name": "Migration Agent",
+    "category": "infrastructure",
+    "mission": "Migrate data or environment state",
+    "manifest_path": "agents/infrastructure/AGENT-327/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-327/system-prompt.md",
+    "system_prompt_sha256": "705e8fd0490596453d9f65531d2791a8a96a19a696bdf36d75557a9360d25a79"
+  },
+  {
+    "id": "AGENT-328",
+    "name": "Upgrade Agent",
+    "category": "infrastructure",
+    "mission": "Upgrade a system component",
+    "manifest_path": "agents/infrastructure/AGENT-328/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-328/system-prompt.md",
+    "system_prompt_sha256": "e35f0d25f13f304218b754b28bf226993a5d59e3b3b90772e7c55e7e19918c13"
+  },
+  {
+    "id": "AGENT-329",
+    "name": "Rollback Agent",
+    "category": "infrastructure",
+    "mission": "Roll back a failed environment change",
+    "manifest_path": "agents/infrastructure/AGENT-329/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-329/system-prompt.md",
+    "system_prompt_sha256": "175761d3fac72d895564667c2d4c98dda08128cec70d224f39535dda79543138"
+  },
+  {
+    "id": "AGENT-330",
+    "name": "Compatibility Agent",
+    "category": "infrastructure",
+    "mission": "Evaluate component compatibility",
+    "manifest_path": "agents/infrastructure/AGENT-330/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-330/system-prompt.md",
+    "system_prompt_sha256": "cdfe7042681f2baadff827dd8e812ad04183d2a49361d91453a03599207d0f4e"
+  },
+  {
+    "id": "AGENT-331",
+    "name": "Reproducibility Agent",
+    "category": "infrastructure",
+    "mission": "Make infrastructure setup reproducible",
+    "manifest_path": "agents/infrastructure/AGENT-331/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-331/system-prompt.md",
+    "system_prompt_sha256": "c61617ffe982c051b53568ed088cf64fe66c52e63943b937e6d27e997416e8a0"
+  },
+  {
+    "id": "AGENT-332",
+    "name": "Bootstrap Optimizer",
+    "category": "infrastructure",
+    "mission": "Optimize bootstrap time and reliability",
+    "manifest_path": "agents/infrastructure/AGENT-332/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-332/system-prompt.md",
+    "system_prompt_sha256": "13b7b9253948b502107e9b190682f87ec3885bccac229400ec171febcccaedc2"
+  },
+  {
+    "id": "AGENT-333",
+    "name": "Skill Discovery Agent",
+    "category": "memory-learning",
+    "mission": "Discover relevant reusable skills",
+    "manifest_path": "agents/memory-learning/AGENT-333/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-333/system-prompt.md",
+    "system_prompt_sha256": "0b0ea065a5ad2e36af1bad640c159043eca890282ae99dccf1f05f9b5cae2634"
+  },
+  {
+    "id": "AGENT-334",
+    "name": "Skill Router",
+    "category": "memory-learning",
+    "mission": "Route work to an appropriate skill",
+    "manifest_path": "agents/memory-learning/AGENT-334/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-334/system-prompt.md",
+    "system_prompt_sha256": "eb7a020ea50ebb70b3caf8edf64dd3a0a284e29b0ea93bfa3ca734e9da53a6bd"
+  },
+  {
+    "id": "AGENT-335",
+    "name": "Skill Composer",
+    "category": "memory-learning",
+    "mission": "Compose compatible skills",
+    "manifest_path": "agents/memory-learning/AGENT-335/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-335/system-prompt.md",
+    "system_prompt_sha256": "96b059ef78f230db1c7b75979c08b747e06788fe2d489ee0c52489fd60786b7e"
+  },
+  {
+    "id": "AGENT-336",
+    "name": "Skill Authoring Agent",
+    "category": "memory-learning",
+    "mission": "Author a reusable skill specification",
+    "manifest_path": "agents/memory-learning/AGENT-336/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-336/system-prompt.md",
+    "system_prompt_sha256": "2236988246d3fa646b54cc08f6fc23fdc22f300e8c639036cea506e915bea7ac"
+  },
+  {
+    "id": "AGENT-337",
+    "name": "Skill Critic",
+    "category": "memory-learning",
+    "mission": "Critique a skill's instructions",
+    "manifest_path": "agents/memory-learning/AGENT-337/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-337/system-prompt.md",
+    "system_prompt_sha256": "0b4da216d546df18e7dc359de57a41ba593eb964ee44e02c73b68e5dfbc634b0"
+  },
+  {
+    "id": "AGENT-338",
+    "name": "Skill Testing Agent",
+    "category": "memory-learning",
+    "mission": "Test a skill against representative tasks",
+    "manifest_path": "agents/memory-learning/AGENT-338/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-338/system-prompt.md",
+    "system_prompt_sha256": "481b24bad0b289c28be1b60f4b878057f080c1e2f3c52780cd98eb1e04d9fe52"
+  },
+  {
+    "id": "AGENT-339",
+    "name": "Skill Benchmark Agent",
+    "category": "memory-learning",
+    "mission": "Benchmark skill effectiveness",
+    "manifest_path": "agents/memory-learning/AGENT-339/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-339/system-prompt.md",
+    "system_prompt_sha256": "a3e954ca5616d968e33249e6cedc97f2772d79a9c2c8e78f29c965bd709c195d"
+  },
+  {
+    "id": "AGENT-340",
+    "name": "Skill Version Manager",
+    "category": "memory-learning",
+    "mission": "Version reusable skills",
+    "manifest_path": "agents/memory-learning/AGENT-340/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-340/system-prompt.md",
+    "system_prompt_sha256": "6abaff9be414789f38fbdd0a085a94db63520b58b9d238e449227975389e1a14"
+  },
+  {
+    "id": "AGENT-341",
+    "name": "Skill Dependency Agent",
+    "category": "memory-learning",
+    "mission": "Manage skill dependencies",
+    "manifest_path": "agents/memory-learning/AGENT-341/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-341/system-prompt.md",
+    "system_prompt_sha256": "a5b3cba5346b38da28d225f850a438ae6dfdd8dd72ee2184912167414764382d"
+  },
+  {
+    "id": "AGENT-342",
+    "name": "Skill Conflict Detector",
+    "category": "memory-learning",
+    "mission": "Detect conflicting skill instructions",
+    "manifest_path": "agents/memory-learning/AGENT-342/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-342/system-prompt.md",
+    "system_prompt_sha256": "c292809997d459b6ec5c5cec2f83f8b1b73d19fce630208d5fe85bb82ca6118f"
+  },
+  {
+    "id": "AGENT-343",
+    "name": "Skill Security Scanner",
+    "category": "memory-learning",
+    "mission": "Scan skills for security risks",
+    "manifest_path": "agents/memory-learning/AGENT-343/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-343/system-prompt.md",
+    "system_prompt_sha256": "66f18a96c561afce842d528233c97640d75fdb3137109ba3011d1d51e0893f65"
+  },
+  {
+    "id": "AGENT-344",
+    "name": "Skill Provenance Agent",
+    "category": "memory-learning",
+    "mission": "Record skill provenance",
+    "manifest_path": "agents/memory-learning/AGENT-344/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-344/system-prompt.md",
+    "system_prompt_sha256": "6336c6d81152e17832f217e5c4d30b271b6c608ca02f80286159bafaed21c363"
+  },
+  {
+    "id": "AGENT-345",
+    "name": "Skill Trust Agent",
+    "category": "memory-learning",
+    "mission": "Assess skill trustworthiness",
+    "manifest_path": "agents/memory-learning/AGENT-345/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-345/system-prompt.md",
+    "system_prompt_sha256": "4d64fb131f30c71eab6d516f4c2cdeb7e150691ebb36067a9a42685937bf0600"
+  },
+  {
+    "id": "AGENT-346",
+    "name": "Skill Deprecation Agent",
+    "category": "memory-learning",
+    "mission": "Deprecate obsolete skills",
+    "manifest_path": "agents/memory-learning/AGENT-346/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-346/system-prompt.md",
+    "system_prompt_sha256": "6f7481cddf18a5c2bee391ace76f258eb551357c54471711d6d1b21e5fb60b75"
+  },
+  {
+    "id": "AGENT-347",
+    "name": "Skill Deduplication Agent",
+    "category": "memory-learning",
+    "mission": "Deduplicate overlapping skills",
+    "manifest_path": "agents/memory-learning/AGENT-347/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-347/system-prompt.md",
+    "system_prompt_sha256": "df28019d0d6bf694a70c654226fb22a84a627b6ee510f27e8eae17b25e17900f"
+  },
+  {
+    "id": "AGENT-348",
+    "name": "Skill Compression Agent",
+    "category": "memory-learning",
+    "mission": "Compress skill instructions",
+    "manifest_path": "agents/memory-learning/AGENT-348/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-348/system-prompt.md",
+    "system_prompt_sha256": "5eda9911981be23e02ae39baac4cb493eb8f74678771ab1e733d53c09d4df481"
+  },
+  {
+    "id": "AGENT-349",
+    "name": "Skill Marketplace/Registry Agent",
+    "category": "memory-learning",
+    "mission": "Maintain a skill registry",
+    "manifest_path": "agents/memory-learning/AGENT-349/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-349/system-prompt.md",
+    "system_prompt_sha256": "b552b1688daf75f0fa584fea125b48a7f6bf8cf3cc4f2ce14344070ccb4f7e19"
+  },
+  {
+    "id": "AGENT-350",
+    "name": "Skill Evolution Agent",
+    "category": "memory-learning",
+    "mission": "Improve skills from evaluation evidence",
+    "manifest_path": "agents/memory-learning/AGENT-350/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-350/system-prompt.md",
+    "system_prompt_sha256": "f416cf4fc3990b8b4c30db4217dad19e56425268046c3375fa8d222acc4915c4"
+  },
+  {
+    "id": "AGENT-351",
+    "name": "Prototype Agent",
+    "category": "infrastructure",
+    "mission": "Build a focused prototype",
+    "manifest_path": "agents/infrastructure/AGENT-351/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-351/system-prompt.md",
+    "system_prompt_sha256": "a1e0fe836939915fff3de5208d8163438bb9c910d015e6a6002cbe46ff7dc5d5"
+  },
+  {
+    "id": "AGENT-352",
+    "name": "Build Agent",
+    "category": "infrastructure",
+    "mission": "Produce a release build",
+    "manifest_path": "agents/infrastructure/AGENT-352/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-352/system-prompt.md",
+    "system_prompt_sha256": "8eca7fc4104085b0671bc128fd5976ab56a20cde7241b73bc3ff0e10a99f756f"
+  },
+  {
+    "id": "AGENT-353",
+    "name": "Evaluation Designer",
+    "category": "infrastructure",
+    "mission": "Design an evaluation program",
+    "manifest_path": "agents/infrastructure/AGENT-353/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-353/system-prompt.md",
+    "system_prompt_sha256": "a9b8596afabc3caaab3d2c1e3fad9577a04df54b94dee040935483afe5658fbe"
+  },
+  {
+    "id": "AGENT-354",
+    "name": "Dataset/Eval Generator",
+    "category": "infrastructure",
+    "mission": "Generate evaluation datasets",
+    "manifest_path": "agents/infrastructure/AGENT-354/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-354/system-prompt.md",
+    "system_prompt_sha256": "3c7b4bce8664f44bed16aa89f7bfdf5ab10ae75340237d41fcb84d261278ab4c"
+  },
+  {
+    "id": "AGENT-355",
+    "name": "Benchmark Runner",
+    "category": "infrastructure",
+    "mission": "Run benchmarks reproducibly",
+    "manifest_path": "agents/infrastructure/AGENT-355/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-355/system-prompt.md",
+    "system_prompt_sha256": "1f15b66a6dbb001b9c7d7b9119a672726d7ee7ffb1af130dca75550b70e93518"
+  },
+  {
+    "id": "AGENT-356",
+    "name": "Regression Detector",
+    "category": "infrastructure",
+    "mission": "Detect quality regressions",
+    "manifest_path": "agents/infrastructure/AGENT-356/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-356/system-prompt.md",
+    "system_prompt_sha256": "7efcd0b8dcaf22054b24ceffc3bcb93db566189c0d5207df7df3deb358297f05"
+  },
+  {
+    "id": "AGENT-357",
+    "name": "Deployment Readiness Agent",
+    "category": "infrastructure",
+    "mission": "Judge deployment readiness",
+    "manifest_path": "agents/infrastructure/AGENT-357/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-357/system-prompt.md",
+    "system_prompt_sha256": "49f9a5bd8fac1751a5117853b59f8822224ac0c2512f8a88027016f8c37d05b4"
+  },
+  {
+    "id": "AGENT-358",
+    "name": "Release Agent",
+    "category": "infrastructure",
+    "mission": "Prepare and execute an authorized release",
+    "manifest_path": "agents/infrastructure/AGENT-358/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-358/system-prompt.md",
+    "system_prompt_sha256": "e06a96d8b94935117f6fd76c91e38321600a0d1effa20b9e11a9e6d65a849285"
+  },
+  {
+    "id": "AGENT-359",
+    "name": "Canary Agent",
+    "category": "infrastructure",
+    "mission": "Evaluate a canary release",
+    "manifest_path": "agents/infrastructure/AGENT-359/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-359/system-prompt.md",
+    "system_prompt_sha256": "13b681857d7a1319c9e091ec363b444466129f51e212d0e254746b15a460b9a0"
+  },
+  {
+    "id": "AGENT-360",
+    "name": "Production Validation Agent",
+    "category": "infrastructure",
+    "mission": "Validate production behavior",
+    "manifest_path": "agents/infrastructure/AGENT-360/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-360/system-prompt.md",
+    "system_prompt_sha256": "3d1ffc29196e9a7795737eea9693ec2266843b8be054a9dbeb3576c87d950ba7"
+  },
+  {
+    "id": "AGENT-361",
+    "name": "Observability Setup Agent",
+    "category": "infrastructure",
+    "mission": "Install observability instrumentation",
+    "manifest_path": "agents/infrastructure/AGENT-361/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-361/system-prompt.md",
+    "system_prompt_sha256": "f0b220c61978a776494705b125f5c263cc75a4aa34aaad510a3821ce434c6429"
+  },
+  {
+    "id": "AGENT-362",
+    "name": "Production Drift Agent",
+    "category": "infrastructure",
+    "mission": "Detect production behavior drift",
+    "manifest_path": "agents/infrastructure/AGENT-362/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-362/system-prompt.md",
+    "system_prompt_sha256": "a8e2ea52b5bf5d984614f42b4785adf9406c5652a227147c1645cbc4b777efce"
+  },
+  {
+    "id": "AGENT-363",
+    "name": "Incident Rollback Agent",
+    "category": "infrastructure",
+    "mission": "Roll back a production incident",
+    "manifest_path": "agents/infrastructure/AGENT-363/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-363/system-prompt.md",
+    "system_prompt_sha256": "f7204472508aae99ef6359058f1f7316b72aef83e4bb487b2cc0f356ae7734b4"
+  },
+  {
+    "id": "AGENT-364",
+    "name": "Postmortem Agent",
+    "category": "infrastructure",
+    "mission": "Write a blameless operational postmortem",
+    "manifest_path": "agents/infrastructure/AGENT-364/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-364/system-prompt.md",
+    "system_prompt_sha256": "760cd05c8c89a485b66f7a007eb58eb11ea102e5419ac4ed1e64674dc8ef9a68"
+  },
+  {
+    "id": "AGENT-365",
+    "name": "Continuous Improvement Agent",
+    "category": "infrastructure",
+    "mission": "Drive continuous operational improvement",
+    "manifest_path": "agents/infrastructure/AGENT-365/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-365/system-prompt.md",
+    "system_prompt_sha256": "b2cd868ca2de0f9bf09121c28cc850c494131e489d34bdf98d22db212de3cc3c"
+  },
+  {
+    "id": "AGENT-366",
+    "name": "Human Approval Controller",
+    "category": "meta",
+    "mission": "Manage required human approvals",
+    "manifest_path": "agents/meta/AGENT-366/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-366/system-prompt.md",
+    "system_prompt_sha256": "4d5aae63642e6d9eaf9f698e62a96bd450b5486f6fdc04a2a80872cb9965f6dc"
+  },
+  {
+    "id": "AGENT-367",
+    "name": "Action Risk Classifier",
+    "category": "meta",
+    "mission": "Classify action risk",
+    "manifest_path": "agents/meta/AGENT-367/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-367/system-prompt.md",
+    "system_prompt_sha256": "c60709cba588271d4c4e3510072ad3b3f0cab6d54fc330ac186ed6f7198fa189"
+  },
+  {
+    "id": "AGENT-368",
+    "name": "Reversibility Judge",
+    "category": "meta",
+    "mission": "Judge action reversibility",
+    "manifest_path": "agents/meta/AGENT-368/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-368/system-prompt.md",
+    "system_prompt_sha256": "d8fa1db2f66607a35e234a33144a404a2bb50823a2ae220aa4e9798c7f0eda12"
+  },
+  {
+    "id": "AGENT-369",
+    "name": "Blast-Radius Estimator",
+    "category": "meta",
+    "mission": "Estimate an action's blast radius",
+    "manifest_path": "agents/meta/AGENT-369/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-369/system-prompt.md",
+    "system_prompt_sha256": "34a1c6df5841118290cefc22c066ca72719065501dfa5251083db043e5af8768"
+  },
+  {
+    "id": "AGENT-370",
+    "name": "Least-Privilege Controller",
+    "category": "meta",
+    "mission": "Coordinate least-privilege policy",
+    "manifest_path": "agents/meta/AGENT-370/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-370/system-prompt.md",
+    "system_prompt_sha256": "cb2a029405b5b30f7f671a96067609f6e235b49e2741b28e5bb47c0a8c939a39"
+  },
+  {
+    "id": "AGENT-371",
+    "name": "Credential Scope Controller",
+    "category": "meta",
+    "mission": "Control credential scope",
+    "manifest_path": "agents/meta/AGENT-371/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-371/system-prompt.md",
+    "system_prompt_sha256": "3dd2d4e23b1dbe1c91757aa6017f936233e174eabac3f857c205e440cf6c0d6f"
+  },
+  {
+    "id": "AGENT-372",
+    "name": "Data Classification Agent",
+    "category": "meta",
+    "mission": "Classify data sensitivity",
+    "manifest_path": "agents/meta/AGENT-372/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-372/system-prompt.md",
+    "system_prompt_sha256": "497eecf22c7ee35eb6ff6e125410c4b6f1559b7c0f85a7d668de3c0706e46853"
+  },
+  {
+    "id": "AGENT-373",
+    "name": "Privacy/PII Agent",
+    "category": "meta",
+    "mission": "Minimize personal-data exposure",
+    "manifest_path": "agents/meta/AGENT-373/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-373/system-prompt.md",
+    "system_prompt_sha256": "9f1b2131f0801d0b4bd5cba0b2a07759af1e77db12a638ca8c8662f80b795d83"
+  },
+  {
+    "id": "AGENT-374",
+    "name": "Audit Agent",
+    "category": "meta",
+    "mission": "Audit system actions",
+    "manifest_path": "agents/meta/AGENT-374/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-374/system-prompt.md",
+    "system_prompt_sha256": "2e9c0bc057793f2f30171a8d0cba2be5b843e00ebeced5e7510879ddccc126e7"
+  },
+  {
+    "id": "AGENT-375",
+    "name": "Policy Enforcement Agent",
+    "category": "meta",
+    "mission": "Enforce applicable policy decisions",
+    "manifest_path": "agents/meta/AGENT-375/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-375/system-prompt.md",
+    "system_prompt_sha256": "b6d5956532f7444661189d0ceb4955aea80606ebd7a70b62d17993844fe6e908"
+  },
+  {
+    "id": "AGENT-376",
+    "name": "Agent Protocol Manager",
+    "category": "meta",
+    "mission": "Manage agent communication protocols",
+    "manifest_path": "agents/meta/AGENT-376/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-376/system-prompt.md",
+    "system_prompt_sha256": "4bffd7e3f64dbf4803c0c791fbbb7ac6a4bf3ea899a33538aff2426e28eff69b"
+  },
+  {
+    "id": "AGENT-377",
+    "name": "Message Schema Validator",
+    "category": "meta",
+    "mission": "Validate inter-agent message schemas",
+    "manifest_path": "agents/meta/AGENT-377/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-377/system-prompt.md",
+    "system_prompt_sha256": "9cc718a2f0e46b2b05a6c1a5b64e3d2c08b04e11968adff007250ef363705ad6"
+  },
+  {
+    "id": "AGENT-378",
+    "name": "Agent Capability Advertiser",
+    "category": "meta",
+    "mission": "Advertise an agent's real capabilities",
+    "manifest_path": "agents/meta/AGENT-378/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-378/system-prompt.md",
+    "system_prompt_sha256": "9d3a6f41127cfbd1653b06ff26c26e24e149a7d5f71ce0e6d82341430ed9317f"
+  },
+  {
+    "id": "AGENT-379",
+    "name": "Capability Discovery Agent",
+    "category": "meta",
+    "mission": "Discover available agent capabilities",
+    "manifest_path": "agents/meta/AGENT-379/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-379/system-prompt.md",
+    "system_prompt_sha256": "05ab565450f2e284b8ad93cd3db1214cf2f483cd17e12321079d0c2b00581db5"
+  },
+  {
+    "id": "AGENT-380",
+    "name": "Handoff Validator",
+    "category": "meta",
+    "mission": "Validate a task handoff",
+    "manifest_path": "agents/meta/AGENT-380/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-380/system-prompt.md",
+    "system_prompt_sha256": "25de8310b2171513eac17c81078a947bd40126a6e17945c22d3b12dc0b7f2192"
+  },
+  {
+    "id": "AGENT-381",
+    "name": "Shared-State Coordinator",
+    "category": "meta",
+    "mission": "Coordinate shared mutable state",
+    "manifest_path": "agents/meta/AGENT-381/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-381/system-prompt.md",
+    "system_prompt_sha256": "f88a85c6de8d75712bc4ee626cd987cad0b8316d1c6cb4152fb2af464ae35bda"
+  },
+  {
+    "id": "AGENT-382",
+    "name": "Conflict Resolution Agent",
+    "category": "meta",
+    "mission": "Resolve conflicting agent proposals",
+    "manifest_path": "agents/meta/AGENT-382/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-382/system-prompt.md",
+    "system_prompt_sha256": "94f2ed06e263672b85957ee9c531e15488145bd0bf3df9b00ba5c50e73431408"
+  },
+  {
+    "id": "AGENT-383",
+    "name": "Consensus Agent",
+    "category": "meta",
+    "mission": "Reach evidence-based multi-agent agreement",
+    "manifest_path": "agents/meta/AGENT-383/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-383/system-prompt.md",
+    "system_prompt_sha256": "0aef463bd8af6920e605a45806790939914cfd27f80ed9cf615b548c6c0c5734"
+  },
+  {
+    "id": "AGENT-384",
+    "name": "Agent Reputation/Reliability Tracker",
+    "category": "meta",
+    "mission": "Track agent reliability",
+    "manifest_path": "agents/meta/AGENT-384/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-384/system-prompt.md",
+    "system_prompt_sha256": "dfb1dc74d34ac16c4bf488f6d0eb1d94da85f211b9ef5814ada8212b9c4ee2a6"
+  },
+  {
+    "id": "AGENT-385",
+    "name": "Delegation Auditor",
+    "category": "meta",
+    "mission": "Audit delegated work",
+    "manifest_path": "agents/meta/AGENT-385/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-385/system-prompt.md",
+    "system_prompt_sha256": "46ab3532aa8f5c0675d2c1b4ddab1245e3eee1a252cd3825b7676b52b703e7f5"
+  },
+  {
+    "id": "AGENT-386",
+    "name": "Failure Taxonomy Agent",
+    "category": "verification-recovery",
+    "mission": "Classify failures consistently",
+    "manifest_path": "agents/verification-recovery/AGENT-386/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-386/system-prompt.md",
+    "system_prompt_sha256": "a812753b4a85bda3d8805ffc54dbf02387ce354248f354ab274a695c1b1e7958"
+  },
+  {
+    "id": "AGENT-387",
+    "name": "Failure Fingerprinting Agent",
+    "category": "verification-recovery",
+    "mission": "Fingerprint recurring failures",
+    "manifest_path": "agents/verification-recovery/AGENT-387/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-387/system-prompt.md",
+    "system_prompt_sha256": "2bab3141d951a992e0c0119bf43b43c00f3d2eaa6bb6a5f1d0c547ebcd1d5989"
+  },
+  {
+    "id": "AGENT-388",
+    "name": "Repeated-Failure Detector",
+    "category": "verification-recovery",
+    "mission": "Detect repeated failed attempts",
+    "manifest_path": "agents/verification-recovery/AGENT-388/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-388/system-prompt.md",
+    "system_prompt_sha256": "17aaf191aa2b8cb2f53bd054a8353c681cff9b2073b64c68326c34fe472ae499"
+  },
+  {
+    "id": "AGENT-389",
+    "name": "Root-Cause Knowledge Agent",
+    "category": "verification-recovery",
+    "mission": "Maintain root-cause knowledge",
+    "manifest_path": "agents/verification-recovery/AGENT-389/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-389/system-prompt.md",
+    "system_prompt_sha256": "2d4797de6431e56676475e165f86b6256428e8519b27d9fd885e7892d4cccaff"
+  },
+  {
+    "id": "AGENT-390",
+    "name": "Failure-to-Eval Agent",
+    "category": "verification-recovery",
+    "mission": "Turn failures into evaluation cases",
+    "manifest_path": "agents/verification-recovery/AGENT-390/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-390/system-prompt.md",
+    "system_prompt_sha256": "27d134e861edc43b24f0164efc642f1522fe4233fd651113c9e35546a1d22ca9"
+  },
+  {
+    "id": "AGENT-391",
+    "name": "Failure-to-Skill Agent",
+    "category": "verification-recovery",
+    "mission": "Turn recurring failures into skill improvements",
+    "manifest_path": "agents/verification-recovery/AGENT-391/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-391/system-prompt.md",
+    "system_prompt_sha256": "88a7835e65e2492bde8296447f01d86d45f51922aa5a18d43009a961a48b260b"
+  },
+  {
+    "id": "AGENT-392",
+    "name": "Failure-to-Test Agent",
+    "category": "verification-recovery",
+    "mission": "Turn defects into regression tests",
+    "manifest_path": "agents/verification-recovery/AGENT-392/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-392/system-prompt.md",
+    "system_prompt_sha256": "db4e7beeede785e4e39b9431dc64e939acb8d07e190abc1b582aeb6d5f0e4a7c"
+  },
+  {
+    "id": "AGENT-393",
+    "name": "Failure-to-Guardrail Agent",
+    "category": "verification-recovery",
+    "mission": "Turn failures into protective controls",
+    "manifest_path": "agents/verification-recovery/AGENT-393/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-393/system-prompt.md",
+    "system_prompt_sha256": "1a8fdfe99ebcb8855ad261e699ae2a4d3460330c3f7064aabff13f2ccd0a264c"
+  },
+  {
+    "id": "AGENT-394",
+    "name": "Failure-to-Documentation Agent",
+    "category": "verification-recovery",
+    "mission": "Turn incidents into useful documentation",
+    "manifest_path": "agents/verification-recovery/AGENT-394/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-394/system-prompt.md",
+    "system_prompt_sha256": "19c26c223878822ad77a1c6e768f4f633ae7be694331daf2d6a9cf7f65acf501"
+  },
+  {
+    "id": "AGENT-395",
+    "name": "Failure Prevention Agent",
+    "category": "verification-recovery",
+    "mission": "Prevent known failure classes",
+    "manifest_path": "agents/verification-recovery/AGENT-395/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-395/system-prompt.md",
+    "system_prompt_sha256": "a1db8bf3aae438791a053de2eaaff98b746328eded58b8d84894b773ad876335"
+  },
+  {
+    "id": "AGENT-396",
+    "name": "Token Accountant",
+    "category": "infrastructure",
+    "mission": "Account for token consumption",
+    "manifest_path": "agents/infrastructure/AGENT-396/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-396/system-prompt.md",
+    "system_prompt_sha256": "86309fca4f99bd1dbc0d22c3c0eb8cfda064a770be676529dd77408532f00508"
+  },
+  {
+    "id": "AGENT-397",
+    "name": "Compute Accountant",
+    "category": "infrastructure",
+    "mission": "Account for compute resources",
+    "manifest_path": "agents/infrastructure/AGENT-397/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-397/system-prompt.md",
+    "system_prompt_sha256": "817a160ca8f95bf525059b6f58b5063197cd2449062afc50054232415df7bd23"
+  },
+  {
+    "id": "AGENT-398",
+    "name": "Tool-Call Accountant",
+    "category": "infrastructure",
+    "mission": "Account for tool-call usage",
+    "manifest_path": "agents/infrastructure/AGENT-398/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-398/system-prompt.md",
+    "system_prompt_sha256": "38c955f7012cc54e6df050a6375fc259e533a36533748e68032852323091a86a"
+  },
+  {
+    "id": "AGENT-399",
+    "name": "Latency Accountant",
+    "category": "infrastructure",
+    "mission": "Account for end-to-end latency",
+    "manifest_path": "agents/infrastructure/AGENT-399/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-399/system-prompt.md",
+    "system_prompt_sha256": "bbc7d79ff9d4799cf40ef5fa28cbb50387df5c207cd3d8311bb4b768253b399b"
+  },
+  {
+    "id": "AGENT-400",
+    "name": "Cache Manager",
+    "category": "infrastructure",
+    "mission": "Manage reusable cached results",
+    "manifest_path": "agents/infrastructure/AGENT-400/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-400/system-prompt.md",
+    "system_prompt_sha256": "3a0f18d7c01d9c3d0358d2f023a7b582883322992f40068dbdf39bd7d7bdad8e"
+  },
+  {
+    "id": "AGENT-401",
+    "name": "Result Reuse Agent",
+    "category": "infrastructure",
+    "mission": "Reuse previous results safely",
+    "manifest_path": "agents/infrastructure/AGENT-401/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-401/system-prompt.md",
+    "system_prompt_sha256": "3b8e0f903860fde45cf0ac5f34a4fb75757c53f422fa4730cd272405fef4f086"
+  },
+  {
+    "id": "AGENT-402",
+    "name": "Duplicate-Work Detector",
+    "category": "infrastructure",
+    "mission": "Detect duplicated work",
+    "manifest_path": "agents/infrastructure/AGENT-402/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-402/system-prompt.md",
+    "system_prompt_sha256": "44ff26e44488f06c43a8139d7e3d513d40205fc8182e715b47c3521c770bd5a3"
+  },
+  {
+    "id": "AGENT-403",
+    "name": "Parallelization Judge",
+    "category": "infrastructure",
+    "mission": "Judge whether work should run in parallel",
+    "manifest_path": "agents/infrastructure/AGENT-403/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-403/system-prompt.md",
+    "system_prompt_sha256": "acb0b723adf9c6ea010e027cc69cf96917665671879b4352f1d77001e0e20a08"
+  },
+  {
+    "id": "AGENT-404",
+    "name": "Model Escalation Agent",
+    "category": "infrastructure",
+    "mission": "Escalate model capability when justified",
+    "manifest_path": "agents/infrastructure/AGENT-404/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-404/system-prompt.md",
+    "system_prompt_sha256": "4a9eb55e6511965447f861feba0137929d84dfcc8329134a38067d425b973815"
+  },
+  {
+    "id": "AGENT-405",
+    "name": "Cost/Quality Optimizer",
+    "category": "infrastructure",
+    "mission": "Optimize cost against output quality",
+    "manifest_path": "agents/infrastructure/AGENT-405/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-405/system-prompt.md",
+    "system_prompt_sha256": "ef6f7714dd8e8db8de3b333676de29476e5cdb9dea905a409b971accb0c9cb9b"
+  },
+  {
+    "id": "AGENT-406",
+    "name": "Frontend Engineering Agent",
+    "category": "software-engineering",
+    "mission": "Build responsive user-facing web interfaces",
+    "manifest_path": "agents/software-engineering/AGENT-406/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-406/system-prompt.md",
+    "system_prompt_sha256": "385e945332a92b1d76d05f3985ca781dbee4866b91671515012f4f5e318d2864"
+  },
+  {
+    "id": "AGENT-407",
+    "name": "Backend Engineering Agent",
+    "category": "software-engineering",
+    "mission": "Implement reliable application services and business logic",
+    "manifest_path": "agents/software-engineering/AGENT-407/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-407/system-prompt.md",
+    "system_prompt_sha256": "3d2f7cfd09f963081936a08c08069b9dcde66b48d7eb50a9249b31e429290d3a"
+  },
+  {
+    "id": "AGENT-408",
+    "name": "UX/UI Design Agent",
+    "category": "software-engineering",
+    "mission": "Design usable user journeys and interface systems",
+    "manifest_path": "agents/software-engineering/AGENT-408/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-408/system-prompt.md",
+    "system_prompt_sha256": "3d9d27d07389fff282806beda1b35d1d30a10a2d6212297b0b53ad75503ac4d8"
+  },
+  {
+    "id": "AGENT-409",
+    "name": "Accessibility Engineering Agent",
+    "category": "software-engineering",
+    "mission": "Identify and remediate accessibility barriers",
+    "manifest_path": "agents/software-engineering/AGENT-409/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-409/system-prompt.md",
+    "system_prompt_sha256": "7bac85fbe547c4d0c397dee024cc0e539527b72a01110bcaf7b61118a6bfad8e"
+  },
+  {
+    "id": "AGENT-410",
+    "name": "Mobile Application Engineering Agent",
+    "category": "software-engineering",
+    "mission": "Build mobile applications for the requested platform",
+    "manifest_path": "agents/software-engineering/AGENT-410/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-410/system-prompt.md",
+    "system_prompt_sha256": "ca042e872958f4c1c85d4b21ded8caa1aa1bc135476f3ac7d3816bf300b72140"
+  },
+  {
+    "id": "AGENT-411",
+    "name": "Machine Learning Modeling Agent",
+    "category": "research-science",
+    "mission": "Select and evaluate predictive modeling approaches",
+    "manifest_path": "agents/research-science/AGENT-411/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-411/system-prompt.md",
+    "system_prompt_sha256": "5e3cbb776c9c6acd24d6918fe22c7b34af62a22311c941ffe9973b3955823d2a"
+  },
+  {
+    "id": "AGENT-412",
+    "name": "Model Training and Fine-Tuning Agent",
+    "category": "research-science",
+    "mission": "Design reproducible model training and adaptation runs",
+    "manifest_path": "agents/research-science/AGENT-412/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-412/system-prompt.md",
+    "system_prompt_sha256": "ca791797b22169a9ab157d99a0bddbf8bc1f4465f5a9c88f1033fa0846944d6b"
+  },
+  {
+    "id": "AGENT-413",
+    "name": "MLOps and Model Lifecycle Agent",
+    "category": "infrastructure",
+    "mission": "Operate versioned machine-learning lifecycles",
+    "manifest_path": "agents/infrastructure/AGENT-413/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-413/system-prompt.md",
+    "system_prompt_sha256": "a912215ebe50abb9fed1650137764e6c11bbfef8747d35dfab14d81936924e4b"
+  },
+  {
+    "id": "AGENT-414",
+    "name": "Model Inference and Serving Agent",
+    "category": "infrastructure",
+    "mission": "Serve model predictions within quality and resource limits",
+    "manifest_path": "agents/infrastructure/AGENT-414/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-414/system-prompt.md",
+    "system_prompt_sha256": "10ff60ac440801dde55769e0152a79020173c699f312143ae1690044acd3f68e"
+  },
+  {
+    "id": "AGENT-415",
+    "name": "GPU and Accelerator Computing Agent",
+    "category": "infrastructure",
+    "mission": "Optimize accelerator workloads",
+    "manifest_path": "agents/infrastructure/AGENT-415/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-415/system-prompt.md",
+    "system_prompt_sha256": "5dcf760c8e98bcf797cd7ff574c42b27965c33e9365d1df326a56b5440b187d4"
+  },
+  {
+    "id": "AGENT-416",
+    "name": "Robotics and Physical AI Agent",
+    "category": "os-systems",
+    "mission": "Design and evaluate embodied control workflows",
+    "manifest_path": "agents/os-systems/AGENT-416/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-416/system-prompt.md",
+    "system_prompt_sha256": "f196d4a65925436c3ea0b5ced6ab12af019d621fb80be6f514e1d5060ef1cc6b"
+  },
+  {
+    "id": "AGENT-417",
+    "name": "Real-Time and Embedded Engineering Agent",
+    "category": "os-systems",
+    "mission": "Implement time-bounded embedded behavior",
+    "manifest_path": "agents/os-systems/AGENT-417/manifest.json",
+    "system_prompt_path": "agents/os-systems/AGENT-417/system-prompt.md",
+    "system_prompt_sha256": "db02b67b0341eb564b9e3cf75daf71e6041b37b665f8b97f499c3ee833bed448"
+  },
+  {
+    "id": "AGENT-418",
+    "name": "Distributed Systems Engineering Agent",
+    "category": "software-engineering",
+    "mission": "Design behavior across independently failing components",
+    "manifest_path": "agents/software-engineering/AGENT-418/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-418/system-prompt.md",
+    "system_prompt_sha256": "4dee37c04ef54a1bc9bffb3613bd7f7f6fc2a7f866a01ab46a724c8f545730ac"
+  },
+  {
+    "id": "AGENT-419",
+    "name": "Event Streaming Engineering Agent",
+    "category": "data-knowledge",
+    "mission": "Build reliable event-driven data flows",
+    "manifest_path": "agents/data-knowledge/AGENT-419/manifest.json",
+    "system_prompt_path": "agents/data-knowledge/AGENT-419/system-prompt.md",
+    "system_prompt_sha256": "52e579aeb514a14c4b4bb02b452e6f00fb90f65dbc36bb34f9f0cc936f2da7a5"
+  },
+  {
+    "id": "AGENT-420",
+    "name": "Technical Documentation Agent",
+    "category": "software-engineering",
+    "mission": "Create maintainable developer and user documentation",
+    "manifest_path": "agents/software-engineering/AGENT-420/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-420/system-prompt.md",
+    "system_prompt_sha256": "96335492b0a9defd7bae7c37ec1bb40ec76f3fee88a6569f2f09e2596f9a0f41"
+  },
+  {
+    "id": "AGENT-421",
+    "name": "Localization and Internationalization Agent",
+    "category": "software-engineering",
+    "mission": "Adapt software for languages and regional conventions",
+    "manifest_path": "agents/software-engineering/AGENT-421/manifest.json",
+    "system_prompt_path": "agents/software-engineering/AGENT-421/system-prompt.md",
+    "system_prompt_sha256": "9f2c077985733cef996fcb5c6691078d17ea35034fb39b5f027e64ab5d3d9837"
+  },
+  {
+    "id": "AGENT-422",
+    "name": "Open-Source License Compliance Agent",
+    "category": "meta",
+    "mission": "Inventory software licensing obligations",
+    "manifest_path": "agents/meta/AGENT-422/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-422/system-prompt.md",
+    "system_prompt_sha256": "986792f2471a2e76bd1fad8947b2fcf1383b37bfbfa577f35d558a06d1766f90"
+  },
+  {
+    "id": "AGENT-423",
+    "name": "Backup and Restore Engineering Agent",
+    "category": "infrastructure",
+    "mission": "Design and verify usable backups",
+    "manifest_path": "agents/infrastructure/AGENT-423/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-423/system-prompt.md",
+    "system_prompt_sha256": "d20010da993599f93a6dec535a509fd56754dd79d28dddf62b50e7a3af9409c5"
+  },
+  {
+    "id": "AGENT-424",
+    "name": "Disaster Recovery Engineering Agent",
+    "category": "infrastructure",
+    "mission": "Plan service recovery after major disruption",
+    "manifest_path": "agents/infrastructure/AGENT-424/manifest.json",
+    "system_prompt_path": "agents/infrastructure/AGENT-424/system-prompt.md",
+    "system_prompt_sha256": "5b25f37d88cabc9a937f6cde39fd0d146708915b1a3dee82fd2f1c5221ecb178"
+  },
+  {
+    "id": "AGENT-425",
+    "name": "Artifact Integrity and Provenance Agent",
+    "category": "verification-recovery",
+    "mission": "Verify artifacts across creation and handoffs",
+    "manifest_path": "agents/verification-recovery/AGENT-425/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-425/system-prompt.md",
+    "system_prompt_sha256": "662830dc5f864f10e6014e2ecfacd9c4a1a9c8608e1491d446be0cea9ffba493"
+  },
+  {
+    "id": "AGENT-426",
+    "name": "Web Crawl Agent",
+    "category": "computer-tools",
+    "mission": "Crawl a bounded set of web pages and extract structured records",
+    "manifest_path": "agents/computer-tools/AGENT-426/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-426/system-prompt.md",
+    "system_prompt_sha256": "50d2a03d02dd315a3ac3f9f01b8f380e54aedb26abd9eea99ee7077d9d2f424b"
+  },
+  {
+    "id": "AGENT-427",
+    "name": "Multi-Source Search Agent",
+    "category": "research-science",
+    "mission": "Run parallel differently-phrased searches and cross-check results across independent sources",
+    "manifest_path": "agents/research-science/AGENT-427/manifest.json",
+    "system_prompt_path": "agents/research-science/AGENT-427/system-prompt.md",
+    "system_prompt_sha256": "1f0dceebfc7c4954cc96369693176ef402115a0dee0b088e634a9f4326fda3be"
+  },
+  {
+    "id": "AGENT-428",
+    "name": "Browser Automation Operator",
+    "category": "computer-tools",
+    "mission": "Operate a real browser through structured snapshots with evidence and confirmation gates",
+    "manifest_path": "agents/computer-tools/AGENT-428/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-428/system-prompt.md",
+    "system_prompt_sha256": "8c72d7ff330cc573adaf592b5f090f82b1f991b5a888f007d45e1db5cab87ed1"
+  },
+  {
+    "id": "AGENT-429",
+    "name": "Agent and Skill Invocation Agent",
+    "category": "meta",
+    "mission": "Resolve explicit requests for a named agent or skill and hand over the task unchanged",
+    "manifest_path": "agents/meta/AGENT-429/manifest.json",
+    "system_prompt_path": "agents/meta/AGENT-429/system-prompt.md",
+    "system_prompt_sha256": "521997603dbd6ae54f525e1431c1847db880db1579b80ace2d84c4c9fb1ebe83"
+  },
+  {
+    "id": "AGENT-430",
+    "name": "Live Model Connection Agent",
+    "category": "computer-tools",
+    "mission": "Connect adapters to live model APIs and diagnose connection failures",
+    "manifest_path": "agents/computer-tools/AGENT-430/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-430/system-prompt.md",
+    "system_prompt_sha256": "f3856bccf850c8991b9568e312f6a9aa9331bc3b3144ee60a3899e346777ec47"
+  },
+  {
+    "id": "AGENT-431",
+    "name": "Tool Communication Verifier",
+    "category": "verification-recovery",
+    "mission": "Verify that requests and responses between brain, model and tools follow the contract",
+    "manifest_path": "agents/verification-recovery/AGENT-431/manifest.json",
+    "system_prompt_path": "agents/verification-recovery/AGENT-431/system-prompt.md",
+    "system_prompt_sha256": "c8b868f47793625eabbf56c9dfd3e5b2993a5644fbb19e2801b5fc63e6cf6d61"
+  },
+  {
+    "id": "AGENT-432",
+    "name": "Claude Code Integration Agent",
+    "category": "computer-tools",
+    "mission": "Install and verify the registry as Claude Code subagents and skills",
+    "manifest_path": "agents/computer-tools/AGENT-432/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-432/system-prompt.md",
+    "system_prompt_sha256": "bebc89fa86ab0d4630eccd972c16593ed156442bd9cecc94aac30fa26c03671c"
+  },
+  {
+    "id": "AGENT-433",
+    "name": "Local Model Operations Agent",
+    "category": "computer-tools",
+    "mission": "Configure and operate small or local models so agents work reliably offline",
+    "manifest_path": "agents/computer-tools/AGENT-433/manifest.json",
+    "system_prompt_path": "agents/computer-tools/AGENT-433/system-prompt.md",
+    "system_prompt_sha256": "e472c5d9bd23ca0596aa7da07e48e0e0890ca10fac388918f1a49efb087eb4ab"
+  },
+  {
+    "id": "AGENT-434",
+    "name": "Session Journal Agent",
+    "category": "memory-learning",
+    "mission": "Keep a compact resumable record of what was asked, answered, required and left undone",
+    "manifest_path": "agents/memory-learning/AGENT-434/manifest.json",
+    "system_prompt_path": "agents/memory-learning/AGENT-434/system-prompt.md",
+    "system_prompt_sha256": "2aaee7d5a3c9d874c929202cfd664ec67fc442db7e838871ff5b400777cf0d25"
+  }
+]

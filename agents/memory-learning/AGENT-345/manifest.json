@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-345",
+  "name": "Skill Trust Agent",
+  "category": "memory-learning",
+  "group": "Skill Management",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Assess skill trustworthiness",
+  "specialist_method": "Evaluate provenance, review evidence and requested powers",
+  "skills": [
+    "Assess skill trustworthiness",
+    "Evaluate provenance, review evidence and requested powers"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "memory_read",
+    "authorized_memory_write",
+    "evaluation_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: assess skill trustworthiness"
+  ],
+  "verification": [
+    "Trust decisions are scoped and revisited when content changes",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "4d64fb131f30c71eab6d516f4c2cdeb7e150691ebb36067a9a42685937bf0600",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/continuous-learning-pattern/SKILL.md",
+    "skills/cross-session-memory-pattern/SKILL.md"
+  ],
+  "specialist_focus": "Assign skill trust levels from provenance, review and test results, never by default.",
+  "field_rules": [
+    "Test the trigger.",
+    "Review before trust.",
+    "Retire what no longer earns its place."
+  ]
+}

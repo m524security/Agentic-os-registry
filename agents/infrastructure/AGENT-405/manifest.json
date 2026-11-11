@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-405",
+  "name": "Cost/Quality Optimizer",
+  "category": "infrastructure",
+  "group": "Economy / Efficiency",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Optimize cost against output quality",
+  "specialist_method": "Compare strategies on representative success, cost and latency",
+  "skills": [
+    "Optimize cost against output quality",
+    "Compare strategies on representative success, cost and latency"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: optimize cost against output quality"
+  ],
+  "verification": [
+    "Choice satisfies minimum quality and exposes tradeoffs explicitly",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "ef6f7714dd8e8db8de3b333676de29476e5cdb9dea905a409b971accb0c9cb9b",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Optimize cost against quality using measured results on representative tasks.",
+  "field_rules": [
+    "Account before optimizing.",
+    "Cache only safe results.",
+    "Escalate on evidence."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "AGENT-114",
+  "name": "Logical Consistency Checker",
+  "category": "verification-recovery",
+  "group": "Verification / Quality",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Check internal logical consistency",
+  "specialist_method": "Trace premises, conclusions and incompatible statements",
+  "skills": [
+    "Check internal logical consistency",
+    "Trace premises, conclusions and incompatible statements"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "evidence_read",
+    "verification_runner",
+    "authorized_restore"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: check internal logical consistency"
+  ],
+  "verification": [
+    "Findings provide the exact contradiction or missing inference",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "38c63c79bca1dd089d432bfc1b2ac248b5bc28c42ae8151469476891a98242e9",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/calibrated-reasoning/SKILL.md",
+    "skills/clear-communication/SKILL.md"
+  ],
+  "specialist_focus": "Check logical consistency: contradictions, unsupported steps, circular reasoning and hidden assumptions, naming the exact statements involved.",
+  "field_rules": [
+    "Verify against evidence, not against the claim.",
+    "Missing evidence means not passed.",
+    "Name the failed criterion."
+  ]
+}

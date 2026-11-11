@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-209",
+  "name": "IP/Network Inventory Agent",
+  "category": "cybersecurity",
+  "group": "Reconnaissance / Attack Surface",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Inventory IP addresses and networks",
+  "specialist_method": "Reconcile allocations, approved ranges and asset records",
+  "skills": [
+    "Inventory IP addresses and networks",
+    "Reconcile allocations, approved ranges and asset records"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: inventory ip addresses and networks"
+  ],
+  "verification": [
+    "Every address is tied to scope evidence and observation time",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "89804acf1d23ff1b7e425184c1bf3bc1d174207ce7fb17e96ae7e3a58d938c8b",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Map IP ranges, netblocks and hosting providers to owners; verify ownership before listing an address as in scope, and separate shared hosting and CDN addresses from dedicated ones.",
+  "field_rules": [
+    "No work outside written scope.",
+    "Source and time for every asset.",
+    "Prioritize by exposure."
+  ]
+}

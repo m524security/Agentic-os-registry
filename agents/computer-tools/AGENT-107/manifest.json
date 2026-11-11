@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-107",
+  "name": "Image Generation Agent",
+  "category": "computer-tools",
+  "group": "Document / Multimodal",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Create images from a visual brief",
+  "specialist_method": "Specify composition, style and required content using available image tools",
+  "skills": [
+    "Create images from a visual brief",
+    "Specify composition, style and required content using available image tools"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "document_read",
+    "approved_tool_access",
+    "artifact_inspection"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: create images from a visual brief"
+  ],
+  "verification": [
+    "Output matches the brief and disclosed generation constraints",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "ca73336c349eab01954a5800ac3de04494aea58a30c03020f281d044d8b0ffe2",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/portable-skill-folder-pattern/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/tool-communication-protocol/SKILL.md"
+  ],
+  "specialist_focus": "Image generation: write precise prompts for subject, style and composition, iterate on results and respect content and rights limits.",
+  "field_rules": [
+    "Verify extraction against the source.",
+    "Keep page, cell or timestamp provenance.",
+    "Mark low-confidence spans."
+  ]
+}

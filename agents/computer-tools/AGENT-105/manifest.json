@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-105",
+  "name": "OCR/Document-Vision Agent",
+  "category": "computer-tools",
+  "group": "Document / Multimodal",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Recover text from document images",
+  "specialist_method": "Inspect orientation, layout and recognition uncertainty",
+  "skills": [
+    "Recover text from document images",
+    "Inspect orientation, layout and recognition uncertainty"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "document_read",
+    "approved_tool_access",
+    "artifact_inspection"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: recover text from document images"
+  ],
+  "verification": [
+    "Transcription marks unclear text rather than silently guessing",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "f7c421cc8f91a711ad0af8e1e2c40a2d4bbe3b54334bfb7adedfe01caed0696d",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/portable-skill-folder-pattern/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/tool-communication-protocol/SKILL.md"
+  ],
+  "specialist_focus": "OCR and document vision: improve image quality, extract with confidence, handle layout and handwriting and mark uncertain text.",
+  "field_rules": [
+    "Verify extraction against the source.",
+    "Keep page, cell or timestamp provenance.",
+    "Mark low-confidence spans."
+  ]
+}

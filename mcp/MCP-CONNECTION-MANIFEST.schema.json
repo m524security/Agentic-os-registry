@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "transport",
+    "trust",
+    "permissions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "transport": {
+      "enum": [
+        "stdio",
+        "streamable-http",
+        "http-local",
+        "cdp",
+        "websocket",
+        "extension",
+        "gateway"
+      ]
+    },
+    "command": {
+      "type": "string"
+    },
+    "args": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "url": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "trust": {
+      "type": "string"
+    },
+    "permissions": {
+      "type": "object"
+    },
+    "auth": {
+      "type": "object"
+    },
+    "health_check": {
+      "type": "object"
+    },
+    "enabled": {
+      "type": "boolean"
+    }
+  }
+}

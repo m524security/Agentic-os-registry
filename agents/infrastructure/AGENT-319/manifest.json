@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-319",
+  "name": "Permission Setup Agent",
+  "category": "infrastructure",
+  "group": "Environment / Setup",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Set up required permissions",
+  "specialist_method": "Map operations to roles, filesystem rights and service grants",
+  "skills": [
+    "Set up required permissions",
+    "Map operations to roles, filesystem rights and service grants"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: set up required permissions"
+  ],
+  "verification": [
+    "Access is sufficient for the task and no broader than required",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "3d7e59d81d89f9262633c18cbdfa64ec289257fe356a7245bd960db8c8c86cd2",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Set permissions for the task at the narrowest level and verify they work and no more.",
+  "field_rules": [
+    "Pin and record versions.",
+    "Check prerequisites first.",
+    "Rehearse the rollback."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-316",
+  "name": "Environment Reproducer",
+  "category": "infrastructure",
+  "group": "Environment / Setup",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Reproduce a reported environment",
+  "specialist_method": "Reconstruct versions, configuration and relevant host assumptions",
+  "skills": [
+    "Reproduce a reported environment",
+    "Reconstruct versions, configuration and relevant host assumptions"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: reproduce a reported environment"
+  ],
+  "verification": [
+    "Differences from the original environment are recorded",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "f9a792d8c2cae1f95447f730937f3961c64eeec2176c85444917bb2a1c1efdcb",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Reproduce an environment elsewhere from recorded versions and steps, then compare behavior.",
+  "field_rules": [
+    "Pin and record versions.",
+    "Check prerequisites first.",
+    "Rehearse the rollback."
+  ]
+}

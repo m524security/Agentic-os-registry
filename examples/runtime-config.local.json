@@ -1,0 +1,38 @@
+{
+  "allowed_agents": [
+    "*"
+  ],
+  "granted_capabilities": [],
+  "verification_capabilities": [],
+  "timeout_seconds": 900,
+  "verifier_agent_id": "AGENT-111",
+  "allow_unverified": false,
+  "pass_env": [
+    "ANTHROPIC_API_KEY",
+    "ANTHROPIC_MODEL",
+    "ANTHROPIC_BASE_URL",
+    "OPENAI_API_KEY",
+    "LLM_PROVIDER",
+    "LLM_BASE_URL",
+    "LLM_MODEL",
+    "LLM_API_KEY",
+    "LLM_PROFILE",
+    "LLM_CONTEXT",
+    "LLM_TIMEOUT",
+    "LLM_COMMAND",
+    "SEARCH_URL",
+    "WEB_ALLOW_PRIVATE",
+    "HOME"
+  ],
+  "default_command": [
+    "python3",
+    "examples/llm_adapter.py"
+  ],
+  "planner_command": [
+    "python3",
+    "examples/llm_adapter.py"
+  ],
+  "agent_commands": {},
+  "_note": "Small local models: slow CPUs need long timeouts; keep plans to a few tasks. Example: LLM_PROVIDER=ollama LLM_MODEL=qwen2.5:1.5b. A weak model's verification fails closed unless it returns a clear pass with evidence.",
+  "max_iterations": 3
+}

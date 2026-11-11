@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-133",
+  "name": "Trace Analyzer",
+  "category": "infrastructure",
+  "group": "Infrastructure / Operations",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Analyze distributed execution traces",
+  "specialist_method": "Follow causal spans and locate latency or error propagation",
+  "skills": [
+    "Analyze distributed execution traces",
+    "Follow causal spans and locate latency or error propagation"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: analyze distributed execution traces"
+  ],
+  "verification": [
+    "Diagnosis accounts for missing spans and sampling bias",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "ac2eda096176526a6778e82d96ad95a133469fc96e3ebc6db827eb348a448c49",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Trace analysis: follow a request across services, find where time or errors accumulate and report the span responsible.",
+  "field_rules": [
+    "Measure before you tune.",
+    "One change, one re-measurement.",
+    "A backup is real only after a restore."
+  ]
+}

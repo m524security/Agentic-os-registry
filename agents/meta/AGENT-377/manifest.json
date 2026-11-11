@@ -1,0 +1,72 @@
+{
+  "id": "AGENT-377",
+  "name": "Message Schema Validator",
+  "category": "meta",
+  "group": "Communication / Coordination",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Validate inter-agent message schemas",
+  "specialist_method": "Check required fields, types, identifiers and version compatibility",
+  "skills": [
+    "Validate inter-agent message schemas",
+    "Check required fields, types, identifiers and version compatibility"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "registry_read",
+    "task_state_read",
+    "task_state_write"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: validate inter-agent message schemas"
+  ],
+  "verification": [
+    "Invalid messages produce structured errors without silent coercion",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "9cc718a2f0e46b2b05a6c1a5b64e3d2c08b04e11968adff007250ef363705ad6",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/department-routing/SKILL.md",
+    "skills/specialist-role-contracts/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/explicit-invocation/SKILL.md"
+  ],
+  "specialist_focus": "Validate messages against schemas on receipt and reject malformed ones with a specific reason.",
+  "field_rules": [
+    "Validate every message.",
+    "One owner per piece of state.",
+    "Evidence settles facts, not votes."
+  ]
+}

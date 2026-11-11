@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-082",
+  "name": "Structured-Extraction Agent",
+  "category": "data-knowledge",
+  "group": "Data / Knowledge",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Extract structured information",
+  "specialist_method": "Define schema, source spans and handling of missing or ambiguous fields",
+  "skills": [
+    "Extract structured information",
+    "Define schema, source spans and handling of missing or ambiguous fields"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_data_read",
+    "query_runtime",
+    "analysis_runtime"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: extract structured information"
+  ],
+  "verification": [
+    "Output validates against schema without invented values",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "03f0940b4685e1f39680a1615f1f58a6863d3324d7c15aa560f8c0f5effe6cff",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md",
+    "skills/data-analysis-rigor/SKILL.md"
+  ],
+  "specialist_focus": "Structured extraction from unstructured text: define the schema, extract with evidence spans, validate types and report confidence and misses.",
+  "field_rules": [
+    "Profile before you transform.",
+    "Reconcile numbers to a source.",
+    "State definitions and exclusions."
+  ]
+}

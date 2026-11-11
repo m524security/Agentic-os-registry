@@ -1,0 +1,591 @@
+{
+ "_note": "General vocabulary used to widen a query before ranking; each expansion counts for less than a word the user actually wrote.",
+ "synonyms": {
+  "faster": [
+   "performance",
+   "latency",
+   "optimize",
+   "speed"
+  ],
+  "slow": [
+   "performance",
+   "latency",
+   "bottleneck"
+  ],
+  "crash": [
+   "failure",
+   "root",
+   "cause",
+   "debug"
+  ],
+  "crashing": [
+   "failure",
+   "root",
+   "cause",
+   "debug"
+  ],
+  "broken": [
+   "failure",
+   "debug",
+   "repair"
+  ],
+  "bug": [
+   "debug",
+   "defect"
+  ],
+  "error": [
+   "failure",
+   "debug"
+  ],
+  "login": [
+   "authentication",
+   "session"
+  ],
+  "password": [
+   "secret",
+   "credential",
+   "authentication"
+  ],
+  "passwords": [
+   "secret",
+   "credential",
+   "authentication"
+  ],
+  "key": [
+   "secret"
+  ],
+  "keys": [
+   "secret"
+  ],
+  "leak": [
+   "exfiltration",
+   "exposure",
+   "secret"
+  ],
+  "leaking": [
+   "exfiltration",
+   "exposure",
+   "secret"
+  ],
+  "hack": [
+   "security",
+   "vulnerability",
+   "attack"
+  ],
+  "hacker": [
+   "security",
+   "attack"
+  ],
+  "vulnerable": [
+   "vulnerability",
+   "security",
+   "assessment"
+  ],
+  "safe": [
+   "security",
+   "risk"
+  ],
+  "secure": [
+   "security"
+  ],
+  "image": [
+   "vision",
+   "picture",
+   "generation"
+  ],
+  "picture": [
+   "image"
+  ],
+  "photo": [
+   "image"
+  ],
+  "audio": [
+   "speech",
+   "transcribe",
+   "voice"
+  ],
+  "recording": [
+   "audio",
+   "transcribe"
+  ],
+  "meeting": [
+   "summarize",
+   "session",
+   "notes"
+  ],
+  "notes": [
+   "document",
+   "summarize"
+  ],
+  "pdf": [
+   "document"
+  ],
+  "invoice": [
+   "document",
+   "extract"
+  ],
+  "scan": [
+   "ocr",
+   "assessment"
+  ],
+  "scanned": [
+   "ocr",
+   "image",
+   "document"
+  ],
+  "slides": [
+   "presentation"
+  ],
+  "deck": [
+   "presentation"
+  ],
+  "chart": [
+   "visualization",
+   "graph"
+  ],
+  "graph": [
+   "visualization",
+   "chart"
+  ],
+  "dashboard": [
+   "observability",
+   "monitor",
+   "metrics",
+   "visualization"
+  ],
+  "monitoring": [
+   "observability",
+   "metrics",
+   "health"
+  ],
+  "server": [
+   "service",
+   "system",
+   "infrastructure"
+  ],
+  "database": [
+   "sql",
+   "data",
+   "query"
+  ],
+  "db": [
+   "database"
+  ],
+  "csv": [
+   "data",
+   "table",
+   "spreadsheet"
+  ],
+  "table": [
+   "data",
+   "spreadsheet"
+  ],
+  "excel": [
+   "spreadsheet"
+  ],
+  "script": [
+   "shell",
+   "automation",
+   "code"
+  ],
+  "rename": [
+   "filesystem",
+   "script"
+  ],
+  "files": [
+   "filesystem"
+  ],
+  "regex": [
+   "code",
+   "explain",
+   "string"
+  ],
+  "function": [
+   "code"
+  ],
+  "feature": [
+   "implement",
+   "code"
+  ],
+  "app": [
+   "application",
+   "software"
+  ],
+  "mobile": [
+   "phone",
+   "android",
+   "ios"
+  ],
+  "phone": [
+   "mobile"
+  ],
+  "website": [
+   "web",
+   "browser",
+   "site"
+  ],
+  "site": [
+   "web"
+  ],
+  "internet": [
+   "web",
+   "search"
+  ],
+  "paper": [
+   "research",
+   "literature",
+   "academic"
+  ],
+  "papers": [
+   "research",
+   "literature",
+   "academic"
+  ],
+  "study": [
+   "research"
+  ],
+  "backup": [
+   "restore",
+   "recovery"
+  ],
+  "restore": [
+   "backup",
+   "recovery",
+   "rollback"
+  ],
+  "rollback": [
+   "revert",
+   "recovery"
+  ],
+  "undo": [
+   "rollback"
+  ],
+  "release": [
+   "deployment",
+   "version"
+  ],
+  "deploy": [
+   "deployment",
+   "release"
+  ],
+  "ship": [
+   "release",
+   "deployment"
+  ],
+  "outage": [
+   "incident",
+   "postmortem",
+   "failure"
+  ],
+  "incident": [
+   "response",
+   "triage"
+  ],
+  "postmortem": [
+   "incident",
+   "retrospective"
+  ],
+  "trust": [
+   "risk",
+   "permission",
+   "privilege"
+  ],
+  "admin": [
+   "privilege",
+   "permission"
+  ],
+  "permission": [
+   "privilege",
+   "access"
+  ],
+  "access": [
+   "permission",
+   "authorization"
+  ],
+  "tokens": [
+   "cost",
+   "context"
+  ],
+  "cost": [
+   "spend"
+  ],
+  "spend": [
+   "cost"
+  ],
+  "language model": [
+   "llm"
+  ],
+  "llm": [
+   "model"
+  ],
+  "compare": [
+   "benchmark",
+   "evaluate"
+  ],
+  "benchmark": [
+   "evaluation",
+   "compare"
+  ],
+  "test": [
+   "verification",
+   "check"
+  ],
+  "testing": [
+   "verification",
+   "check"
+  ],
+  "check": [
+   "verify",
+   "validate"
+  ],
+  "verify": [
+   "check"
+  ],
+  "validate": [
+   "verify"
+  ],
+  "explain": [
+   "understand",
+   "teach"
+  ],
+  "understand": [
+   "explain"
+  ],
+  "remember": [
+   "memory",
+   "recall"
+  ],
+  "preferences": [
+   "memory"
+  ],
+  "prioritize": [
+   "priority",
+   "plan"
+  ],
+  "plan": [
+   "decompose",
+   "planning"
+  ],
+  "steps": [
+   "decompose",
+   "task"
+  ],
+  "goal": [
+   "objective",
+   "plan"
+  ],
+  "unused": [
+   "dead",
+   "delete",
+   "necessity"
+  ],
+  "cleanup": [
+   "delete",
+   "simplify"
+  ],
+  "old": [
+   "deprecated",
+   "unused"
+  ],
+  "dependencies": [
+   "dependency",
+   "packages",
+   "libraries"
+  ],
+  "packages": [
+   "dependency"
+  ],
+  "libraries": [
+   "dependency"
+  ],
+  "python": [
+   "runtime",
+   "environment"
+  ],
+  "environment": [
+   "setup",
+   "configuration"
+  ],
+  "install": [
+   "setup",
+   "environment"
+  ],
+  "setup": [
+   "environment",
+   "install",
+   "configure"
+  ],
+  "configure": [
+   "configuration",
+   "setup"
+  ],
+  "config": [
+   "configuration"
+  ],
+  "domain": [
+   "dns",
+   "recon",
+   "whois"
+  ],
+  "dns": [
+   "domain"
+  ],
+  "certificate": [
+   "tls",
+   "pki"
+  ],
+  "tls": [
+   "certificate",
+   "ssl",
+   "encryption"
+  ],
+  "ssl": [
+   "tls"
+  ],
+  "sql": [
+   "database",
+   "query"
+  ],
+  "injection": [
+   "input",
+   "vulnerability"
+  ],
+  "xss": [
+   "cross",
+   "site",
+   "scripting"
+  ],
+  "phishing": [
+   "email",
+   "incident",
+   "social"
+  ],
+  "malware": [
+   "analysis",
+   "virus",
+   "ransomware"
+  ],
+  "ransomware": [
+   "malware",
+   "incident"
+  ],
+  "virus": [
+   "malware"
+  ],
+  "firewall": [
+   "network"
+  ],
+  "api": [
+   "interface",
+   "endpoint",
+   "rest"
+  ],
+  "endpoint": [
+   "api"
+  ],
+  "design": [
+   "architecture",
+   "plan"
+  ],
+  "architecture": [
+   "design"
+  ],
+  "ux": [
+   "interface",
+   "design"
+  ],
+  "accessibility": [
+   "keyboard",
+   "screen",
+   "reader"
+  ],
+  "docs": [
+   "documentation"
+  ],
+  "documentation": [
+   "docs",
+   "document"
+  ],
+  "git": [
+   "version",
+   "commit"
+  ],
+  "review": [
+   "critique",
+   "check"
+  ],
+  "refactor": [
+   "simplify",
+   "restructure"
+  ],
+  "simplify": [
+   "refactor",
+   "minimal"
+  ],
+  "performance": [
+   "speed",
+   "latency",
+   "optimize"
+  ],
+  "cpu": [
+   "performance",
+   "process"
+  ],
+  "disk": [
+   "storage",
+   "filesystem"
+  ],
+  "storage": [
+   "disk"
+  ],
+  "network": [
+   "connectivity",
+   "dns",
+   "routing"
+  ],
+  "vpn": [
+   "network"
+  ],
+  "container": [
+   "docker"
+  ],
+  "docker": [
+   "container"
+  ],
+  "kubernetes": [
+   "container",
+   "cluster"
+  ],
+  "k8s": [
+   "kubernetes"
+  ],
+  "cloud": [
+   "aws",
+   "azure",
+   "gcp"
+  ],
+  "terraform": [
+   "infrastructure",
+   "code",
+   "iac"
+  ],
+  "kernel": [
+   "operating",
+   "system",
+   "linux"
+  ],
+  "linux": [
+   "operating",
+   "system"
+  ],
+  "windows": [
+   "operating",
+   "system"
+  ],
+  "mac": [
+   "macos",
+   "operating",
+   "system"
+  ]
+ }
+}

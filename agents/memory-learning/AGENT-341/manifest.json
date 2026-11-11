@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-341",
+  "name": "Skill Dependency Agent",
+  "category": "memory-learning",
+  "group": "Skill Management",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Manage skill dependencies",
+  "specialist_method": "Map required tools, resources and other skills",
+  "skills": [
+    "Manage skill dependencies",
+    "Map required tools, resources and other skills"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "memory_read",
+    "authorized_memory_write",
+    "evaluation_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: manage skill dependencies"
+  ],
+  "verification": [
+    "Dependencies resolve without cycles or hidden access assumptions",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "a5b3cba5346b38da28d225f850a438ae6dfdd8dd72ee2184912167414764382d",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/continuous-learning-pattern/SKILL.md",
+    "skills/cross-session-memory-pattern/SKILL.md"
+  ],
+  "specialist_focus": "Track skill dependencies and ordering so changes do not break dependents.",
+  "field_rules": [
+    "Test the trigger.",
+    "Review before trust.",
+    "Retire what no longer earns its place."
+  ]
+}

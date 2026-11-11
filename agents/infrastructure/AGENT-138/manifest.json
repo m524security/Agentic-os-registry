@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-138",
+  "name": "Resource Allocator",
+  "category": "infrastructure",
+  "group": "Infrastructure / Operations",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Allocate infrastructure resources",
+  "specialist_method": "Estimate memory, CPU, concurrency and contention",
+  "skills": [
+    "Allocate infrastructure resources",
+    "Estimate memory, CPU, concurrency and contention"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: allocate infrastructure resources"
+  ],
+  "verification": [
+    "Allocation fits constraints and includes observable saturation limits",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "487c080ee80989354c0b73619b07f344c0ccd1506647e7e3625f15b29a83cb51",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Resource allocation: size and schedule compute, memory and concurrency against demand and limits, avoiding starvation.",
+  "field_rules": [
+    "Measure before you tune.",
+    "One change, one re-measurement.",
+    "A backup is real only after a restore."
+  ]
+}

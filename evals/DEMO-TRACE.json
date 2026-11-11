@@ -1,0 +1,361 @@
+{
+  "run_id": "run-1792999894137285618",
+  "signature": "3e7b3765274c22af029055fab3b66cb4a81c7ecdd534057877d6583efe4e3cdd",
+  "simulation": true,
+  "status": "completed",
+  "activation_count": 6,
+  "inflight": null,
+  "events": [
+    {
+      "event": "activated",
+      "task_id": "interface",
+      "agent_id": "AGENT-406",
+      "invocation_id": "run-1792999894137285618:1",
+      "mode": "execute"
+    },
+    {
+      "event": "released",
+      "agent_id": "AGENT-406",
+      "task_id": "interface",
+      "status": "completed"
+    },
+    {
+      "event": "activated",
+      "task_id": "interface",
+      "agent_id": "AGENT-111",
+      "invocation_id": "run-1792999894137285618:2",
+      "mode": "verify"
+    },
+    {
+      "event": "released",
+      "agent_id": "AGENT-111",
+      "task_id": "interface",
+      "status": "completed"
+    },
+    {
+      "event": "activated",
+      "task_id": "accessibility",
+      "agent_id": "AGENT-409",
+      "invocation_id": "run-1792999894137285618:3",
+      "mode": "execute"
+    },
+    {
+      "event": "released",
+      "agent_id": "AGENT-409",
+      "task_id": "accessibility",
+      "status": "completed"
+    },
+    {
+      "event": "activated",
+      "task_id": "accessibility",
+      "agent_id": "AGENT-111",
+      "invocation_id": "run-1792999894137285618:4",
+      "mode": "verify"
+    },
+    {
+      "event": "released",
+      "agent_id": "AGENT-111",
+      "task_id": "accessibility",
+      "status": "completed"
+    },
+    {
+      "event": "activated",
+      "task_id": "documentation",
+      "agent_id": "AGENT-420",
+      "invocation_id": "run-1792999894137285618:5",
+      "mode": "execute"
+    },
+    {
+      "event": "released",
+      "agent_id": "AGENT-420",
+      "task_id": "documentation",
+      "status": "completed"
+    },
+    {
+      "event": "activated",
+      "task_id": "documentation",
+      "agent_id": "AGENT-111",
+      "invocation_id": "run-1792999894137285618:6",
+      "mode": "verify"
+    },
+    {
+      "event": "released",
+      "agent_id": "AGENT-111",
+      "task_id": "documentation",
+      "status": "completed"
+    }
+  ],
+  "tasks": {
+    "interface": {
+      "status": "completed",
+      "agent_id": "AGENT-406",
+      "routing": {
+        "method": "lexical-plus-curated-aliases",
+        "candidates": [
+          {
+            "agent_id": "AGENT-406",
+            "name": "Frontend Engineering Agent",
+            "score": 21.054,
+            "matched_terms": [
+              "frontend"
+            ],
+            "matched_aliases": [
+              "frontend"
+            ]
+          },
+          {
+            "agent_id": "AGENT-408",
+            "name": "UX/UI Design Agent",
+            "score": 8.375,
+            "matched_terms": [
+              "design",
+              "interface"
+            ],
+            "matched_aliases": []
+          },
+          {
+            "agent_id": "AGENT-106",
+            "name": "Image Understanding Agent",
+            "score": 6.054,
+            "matched_terms": [
+              "supplied"
+            ],
+            "matched_aliases": []
+          },
+          {
+            "agent_id": "AGENT-047",
+            "name": "Computer-Use Agent",
+            "score": 5.364,
+            "matched_terms": [
+              "interface"
+            ],
+            "matched_aliases": []
+          },
+          {
+            "agent_id": "AGENT-039",
+            "name": "Dependency Manager",
+            "score": 4.961,
+            "matched_terms": [
+              "project"
+            ],
+            "matched_aliases": []
+          }
+        ]
+      },
+      "output": {
+        "agent_id": "AGENT-406",
+        "status": "completed",
+        "result": "SIMULATION ONLY: fixture response for interface",
+        "evidence": [
+          {
+            "kind": "simulation",
+            "reference": "run-1792999894137285618:1"
+          }
+        ],
+        "assumptions": [],
+        "limitations": [
+          "No real user task was executed"
+        ],
+        "next_action": null
+      },
+      "verification": {
+        "agent_id": "AGENT-111",
+        "status": "completed",
+        "result": "SIMULATION ONLY: fixture response for interface",
+        "evidence": [
+          {
+            "kind": "simulation",
+            "reference": "run-1792999894137285618:2"
+          }
+        ],
+        "assumptions": [],
+        "limitations": [
+          "No real user task was executed"
+        ],
+        "next_action": null,
+        "verdict": "pass"
+      }
+    },
+    "accessibility": {
+      "status": "completed",
+      "agent_id": "AGENT-409",
+      "routing": {
+        "method": "lexical-plus-curated-aliases",
+        "candidates": [
+          {
+            "agent_id": "AGENT-409",
+            "name": "Accessibility Engineering Agent",
+            "score": 21.054,
+            "matched_terms": [
+              "accessibility"
+            ],
+            "matched_aliases": [
+              "accessibility"
+            ]
+          },
+          {
+            "agent_id": "AGENT-106",
+            "name": "Image Understanding Agent",
+            "score": 6.054,
+            "matched_terms": [
+              "supplied"
+            ],
+            "matched_aliases": []
+          },
+          {
+            "agent_id": "AGENT-047",
+            "name": "Computer-Use Agent",
+            "score": 5.364,
+            "matched_terms": [
+              "interface"
+            ],
+            "matched_aliases": []
+          },
+          {
+            "agent_id": "AGENT-163",
+            "name": "Contradiction Hunter",
+            "score": 5.364,
+            "matched_terms": [
+              "artifacts"
+            ],
+            "matched_aliases": []
+          },
+          {
+            "agent_id": "AGENT-408",
+            "name": "UX/UI Design Agent",
+            "score": 5.364,
+            "matched_terms": [
+              "interface"
+            ],
+            "matched_aliases": []
+          }
+        ]
+      },
+      "output": {
+        "agent_id": "AGENT-409",
+        "status": "completed",
+        "result": "SIMULATION ONLY: fixture response for accessibility",
+        "evidence": [
+          {
+            "kind": "simulation",
+            "reference": "run-1792999894137285618:3"
+          }
+        ],
+        "assumptions": [],
+        "limitations": [
+          "No real user task was executed"
+        ],
+        "next_action": null
+      },
+      "verification": {
+        "agent_id": "AGENT-111",
+        "status": "completed",
+        "result": "SIMULATION ONLY: fixture response for accessibility",
+        "evidence": [
+          {
+            "kind": "simulation",
+            "reference": "run-1792999894137285618:4"
+          }
+        ],
+        "assumptions": [],
+        "limitations": [
+          "No real user task was executed"
+        ],
+        "next_action": null,
+        "verdict": "pass"
+      }
+    },
+    "documentation": {
+      "status": "completed",
+      "agent_id": "AGENT-420",
+      "routing": {
+        "method": "lexical-plus-curated-aliases",
+        "candidates": [
+          {
+            "agent_id": "AGENT-420",
+            "name": "Technical Documentation Agent",
+            "score": 29.015,
+            "matched_terms": [
+              "developer",
+              "documentation"
+            ],
+            "matched_aliases": [
+              "developer documentation"
+            ]
+          },
+          {
+            "agent_id": "AGENT-294",
+            "name": "Security Documentation Agent",
+            "score": 9.636,
+            "matched_terms": [
+              "documentation",
+              "write"
+            ],
+            "matched_aliases": []
+          },
+          {
+            "agent_id": "AGENT-030",
+            "name": "Feature Implementation Agent",
+            "score": 6.054,
+            "matched_terms": [
+              "feature"
+            ],
+            "matched_aliases": []
+          },
+          {
+            "agent_id": "AGENT-394",
+            "name": "Failure-to-Documentation Agent",
+            "score": 4.961,
+            "matched_terms": [
+              "documentation"
+            ],
+            "matched_aliases": []
+          },
+          {
+            "agent_id": "AGENT-071",
+            "name": "Scientific Report Writer",
+            "score": 4.675,
+            "matched_terms": [
+              "write"
+            ],
+            "matched_aliases": []
+          }
+        ]
+      },
+      "output": {
+        "agent_id": "AGENT-420",
+        "status": "completed",
+        "result": "SIMULATION ONLY: fixture response for documentation",
+        "evidence": [
+          {
+            "kind": "simulation",
+            "reference": "run-1792999894137285618:5"
+          }
+        ],
+        "assumptions": [],
+        "limitations": [
+          "No real user task was executed"
+        ],
+        "next_action": null
+      },
+      "verification": {
+        "agent_id": "AGENT-111",
+        "status": "completed",
+        "result": "SIMULATION ONLY: fixture response for documentation",
+        "evidence": [
+          {
+            "kind": "simulation",
+            "reference": "run-1792999894137285618:6"
+          }
+        ],
+        "assumptions": [],
+        "limitations": [
+          "No real user task was executed"
+        ],
+        "next_action": null,
+        "verdict": "pass"
+      }
+    }
+  },
+  "outcome": "simulation_only"
+}

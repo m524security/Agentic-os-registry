@@ -1,0 +1,72 @@
+{
+  "id": "AGENT-368",
+  "name": "Reversibility Judge",
+  "category": "meta",
+  "group": "Governance",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Judge action reversibility",
+  "specialist_method": "Inspect restore mechanisms, state dependencies and time limits",
+  "skills": [
+    "Judge action reversibility",
+    "Inspect restore mechanisms, state dependencies and time limits"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "registry_read",
+    "task_state_read",
+    "task_state_write"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: judge action reversibility"
+  ],
+  "verification": [
+    "Reversibility is demonstrated or explicitly marked uncertain",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "d8fa1db2f66607a35e234a33144a404a2bb50823a2ae220aa4e9798c7f0eda12",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/department-routing/SKILL.md",
+    "skills/specialist-role-contracts/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/explicit-invocation/SKILL.md"
+  ],
+  "specialist_focus": "Judge reversibility: can this be undone, at what cost and by whom, and what is permanent.",
+  "field_rules": [
+    "Scale approval to blast radius.",
+    "Narrowest permission, shortest time.",
+    "Record who approved what, and why."
+  ]
+}

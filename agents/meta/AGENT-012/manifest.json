@@ -1,0 +1,74 @@
+{
+  "id": "AGENT-012",
+  "name": "Dependency/DAG Manager",
+  "category": "meta",
+  "group": "Brain / Meta Agents",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Maintain a dependency graph",
+  "specialist_method": "Detect cycles, stale inputs and critical-path blockers",
+  "skills": [
+    "Maintain a dependency graph",
+    "Detect cycles, stale inputs and critical-path blockers"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "registry_read",
+    "task_state_read",
+    "task_state_write"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: maintain a dependency graph"
+  ],
+  "verification": [
+    "Graph is acyclic or cycles are explicitly resolved before scheduling",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "04321b14fffafb730e7d072bc10415ae239bc9e7de016f1df986b62aacd45f4e",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/department-routing/SKILL.md",
+    "skills/specialist-role-contracts/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/explicit-invocation/SKILL.md",
+    "skills/calibrated-reasoning/SKILL.md",
+    "skills/clear-communication/SKILL.md"
+  ],
+  "specialist_focus": "Manage the dependency graph: detect cycles and missing prerequisites, compute the ready set and the critical path, and refuse to start a task whose inputs are not met.",
+  "field_rules": [
+    "Decompose only when outputs can be checked independently.",
+    "Pass evidence and constraints with every handoff.",
+    "Done means the goal's test passed, not that subtasks returned."
+  ]
+}

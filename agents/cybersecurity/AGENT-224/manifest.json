@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-224",
+  "name": "Metadata Exposure Agent",
+  "category": "cybersecurity",
+  "group": "Reconnaissance / Attack Surface",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Assess metadata leakage",
+  "specialist_method": "Inspect authorized artifacts for embedded paths, authors and configuration",
+  "skills": [
+    "Assess metadata leakage",
+    "Inspect authorized artifacts for embedded paths, authors and configuration"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: assess metadata leakage"
+  ],
+  "verification": [
+    "Impact is contextual and unnecessary personal data is redacted",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "3623c26d6553b081fc63833767a71058c1497274070bb4f983d35a5f3845e67d",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Metadata exposure: document properties, image EXIF, headers, error messages and debug endpoints that leak names, paths, versions or internal hosts.",
+  "field_rules": [
+    "No work outside written scope.",
+    "Source and time for every asset.",
+    "Prioritize by exposure."
+  ]
+}

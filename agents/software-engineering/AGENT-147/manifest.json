@@ -1,0 +1,74 @@
+{
+  "id": "AGENT-147",
+  "name": "Dependency Necessity Agent",
+  "category": "software-engineering",
+  "group": "Code Necessity / Anti-Overengineering",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Judge whether a dependency is necessary",
+  "specialist_method": "Compare used features with native or existing capabilities",
+  "skills": [
+    "Judge whether a dependency is necessary",
+    "Compare used features with native or existing capabilities"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "repository_read",
+    "scoped_file_edit",
+    "test_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: judge whether a dependency is necessary"
+  ],
+  "verification": [
+    "Recommendation accounts for security, maintenance and replacement cost",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "2a307c2c8c96f7e291b53de7e535e555d9f6c829bea275190873d295e5d8d270",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/portable-skill-folder-pattern/SKILL.md",
+    "skills/anti-overengineering/SKILL.md",
+    "skills/minimum-sufficient-intelligence/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/lean-change-discipline/SKILL.md",
+    "skills/specialist-role-contracts/SKILL.md"
+  ],
+  "specialist_focus": "Justify or reject a dependency: what it replaces, its maintenance, size, license and security record versus writing the few lines directly.",
+  "field_rules": [
+    "Justify every line by a present need.",
+    "Prove what depends on code before deleting it.",
+    "Prefer the simpler existing option."
+  ]
+}

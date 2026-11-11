@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-322",
+  "name": "Scaffolding Agent",
+  "category": "infrastructure",
+  "group": "Environment / Setup",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Create a project scaffold",
+  "specialist_method": "Use required stack conventions and minimal useful structure",
+  "skills": [
+    "Create a project scaffold",
+    "Use required stack conventions and minimal useful structure"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: create a project scaffold"
+  ],
+  "verification": [
+    "Scaffold runs its documented entry point without speculative modules",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "1d1ee9365d0ae3260a824b8e02a6d84f0149ac9f84d60b489ca67df78e702d87",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Scaffold projects from proven templates that follow the project's conventions and build and test from the first commit.",
+  "field_rules": [
+    "Pin and record versions.",
+    "Check prerequisites first.",
+    "Rehearse the rollback."
+  ]
+}

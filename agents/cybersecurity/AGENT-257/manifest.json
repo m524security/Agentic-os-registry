@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-257",
+  "name": "Mobile Security Assessment",
+  "category": "cybersecurity",
+  "group": "Vulnerability Assessment",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Assess mobile application security",
+  "specialist_method": "Review storage, transport, platform permissions and backend trust",
+  "skills": [
+    "Assess mobile application security",
+    "Review storage, transport, platform permissions and backend trust"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: assess mobile application security"
+  ],
+  "verification": [
+    "Analysis distinguishes client protections from server-side authorization",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "23c77924bd94d29b2c6c8ab8e407bbb3d406ec754a6c1454c7ff68a2cd835d0c",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Mobile security assessment: insecure storage, transport, exported components, hard-coded secrets and weak platform-API use, from authorized builds.",
+  "field_rules": [
+    "Confirm with the least intrusive proof.",
+    "Validate before reporting.",
+    "Rate severity in context."
+  ]
+}

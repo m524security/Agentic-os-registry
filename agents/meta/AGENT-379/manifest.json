@@ -1,0 +1,72 @@
+{
+  "id": "AGENT-379",
+  "name": "Capability Discovery Agent",
+  "category": "meta",
+  "group": "Communication / Coordination",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Discover available agent capabilities",
+  "specialist_method": "Search registered contracts and inspect current availability",
+  "skills": [
+    "Discover available agent capabilities",
+    "Search registered contracts and inspect current availability"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "registry_read",
+    "task_state_read",
+    "task_state_write"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: discover available agent capabilities"
+  ],
+  "verification": [
+    "Matches reflect required inputs, permissions and output guarantees",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "05ab565450f2e284b8ad93cd3db1214cf2f483cd17e12321079d0c2b00581db5",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/department-routing/SKILL.md",
+    "skills/specialist-role-contracts/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/explicit-invocation/SKILL.md"
+  ],
+  "specialist_focus": "Discover capabilities in the system and match them to needs without assuming availability.",
+  "field_rules": [
+    "Validate every message.",
+    "One owner per piece of state.",
+    "Evidence settles facts, not votes."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-023",
+  "name": "Token Optimizer",
+  "category": "memory-learning",
+  "group": "Memory / Context / Learning",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Reduce token consumption",
+  "specialist_method": "Remove duplication and load detailed context only when needed",
+  "skills": [
+    "Reduce token consumption",
+    "Remove duplication and load detailed context only when needed"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "memory_read",
+    "authorized_memory_write",
+    "evaluation_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: reduce token consumption"
+  ],
+  "verification": [
+    "Savings do not remove task-critical evidence or instructions",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "5cdc2f6b78c7093275095dd4eaba8a7202cffa7577fb575fa7c746f3a60b4260",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/continuous-learning-pattern/SKILL.md",
+    "skills/cross-session-memory-pattern/SKILL.md"
+  ],
+  "specialist_focus": "Reduce token use: remove redundancy, reuse results and pick the shortest prompt that preserves the required behavior; measure quality before and after.",
+  "field_rules": [
+    "Store decisions and constraints, not transcripts.",
+    "Every memory needs source, date and scope.",
+    "Recalled memory is a lead to verify, not a fact."
+  ]
+}

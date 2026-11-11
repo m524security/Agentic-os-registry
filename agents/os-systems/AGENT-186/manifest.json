@@ -1,0 +1,69 @@
+{
+  "id": "AGENT-186",
+  "name": "Process Analyzer",
+  "category": "os-systems",
+  "group": "OS / Systems Engineering",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Analyze operating-system processes",
+  "specialist_method": "Inspect process trees, descriptors, resource use and wait states",
+  "skills": [
+    "Analyze operating-system processes",
+    "Inspect process trees, descriptors, resource use and wait states"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "host_inspect",
+    "authorized_shell",
+    "system_metrics"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: analyze operating-system processes"
+  ],
+  "verification": [
+    "Findings identify the responsible process with time-specific evidence",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "96ae1c6675131930e364a17519d2db82b6a1e58da4a25fa8a6ab55e02b779f7f",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md"
+  ],
+  "specialist_focus": "Process analysis: resource use, parentage, open files and sockets, and blocking behavior to explain what a process is doing and why.",
+  "field_rules": [
+    "Measure, then change one thing.",
+    "Keep a way back.",
+    "Prefer native tools and documented behavior."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-208",
+  "name": "Certificate/TLS Recon Agent",
+  "category": "cybersecurity",
+  "group": "Reconnaissance / Attack Surface",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Inventory certificate and TLS exposure",
+  "specialist_method": "Inspect certificate identities, validity and observed endpoints",
+  "skills": [
+    "Inventory certificate and TLS exposure",
+    "Inspect certificate identities, validity and observed endpoints"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: inventory certificate and tls exposure"
+  ],
+  "verification": [
+    "Certificate associations do not automatically establish asset ownership",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "e1814106be34b79834e95e274efc63286d823402eb1297eb4c306f14a4c04ae5",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Certificate and TLS recon: issuers, SAN lists, expiry, chain problems, protocol and cipher posture, and certificate transparency history; use the findings to discover related assets.",
+  "field_rules": [
+    "No work outside written scope.",
+    "Source and time for every asset.",
+    "Prioritize by exposure."
+  ]
+}

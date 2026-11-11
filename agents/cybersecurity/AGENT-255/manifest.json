@@ -1,0 +1,72 @@
+{
+  "id": "AGENT-255",
+  "name": "Source-Code SAST Agent",
+  "category": "cybersecurity",
+  "group": "Vulnerability Assessment",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Perform source-level static security triage",
+  "specialist_method": "Validate scanner paths against actual call flow and sanitization",
+  "skills": [
+    "Perform source-level static security triage",
+    "Validate scanner paths against actual call flow and sanitization"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: perform source-level static security triage"
+  ],
+  "verification": [
+    "Accepted findings have reachable source-to-sink reasoning",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "de1db64a2bd824325500b8dccc5751a2beda91afa3fa7b80b6a1730f64c5bff2",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/secure-code-review/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Static analysis of source for vulnerable patterns: trace tainted data from sources to sinks, triage false positives with reachability reasoning and cite file and line for each real finding.",
+  "field_rules": [
+    "Confirm with the least intrusive proof.",
+    "Validate before reporting.",
+    "Rate severity in context."
+  ]
+}

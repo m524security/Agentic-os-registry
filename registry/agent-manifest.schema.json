@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent Manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "category",
+    "skills",
+    "tools",
+    "spawn_when",
+    "verification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "spawn_when": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "permissions": {
+      "type": "object"
+    },
+    "skill_modules": {
+      "type": "array",
+      "description": "Repository-relative paths into skills/ this agent should load before acting. Every agent carries skills/evidence-first-verification/SKILL.md as a baseline.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "model_policy": {
+      "type": "string"
+    },
+    "memory_scope": {
+      "type": "string"
+    },
+    "claude_code_tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Optional Claude Code tool allowlist override for the generated subagent."
+    },
+    "claude_code_mcp": {
+      "type": "string",
+      "description": "Optional inline MCP server name (playwright) attached to the generated subagent."
+    },
+    "specialist_focus": {
+      "type": "string",
+      "description": "Agent-specific expertise line compiled into the prompt from registry/expertise.json."
+    },
+    "field_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Short field rules kept in condensed prompts."
+    }
+  }
+}

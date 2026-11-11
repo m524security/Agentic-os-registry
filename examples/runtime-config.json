@@ -1,0 +1,19 @@
+{
+  "allowed_agents": [
+    "AGENT-000",
+    "AGENT-031",
+    "AGENT-111",
+    "AGENT-406",
+    "AGENT-409",
+    "AGENT-420"
+  ],
+  "granted_capabilities": [],
+  "verification_capabilities": [],
+  "timeout_seconds": 120,
+  "verifier_agent_id": "AGENT-111",
+  "allow_unverified": false,
+  "pass_env": [],
+  "default_command": null,
+  "planner_command": null,
+  "agent_commands": {}
+}

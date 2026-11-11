@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+# run state and local experiments
+*.state.json
+demo-state.json
+run.json
+plan.json
+.env
+.agentic/

@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-130",
+  "name": "Deadlock/Loop Detector",
+  "category": "verification-recovery",
+  "group": "Recovery / Self-Correction",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Detect deadlocks and repeated loops",
+  "specialist_method": "Track wait dependencies and repeated action signatures",
+  "skills": [
+    "Detect deadlocks and repeated loops",
+    "Track wait dependencies and repeated action signatures"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "evidence_read",
+    "verification_runner",
+    "authorized_restore"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: detect deadlocks and repeated loops"
+  ],
+  "verification": [
+    "Resolution breaks the loop with a bounded, evidence-based intervention",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "2e48b7b3d2ee3a4fecee6efb8d3918c459e04fc5cad1b805ef196d8e5a946cd5",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/root-cause-analysis/SKILL.md"
+  ],
+  "specialist_focus": "Detect loops and deadlocks: repeated actions with no new evidence, circular waits and stalls; break them by changing approach or escalating.",
+  "field_rules": [
+    "Change something between attempts.",
+    "Retry only idempotent failures.",
+    "Bound attempts, then report state."
+  ]
+}

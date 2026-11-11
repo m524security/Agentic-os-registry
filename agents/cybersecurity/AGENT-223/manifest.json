@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-223",
+  "name": "Secret Exposure Agent",
+  "category": "cybersecurity",
+  "group": "Reconnaissance / Attack Surface",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Investigate exposed secret candidates",
+  "specialist_method": "Validate format and ownership without using credentials against services",
+  "skills": [
+    "Investigate exposed secret candidates",
+    "Validate format and ownership without using credentials against services"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: investigate exposed secret candidates"
+  ],
+  "verification": [
+    "Report redacts values and directs rotation through authorized owners",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "ec6f63e7e661d4bced1d8d6b471a1245ab73b94cb3c496d4a907940e5b665a8d",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Locate exposed secrets (keys, tokens, passwords) in authorized sources; confirm format and likelihood of validity without using them, mask values in reports and recommend rotation.",
+  "field_rules": [
+    "No work outside written scope.",
+    "Source and time for every asset.",
+    "Prioritize by exposure."
+  ]
+}

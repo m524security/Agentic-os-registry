@@ -1,0 +1,72 @@
+[
+  {
+    "id": "MCP-CONN-001",
+    "name": "Local STDIO",
+    "direction": "client->local server",
+    "use": "Default local process MCP",
+    "security": "process allowlist; env/secret scoping"
+  },
+  {
+    "id": "MCP-CONN-002",
+    "name": "Streamable HTTP",
+    "direction": "client->HTTP server",
+    "use": "Remote/local network MCP",
+    "security": "TLS/auth/host allowlist"
+  },
+  {
+    "id": "MCP-CONN-003",
+    "name": "Localhost HTTP",
+    "direction": "client->local daemon",
+    "use": "Standalone MCP service",
+    "security": "bind loopback; origin/host controls"
+  },
+  {
+    "id": "MCP-CONN-004",
+    "name": "CDP Bridge",
+    "direction": "MCP->browser CDP",
+    "use": "Browser debugging/control",
+    "security": "debug endpoint is privileged"
+  },
+  {
+    "id": "MCP-CONN-005",
+    "name": "WebSocket Browser Endpoint",
+    "direction": "MCP->remote browser",
+    "use": "Remote Playwright/browser service",
+    "security": "TLS/auth; no public unauthenticated endpoint"
+  },
+  {
+    "id": "MCP-CONN-006",
+    "name": "Browser Extension Bridge",
+    "direction": "MCP<->extension<->browser",
+    "use": "Existing authenticated browser profile",
+    "security": "highest session-data sensitivity"
+  },
+  {
+    "id": "MCP-CONN-007",
+    "name": "Containerized MCP",
+    "direction": "client->sandboxed server",
+    "use": "Untrusted/community MCP isolation",
+    "security": "filesystem/network/secret deny-by-default"
+  },
+  {
+    "id": "MCP-CONN-008",
+    "name": "Remote Managed MCP",
+    "direction": "client->approved service",
+    "use": "Enterprise/cloud MCP",
+    "security": "OAuth/service identity, tenant scope, audit"
+  },
+  {
+    "id": "MCP-CONN-009",
+    "name": "MCP Gateway/Proxy",
+    "direction": "client->gateway->servers",
+    "use": "Central routing, auth, policy, observability",
+    "security": "policy enforcement and per-server scopes"
+  },
+  {
+    "id": "MCP-CONN-010",
+    "name": "Ephemeral MCP Session",
+    "direction": "client->temporary server",
+    "use": "One-task disposable tool service",
+    "security": "destroy state/credentials after task"
+  }
+]

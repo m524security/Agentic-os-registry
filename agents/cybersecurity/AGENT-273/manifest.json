@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-273",
+  "name": "Network Detection Agent",
+  "category": "cybersecurity",
+  "group": "Defensive Security Operations",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Investigate network detections",
+  "specialist_method": "Correlate flows, DNS and permitted packet metadata",
+  "skills": [
+    "Investigate network detections",
+    "Correlate flows, DNS and permitted packet metadata"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: investigate network detections"
+  ],
+  "verification": [
+    "Analysis distinguishes suspicious traffic from confirmed malicious behavior",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "d5d8279e91de20095e86253d4b950a59349b81acdca92706a1b89dd2602bfbf0",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/incident-response-method/SKILL.md"
+  ],
+  "specialist_focus": "Network detection: flow, DNS and protocol anomalies such as beaconing, tunneling and unusual east-west traffic, with the baseline used for comparison.",
+  "field_rules": [
+    "Preserve evidence before you remediate.",
+    "Timeline from independent sources.",
+    "Turn every incident into a detection or fix."
+  ]
+}

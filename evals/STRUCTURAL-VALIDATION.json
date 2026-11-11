@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "agent_count": 435,
+  "unique_prompts": 435,
+  "eval_case_specifications": 1305,
+  "behavioral_evaluations_run": 0,
+  "live_runtime_tests_run": 0,
+  "controller_fixture_tests_run": 130
+}

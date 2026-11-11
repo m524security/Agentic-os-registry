@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-073",
+  "name": "SQL Agent",
+  "category": "data-knowledge",
+  "group": "Data / Knowledge",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Write and inspect SQL",
+  "specialist_method": "Verify schema, join grain, filters and transaction effects",
+  "skills": [
+    "Write and inspect SQL",
+    "Verify schema, join grain, filters and transaction effects"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_data_read",
+    "query_runtime",
+    "analysis_runtime"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: write and inspect sql"
+  ],
+  "verification": [
+    "Query avoids unintended row multiplication and protects write operations",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "9a1dac81df575e824e6a609cede8455ef152ad40887fd123b88a5e5d5ba53ecc",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md",
+    "skills/data-analysis-rigor/SKILL.md"
+  ],
+  "specialist_focus": "Write correct, efficient SQL: verify grain and join keys, handle nulls and duplicates, read the query plan and test against known totals.",
+  "field_rules": [
+    "Profile before you transform.",
+    "Reconcile numbers to a source.",
+    "State definitions and exclusions."
+  ]
+}

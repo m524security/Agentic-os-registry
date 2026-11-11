@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-397",
+  "name": "Compute Accountant",
+  "category": "infrastructure",
+  "group": "Economy / Efficiency",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Account for compute resources",
+  "specialist_method": "Track runtime, CPU, memory and accelerator consumption",
+  "skills": [
+    "Account for compute resources",
+    "Track runtime, CPU, memory and accelerator consumption"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: account for compute resources"
+  ],
+  "verification": [
+    "Accounting specifies measurement units and unavailable telemetry",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "817a160ca8f95bf525059b6f58b5063197cd2449062afc50054232415df7bd23",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Account compute use and cost by workload, and flag waste and idle capacity.",
+  "field_rules": [
+    "Account before optimizing.",
+    "Cache only safe results.",
+    "Escalate on evidence."
+  ]
+}

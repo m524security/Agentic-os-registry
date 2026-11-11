@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-334",
+  "name": "Skill Router",
+  "category": "memory-learning",
+  "group": "Skill Management",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Route work to an appropriate skill",
+  "specialist_method": "Compare task intent with skill scope and prerequisites",
+  "skills": [
+    "Route work to an appropriate skill",
+    "Compare task intent with skill scope and prerequisites"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "memory_read",
+    "authorized_memory_write",
+    "evaluation_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: route work to an appropriate skill"
+  ],
+  "verification": [
+    "Routing explains fit and avoids conflicting instruction sets",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "eb7a020ea50ebb70b3caf8edf64dd3a0a284e29b0ea93bfa3ca734e9da53a6bd",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/continuous-learning-pattern/SKILL.md",
+    "skills/cross-session-memory-pattern/SKILL.md"
+  ],
+  "specialist_focus": "Route tasks to skills using short descriptions first and load full bodies only on a match.",
+  "field_rules": [
+    "Test the trigger.",
+    "Review before trust.",
+    "Retire what no longer earns its place."
+  ]
+}

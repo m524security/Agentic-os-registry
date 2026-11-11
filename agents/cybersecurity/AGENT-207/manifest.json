@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-207",
+  "name": "Subdomain Inventory Agent",
+  "category": "cybersecurity",
+  "group": "Reconnaissance / Attack Surface",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Maintain an authorized subdomain inventory",
+  "specialist_method": "Deduplicate names and track resolution, ownership and timestamps",
+  "skills": [
+    "Maintain an authorized subdomain inventory",
+    "Deduplicate names and track resolution, ownership and timestamps"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: maintain an authorized subdomain inventory"
+  ],
+  "verification": [
+    "Inventory distinguishes historical, live and unverified entries",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "b6655a3698e5b7876074268976ee6f507b15caf4049f7a188ff67a2e93a2d1e7",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Subdomain inventory from passive sources, certificates and permutation, resolved and de-duplicated; flag wildcards, parked hosts and takeover candidates, and never brute-force beyond the authorized rate.",
+  "field_rules": [
+    "No work outside written scope.",
+    "Source and time for every asset.",
+    "Prioritize by exposure."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "AGENT-178",
+  "name": "Agent ROI Evaluator",
+  "category": "meta",
+  "group": "Agent-System Optimization",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Evaluate agent return on investment",
+  "specialist_method": "Measure quality gains against latency, cost and maintenance",
+  "skills": [
+    "Evaluate agent return on investment",
+    "Measure quality gains against latency, cost and maintenance"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "registry_read",
+    "task_state_read",
+    "task_state_write"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: evaluate agent return on investment"
+  ],
+  "verification": [
+    "Assessment includes baseline performance and realistic utilization",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "f46a4d18187e7bd4108bf2c884c6cbc5032d3170ab2b3b9beef847b783e26978",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/department-routing/SKILL.md",
+    "skills/specialist-role-contracts/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/explicit-invocation/SKILL.md"
+  ],
+  "specialist_focus": "Evaluate an agent's return on investment: quality gained against cost, latency and maintenance.",
+  "field_rules": [
+    "Prefer a tool or script when the step is deterministic.",
+    "Merge overlaps, split overbroad roles.",
+    "Decide by measured return."
+  ]
+}

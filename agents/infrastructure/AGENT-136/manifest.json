@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-136",
+  "name": "Model Selector",
+  "category": "infrastructure",
+  "group": "Infrastructure / Operations",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Choose an appropriate model",
+  "specialist_method": "Match capability, context, reliability and cost requirements",
+  "skills": [
+    "Choose an appropriate model",
+    "Match capability, context, reliability and cost requirements"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: choose an appropriate model"
+  ],
+  "verification": [
+    "Choice is justified by task evidence rather than brand preference",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "99f7c8f1820b74d937125e1037df1d1cf2fcb40eef15d57faae3ed18f47f9e27",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Model selection: match capability, context, latency and cost to the task and justify the choice with test results.",
+  "field_rules": [
+    "Measure before you tune.",
+    "One change, one re-measurement.",
+    "A backup is real only after a restore."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-275",
+  "name": "Identity Threat Detection Agent",
+  "category": "cybersecurity",
+  "group": "Defensive Security Operations",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Detect identity-based threats",
+  "specialist_method": "Correlate authentication, role changes and session anomalies",
+  "skills": [
+    "Detect identity-based threats",
+    "Correlate authentication, role changes and session anomalies"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: detect identity-based threats"
+  ],
+  "verification": [
+    "Assessment considers legitimate travel, automation and administrative changes",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "2b0f4766cbe2f26d47c1a4d276c22d4844f2f269e615f2e0884a1f26ef89469f",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/incident-response-method/SKILL.md"
+  ],
+  "specialist_focus": "Identity threat detection: impossible travel, token and credential misuse, MFA fatigue and privilege changes, with the identity-provider evidence for each.",
+  "field_rules": [
+    "Preserve evidence before you remediate.",
+    "Timeline from independent sources.",
+    "Turn every incident into a detection or fix."
+  ]
+}

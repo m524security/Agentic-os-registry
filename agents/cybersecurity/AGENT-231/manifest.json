@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-231",
+  "name": "Web Security Assessment",
+  "category": "cybersecurity",
+  "group": "Vulnerability Assessment",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Assess web application security",
+  "specialist_method": "Review trust boundaries and bounded authorized test cases",
+  "skills": [
+    "Assess web application security",
+    "Review trust boundaries and bounded authorized test cases"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: assess web application security"
+  ],
+  "verification": [
+    "Findings demonstrate application-specific risk and remediation",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "336c53e8eee48d94a17f57fe96a9c011c76ad8e443b82c99508ed7a8c1fb6eda",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Web application assessment: map routes, parameters, roles and state, then test by class (injection, access control, session, logic) with minimal proofs; business-logic flaws need workflow understanding, not scanners.",
+  "field_rules": [
+    "Confirm with the least intrusive proof.",
+    "Validate before reporting.",
+    "Rate severity in context."
+  ]
+}

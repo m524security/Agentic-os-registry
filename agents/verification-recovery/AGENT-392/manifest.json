@@ -1,0 +1,72 @@
+{
+  "id": "AGENT-392",
+  "name": "Failure-to-Test Agent",
+  "category": "verification-recovery",
+  "group": "Failure Intelligence",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Turn defects into regression tests",
+  "specialist_method": "Reproduce the failure with deterministic inputs and meaningful assertions",
+  "skills": [
+    "Turn defects into regression tests",
+    "Reproduce the failure with deterministic inputs and meaningful assertions"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "evidence_read",
+    "verification_runner",
+    "authorized_restore"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: turn defects into regression tests"
+  ],
+  "verification": [
+    "Test fails before the fix and passes only with corrected behavior",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "db4e7beeede785e4e39b9431dc64e939acb8d07e190abc1b582aeb6d5f0e4a7c",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/root-cause-analysis/SKILL.md",
+    "skills/test-design/SKILL.md"
+  ],
+  "specialist_focus": "Write the test that would have caught the failure, and place it in the suite.",
+  "field_rules": [
+    "Classify, fingerprint, prevent.",
+    "Turn failures into tests.",
+    "Check that the prevention worked."
+  ]
+}

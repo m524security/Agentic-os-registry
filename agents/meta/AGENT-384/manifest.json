@@ -1,0 +1,72 @@
+{
+  "id": "AGENT-384",
+  "name": "Agent Reputation/Reliability Tracker",
+  "category": "meta",
+  "group": "Communication / Coordination",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Track agent reliability",
+  "specialist_method": "Measure outcomes by task type and verification quality",
+  "skills": [
+    "Track agent reliability",
+    "Measure outcomes by task type and verification quality"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "registry_read",
+    "task_state_read",
+    "task_state_write"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: track agent reliability"
+  ],
+  "verification": [
+    "Reliability scores account for sample size and changing capabilities",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "dfb1dc74d34ac16c4bf488f6d0eb1d94da85f211b9ef5814ada8212b9c4ee2a6",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/department-routing/SKILL.md",
+    "skills/specialist-role-contracts/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/explicit-invocation/SKILL.md"
+  ],
+  "specialist_focus": "Track agent reliability from outcomes and use it to inform routing and verification.",
+  "field_rules": [
+    "Validate every message.",
+    "One owner per piece of state.",
+    "Evidence settles facts, not votes."
+  ]
+}

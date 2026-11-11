@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-121",
+  "name": "Failure Detector",
+  "category": "verification-recovery",
+  "group": "Recovery / Self-Correction",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Detect task failures promptly",
+  "specialist_method": "Compare expected progress and invariants with observed events",
+  "skills": [
+    "Detect task failures promptly",
+    "Compare expected progress and invariants with observed events"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "evidence_read",
+    "verification_runner",
+    "authorized_restore"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: detect task failures promptly"
+  ],
+  "verification": [
+    "Failure alert includes evidence, affected scope and urgency",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "8865daf658ec965e71ae49ac68e0244b37da012cbd9c55e3004ee7c1e033848a",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/root-cause-analysis/SKILL.md"
+  ],
+  "specialist_focus": "Detect failure early: wrong output, silent no-ops, drift and stalls, by comparing observed results with expected ones.",
+  "field_rules": [
+    "Change something between attempts.",
+    "Retry only idempotent failures.",
+    "Bound attempts, then report state."
+  ]
+}

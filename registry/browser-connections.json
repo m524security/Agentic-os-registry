@@ -1,0 +1,98 @@
+[
+  {
+    "id": "BROWSER-001",
+    "name": "Chrome DevTools MCP",
+    "engine": "Chrome",
+    "transport": "stdio/CDP",
+    "use": "DevTools inspection, console, network, performance, screenshots, automation",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-002",
+    "name": "Playwright MCP Chrome",
+    "engine": "Chrome",
+    "transport": "stdio",
+    "use": "Structured accessibility-tree browser automation",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-003",
+    "name": "Playwright MCP Firefox",
+    "engine": "Firefox",
+    "transport": "stdio",
+    "use": "Cross-browser testing/automation",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-004",
+    "name": "Playwright MCP WebKit",
+    "engine": "WebKit",
+    "transport": "stdio",
+    "use": "WebKit/Safari-like testing",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-005",
+    "name": "Playwright MCP Edge",
+    "engine": "Edge",
+    "transport": "stdio",
+    "use": "Edge automation/testing",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-006",
+    "name": "Existing Chrome via CDP",
+    "engine": "Chromium",
+    "transport": "CDP HTTP/WebSocket",
+    "use": "Attach to already-running browser/debug endpoint",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-007",
+    "name": "Existing Browser via Extension",
+    "engine": "Chrome/Edge",
+    "transport": "extension bridge",
+    "use": "Reuse existing tabs, cookies, SSO/2FA session and installed extensions",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-008",
+    "name": "Remote Playwright Browser",
+    "engine": "multi-browser",
+    "transport": "WebSocket endpoint",
+    "use": "Attach to browser behind Playwright server",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-009",
+    "name": "Standalone Playwright MCP",
+    "engine": "multi-browser",
+    "transport": "HTTP MCP",
+    "use": "Run MCP separately and connect clients over HTTP",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-010",
+    "name": "Headless Isolated Browser",
+    "engine": "Chrome/Chromium",
+    "transport": "stdio",
+    "use": "Disposable automation, CI, untrusted tasks",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-011",
+    "name": "Persistent Profile Browser",
+    "engine": "multi-browser",
+    "transport": "stdio",
+    "use": "Preserve cookies/login state across sessions",
+    "trust": "verify package provenance and pin a version before enabling"
+  },
+  {
+    "id": "BROWSER-012",
+    "name": "BrowserMCP Extension Adapter",
+    "engine": "Chrome",
+    "transport": "extension/local MCP",
+    "use": "Third-party local existing-profile automation adapter",
+    "trust": "verify package provenance and pin a version before enabling"
+  }
+]

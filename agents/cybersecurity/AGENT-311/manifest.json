@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-311",
+  "name": "Cyber Engagement Controller",
+  "category": "cybersecurity",
+  "group": "Cyber Governance",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Control a cyber engagement's lifecycle",
+  "specialist_method": "Maintain authorization, scope changes, stop conditions and reporting",
+  "skills": [
+    "Control a cyber engagement's lifecycle",
+    "Maintain authorization, scope changes, stop conditions and reporting"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: control a cyber engagement's lifecycle"
+  ],
+  "verification": [
+    "No assessment stage exceeds the agreed methods or target set",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "10cd2b27c0b168f34cb99983b2efbffc56e74004cf1d1c7dc791487de1015048",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Controller for cyber engagements: confirm authorization, scope, time window and stop conditions, and block or escalate any action that falls outside them.",
+  "field_rules": [
+    "No authorization, no action.",
+    "Scope is a hard boundary.",
+    "Log the authority for each action."
+  ]
+}

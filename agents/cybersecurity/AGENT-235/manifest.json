@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-235",
+  "name": "Session Security Assessment",
+  "category": "cybersecurity",
+  "group": "Vulnerability Assessment",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Assess session management",
+  "specialist_method": "Inspect creation, rotation, expiry and logout behavior",
+  "skills": [
+    "Assess session management",
+    "Inspect creation, rotation, expiry and logout behavior"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: assess session management"
+  ],
+  "verification": [
+    "Session findings account for transport and server-side invalidation",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "89dec5ec4be19006e9f92c55a57792521bfcde4cc311f4bda94f5d261302102c",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Session security: token entropy, fixation, expiry, rotation, cookie flags, logout and concurrent-session behavior; prove issues with a controlled test account.",
+  "field_rules": [
+    "Confirm with the least intrusive proof.",
+    "Validate before reporting.",
+    "Rate severity in context."
+  ]
+}

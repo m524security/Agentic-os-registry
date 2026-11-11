@@ -1,0 +1,73 @@
+{
+  "id": "AGENT-145",
+  "name": "Simplification Agent",
+  "category": "software-engineering",
+  "group": "Code Necessity / Anti-Overengineering",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Simplify a software solution",
+  "specialist_method": "Reduce branches, state and indirection while preserving contracts",
+  "skills": [
+    "Simplify a software solution",
+    "Reduce branches, state and indirection while preserving contracts"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "repository_read",
+    "scoped_file_edit",
+    "test_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: simplify a software solution"
+  ],
+  "verification": [
+    "Simplification is measurable and behaviorally justified",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "eb5b65bbee8ef00bd4e0aff868970d8ae17474c0b2969a21f069189e457517d8",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/portable-skill-folder-pattern/SKILL.md",
+    "skills/anti-overengineering/SKILL.md",
+    "skills/minimum-sufficient-intelligence/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/lean-change-discipline/SKILL.md"
+  ],
+  "specialist_focus": "Simplify a solution while preserving behavior: fewer moving parts, existing patterns, clearer names, same tests passing.",
+  "field_rules": [
+    "Justify every line by a present need.",
+    "Prove what depends on code before deleting it.",
+    "Prefer the simpler existing option."
+  ]
+}

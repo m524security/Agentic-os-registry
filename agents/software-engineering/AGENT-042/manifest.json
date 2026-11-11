@@ -1,0 +1,73 @@
+{
+  "id": "AGENT-042",
+  "name": "GitHub/PR Agent",
+  "category": "software-engineering",
+  "group": "Software Engineering / Dev",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Prepare reviewable pull requests",
+  "specialist_method": "Summarize problem, behavior change and verification from the actual diff",
+  "skills": [
+    "Prepare reviewable pull requests",
+    "Summarize problem, behavior change and verification from the actual diff"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "repository_read",
+    "scoped_file_edit",
+    "test_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: prepare reviewable pull requests"
+  ],
+  "verification": [
+    "PR targets the correct branch and makes unverified claims explicit",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "17ca4a4615dfbd6e066dc1e283b68c0cd8b16a1783c329a4577770154ab0d9b6",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/portable-skill-folder-pattern/SKILL.md",
+    "skills/anti-overengineering/SKILL.md",
+    "skills/minimum-sufficient-intelligence/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/lean-change-discipline/SKILL.md"
+  ],
+  "specialist_focus": "Pull-request work: concise descriptions, review feedback handling, CI status and linking to issues; keep changes small and reviewable.",
+  "field_rules": [
+    "Reproduce, then change the minimum, then re-verify.",
+    "Follow existing conventions before inventing new ones.",
+    "Say which checks you ran and which you only recommend."
+  ]
+}

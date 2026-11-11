@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-398",
+  "name": "Tool-Call Accountant",
+  "category": "infrastructure",
+  "group": "Economy / Efficiency",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Account for tool-call usage",
+  "specialist_method": "Track calls, retries, outcomes and billable units",
+  "skills": [
+    "Account for tool-call usage",
+    "Track calls, retries, outcomes and billable units"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: account for tool-call usage"
+  ],
+  "verification": [
+    "Ledger deduplicates retried reporting while retaining actual attempts",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "38c955f7012cc54e6df050a6375fc259e533a36533748e68032852323091a86a",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Account tool calls per task: count, cost, failures and repeated calls, and name the calls that can be removed, batched or cached.",
+  "field_rules": [
+    "Account before optimizing.",
+    "Cache only safe results.",
+    "Escalate on evidence."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-321",
+  "name": "Workspace Agent",
+  "category": "infrastructure",
+  "group": "Environment / Setup",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Prepare and manage task workspaces",
+  "specialist_method": "Separate artifacts, dependencies and concurrent edits",
+  "skills": [
+    "Prepare and manage task workspaces",
+    "Separate artifacts, dependencies and concurrent edits"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: prepare and manage task workspaces"
+  ],
+  "verification": [
+    "Workspace is reproducible and preserves unrelated user work",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "6cc247a8bdbeaab3cf3b93b3733a33ff4f6d3f3a3a028c685347d445f49b4876",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Prepare a workspace: directory layout, tooling, formatters and test commands that match the project.",
+  "field_rules": [
+    "Pin and record versions.",
+    "Check prerequisites first.",
+    "Rehearse the rollback."
+  ]
+}

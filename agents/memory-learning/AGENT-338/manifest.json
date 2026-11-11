@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-338",
+  "name": "Skill Testing Agent",
+  "category": "memory-learning",
+  "group": "Skill Management",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Test a skill against representative tasks",
+  "specialist_method": "Include positive, boundary and non-triggering scenarios",
+  "skills": [
+    "Test a skill against representative tasks",
+    "Include positive, boundary and non-triggering scenarios"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "memory_read",
+    "authorized_memory_write",
+    "evaluation_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: test a skill against representative tasks"
+  ],
+  "verification": [
+    "Results reveal incorrect activation and instruction failures",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "481b24bad0b289c28be1b60f4b878057f080c1e2f3c52780cd98eb1e04d9fe52",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/continuous-learning-pattern/SKILL.md",
+    "skills/cross-session-memory-pattern/SKILL.md"
+  ],
+  "specialist_focus": "Test skills on realistic tasks, including near misses that should not trigger them.",
+  "field_rules": [
+    "Test the trigger.",
+    "Review before trust.",
+    "Retire what no longer earns its place."
+  ]
+}

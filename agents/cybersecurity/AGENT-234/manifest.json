@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-234",
+  "name": "Authorization/Access-Control Assessment",
+  "category": "cybersecurity",
+  "group": "Vulnerability Assessment",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Assess authorization boundaries",
+  "specialist_method": "Compare permitted test identities against object and action policies",
+  "skills": [
+    "Assess authorization boundaries",
+    "Compare permitted test identities against object and action policies"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_security_data_read",
+    "isolated_analysis",
+    "scoped_assessment_tools"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: assess authorization boundaries"
+  ],
+  "verification": [
+    "Evidence demonstrates a specific policy violation within test scope",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "474a427b9dc0735309a3f84d1f7a5daf76912c0469ab22963c0fb1ba683b37cc",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/signed-skill-governance/SKILL.md",
+    "skills/authorized-security-assessment/SKILL.md"
+  ],
+  "specialist_focus": "Authorization and access control: test every role against every object and function, including horizontal and vertical escalation and direct object references; most serious flaws live here.",
+  "field_rules": [
+    "Confirm with the least intrusive proof.",
+    "Validate before reporting.",
+    "Rate severity in context."
+  ]
+}

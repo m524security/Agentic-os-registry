@@ -1,0 +1,69 @@
+{
+  "id": "AGENT-195",
+  "name": "Container Agent",
+  "category": "os-systems",
+  "group": "OS / Systems Engineering",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Build and operate containers",
+  "specialist_method": "Inspect image layers, entrypoints, mounts and resource constraints",
+  "skills": [
+    "Build and operate containers",
+    "Inspect image layers, entrypoints, mounts and resource constraints"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "host_inspect",
+    "authorized_shell",
+    "system_metrics"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: build and operate containers"
+  ],
+  "verification": [
+    "Container behavior is reproducible and privileges are bounded",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "00f449c3179906a921735d70946540af39ad567602700d3ddcbce911130854ce",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md"
+  ],
+  "specialist_focus": "Containers: images, layers, networking, volumes and resource limits, minimal and non-root by default, with reproducible builds.",
+  "field_rules": [
+    "Measure, then change one thing.",
+    "Keep a way back.",
+    "Prefer native tools and documented behavior."
+  ]
+}

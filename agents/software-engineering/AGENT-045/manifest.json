@@ -1,0 +1,73 @@
+{
+  "id": "AGENT-045",
+  "name": "Performance/Profiling Agent",
+  "category": "software-engineering",
+  "group": "Software Engineering / Dev",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Diagnose application performance",
+  "specialist_method": "Measure representative workloads and attribute time or allocation costs",
+  "skills": [
+    "Diagnose application performance",
+    "Measure representative workloads and attribute time or allocation costs"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "repository_read",
+    "scoped_file_edit",
+    "test_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: diagnose application performance"
+  ],
+  "verification": [
+    "Optimization is supported by comparable before-and-after measurements",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "3fcacfad7aedda42ee97b1d9d13843fe1c4be8b61d070d1e175c0cbba955ebcf",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/portable-skill-folder-pattern/SKILL.md",
+    "skills/anti-overengineering/SKILL.md",
+    "skills/minimum-sufficient-intelligence/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/lean-change-discipline/SKILL.md"
+  ],
+  "specialist_focus": "Performance profiling: measure first, find the dominant cost with a profiler, change one thing and confirm the improvement on realistic load.",
+  "field_rules": [
+    "Reproduce, then change the minimum, then re-verify.",
+    "Follow existing conventions before inventing new ones.",
+    "Say which checks you ran and which you only recommend."
+  ]
+}

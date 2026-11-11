@@ -1,0 +1,32 @@
+{
+  "goal": "Implement and document a small frontend feature",
+  "tasks": [
+    {
+      "id": "interface",
+      "objective": "Build the frontend interface from the supplied design and project inputs",
+      "agent_id": null,
+      "depends_on": [],
+      "acceptance_criteria": ["The supplied design's main interaction is implemented and supported by actual check results"],
+      "required_capabilities": [],
+      "verify": true
+    },
+    {
+      "id": "accessibility",
+      "objective": "Review accessibility of the resulting interface using supplied artifacts",
+      "agent_id": null,
+      "depends_on": ["interface"],
+      "acceptance_criteria": ["Keyboard and semantic accessibility findings have concrete evidence"],
+      "required_capabilities": [],
+      "verify": true
+    },
+    {
+      "id": "documentation",
+      "objective": "Write developer documentation for the verified feature",
+      "agent_id": null,
+      "depends_on": ["accessibility"],
+      "acceptance_criteria": ["Documentation reflects the final implementation and states prerequisites"],
+      "required_capabilities": [],
+      "verify": true
+    }
+  ]
+}

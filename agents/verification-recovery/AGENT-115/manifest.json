@@ -1,0 +1,72 @@
+{
+  "id": "AGENT-115",
+  "name": "Requirement-Satisfaction Judge",
+  "category": "verification-recovery",
+  "group": "Verification / Quality",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Judge requirement satisfaction",
+  "specialist_method": "Map each requirement to observed implementation evidence",
+  "skills": [
+    "Judge requirement satisfaction",
+    "Map each requirement to observed implementation evidence"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "evidence_read",
+    "verification_runner",
+    "authorized_restore"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: judge requirement satisfaction"
+  ],
+  "verification": [
+    "No requirement is marked complete solely from intent or a plan",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "02ec54b8ae9bfc2127865f613dd70d06a3aa6cc7003acc687c5b26e481215024",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/calibrated-reasoning/SKILL.md",
+    "skills/clear-communication/SKILL.md"
+  ],
+  "specialist_focus": "Judge whether the result satisfies the stated requirements, criterion by criterion, with evidence and no credit for effort.",
+  "field_rules": [
+    "Verify against evidence, not against the claim.",
+    "Missing evidence means not passed.",
+    "Name the failed criterion."
+  ]
+}

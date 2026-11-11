@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-170",
+  "name": "Deployment Reality Agent",
+  "category": "verification-recovery",
+  "group": "Reality / Evidence",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Verify deployment in its real target",
+  "specialist_method": "Check release identity, endpoint behavior and intended configuration",
+  "skills": [
+    "Verify deployment in its real target",
+    "Check release identity, endpoint behavior and intended configuration"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "evidence_read",
+    "verification_runner",
+    "authorized_restore"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: verify deployment in its real target"
+  ],
+  "verification": [
+    "Deployment verdict relies on the target rather than local build success",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "ae5a1778e545b32d49fc115ce0cd283a2f5c2c508322a88ec71e0d4938ed9cae",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/calibrated-reasoning/SKILL.md"
+  ],
+  "specialist_focus": "Verify a deployment is real: the right version is running, serving traffic and passing a real functional check.",
+  "field_rules": [
+    "Observe the real outcome.",
+    "Grade your evidence.",
+    "Unverified stays labelled unverified."
+  ]
+}

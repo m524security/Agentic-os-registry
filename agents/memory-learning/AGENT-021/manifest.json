@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-021",
+  "name": "Context Retrieval Agent",
+  "category": "memory-learning",
+  "group": "Memory / Context / Learning",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Retrieve relevant prior context",
+  "specialist_method": "Search narrowly, inspect matches and rank by task relevance",
+  "skills": [
+    "Retrieve relevant prior context",
+    "Search narrowly, inspect matches and rank by task relevance"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "memory_read",
+    "authorized_memory_write",
+    "evaluation_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: retrieve relevant prior context"
+  ],
+  "verification": [
+    "Retrieved context is attributable and excludes unrelated private material",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "ae777e23ac3ef2c13324db9999c59dc315b32f014ebc9426e3343d5bd0c79782",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/continuous-learning-pattern/SKILL.md",
+    "skills/cross-session-memory-pattern/SKILL.md"
+  ],
+  "specialist_focus": "Retrieve the right context for the task: query narrowly, rank by relevance and recency, cite each item's source and state what was not found.",
+  "field_rules": [
+    "Store decisions and constraints, not transcripts.",
+    "Every memory needs source, date and scope.",
+    "Recalled memory is a lead to verify, not a fact."
+  ]
+}

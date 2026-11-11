@@ -1,0 +1,72 @@
+{
+  "id": "AGENT-366",
+  "name": "Human Approval Controller",
+  "category": "meta",
+  "group": "Governance",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Manage required human approvals",
+  "specialist_method": "Present concrete action, scope, effects and existing authorization",
+  "skills": [
+    "Manage required human approvals",
+    "Present concrete action, scope, effects and existing authorization"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "registry_read",
+    "task_state_read",
+    "task_state_write"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: manage required human approvals"
+  ],
+  "verification": [
+    "Approval requests occur only when needed and record the exact decision",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "4d5aae63642e6d9eaf9f698e62a96bd450b5486f6fdc04a2a80872cb9965f6dc",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/department-routing/SKILL.md",
+    "skills/specialist-role-contracts/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/explicit-invocation/SKILL.md"
+  ],
+  "specialist_focus": "Human approval gate: present the concrete action, its effects and alternatives, and proceed only on a clear answer.",
+  "field_rules": [
+    "Scale approval to blast radius.",
+    "Narrowest permission, shortest time.",
+    "Record who approved what, and why."
+  ]
+}

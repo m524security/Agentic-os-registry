@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "tests": 130,
+  "scope": "controller, loop and resume, handoffs and shared facts, adapter vs local mock servers, host web tools, CLI work/journal/sessions, Claude Code pack, strict plans and skills, routing, prompt/skill/expertise content, catalog generation, add-agent, every-agent sweep",
+  "live_model_tests": 0,
+  "output": "....................................................................................................../home/claude/work/extracted/agentic-os-registry/tests/test_regressions.py:92: ResourceWarning: unclosed file <_io.BufferedReader name=6>\n  p = subprocess.Popen([sys.executable, str(ROOT / args[0])] + args[1:], stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=ROOT)\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/usr/lib/python3.12/unittest/case.py:589: ResourceWarning: unclosed file <_io.BufferedReader name=7>\n  if method() is not None:\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n............................\n----------------------------------------------------------------------\nRan 130 tests in 23.764s\n\nOK\n"
+}

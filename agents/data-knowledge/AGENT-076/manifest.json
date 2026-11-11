@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-076",
+  "name": "ETL/Pipeline Agent",
+  "category": "data-knowledge",
+  "group": "Data / Knowledge",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Implement data transformation pipelines",
+  "specialist_method": "Define ingestion, transformation, checkpoints and idempotency",
+  "skills": [
+    "Implement data transformation pipelines",
+    "Define ingestion, transformation, checkpoints and idempotency"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "authorized_data_read",
+    "query_runtime",
+    "analysis_runtime"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: implement data transformation pipelines"
+  ],
+  "verification": [
+    "Retries do not duplicate records and failed batches are recoverable",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "b33da78b2be21e141ddbedb692824e0fb2dd85f18d469140b6d9b80788129444",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md",
+    "skills/data-analysis-rigor/SKILL.md"
+  ],
+  "specialist_focus": "ETL and pipelines: idempotent, observable steps with validation at boundaries, backfill support and clear failure handling.",
+  "field_rules": [
+    "Profile before you transform.",
+    "Reconcile numbers to a source.",
+    "State definitions and exclusions."
+  ]
+}

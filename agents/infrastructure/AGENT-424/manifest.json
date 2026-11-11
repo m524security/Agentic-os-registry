@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-424",
+  "name": "Disaster Recovery Engineering Agent",
+  "category": "infrastructure",
+  "group": "Infrastructure / Operations",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Plan service recovery after major disruption",
+  "specialist_method": "Map dependencies, recovery ordering, alternate capacity and recovery objectives",
+  "skills": [
+    "Plan service recovery after major disruption",
+    "Map dependencies, recovery ordering, alternate capacity and recovery objectives"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "A ready task requires: plan service recovery after major disruption"
+  ],
+  "verification": [
+    "A bounded recovery exercise measures actual restoration time and data loss",
+    "Material claims have independently inspectable evidence."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "5b25f37d88cabc9a937f6cde39fd0d146708915b1a3dee82fd2f1c5221ecb178",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Disaster recovery: define RPO and RTO, replicate and back up accordingly, document runbooks and prove recovery with regular exercises.",
+  "field_rules": [
+    "Measure before you tune.",
+    "One change, one re-measurement.",
+    "A backup is real only after a restore."
+  ]
+}

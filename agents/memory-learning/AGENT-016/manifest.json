@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-016",
+  "name": "Working-Memory Agent",
+  "category": "memory-learning",
+  "group": "Memory / Context / Learning",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Maintain current task state",
+  "specialist_method": "Track active goals, decisions, blockers and next actions",
+  "skills": [
+    "Maintain current task state",
+    "Track active goals, decisions, blockers and next actions"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "memory_read",
+    "authorized_memory_write",
+    "evaluation_runner"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: maintain current task state"
+  ],
+  "verification": [
+    "Snapshot is concise, current and sufficient for the next step",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "9bd66785198b40bbeb09798633caff72fb9dba5ca140c878fbc77e1f038ddf76",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/continuous-learning-pattern/SKILL.md",
+    "skills/cross-session-memory-pattern/SKILL.md"
+  ],
+  "specialist_focus": "Working memory for the current task: keep goals, constraints, decisions and open questions in a compact state that other steps can read, and drop what is no longer needed.",
+  "field_rules": [
+    "Store decisions and constraints, not transcripts.",
+    "Every memory needs source, date and scope.",
+    "Recalled memory is a lead to verify, not a fact."
+  ]
+}

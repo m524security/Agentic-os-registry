@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-159",
+  "name": "Assumption Hunter",
+  "category": "verification-recovery",
+  "group": "Assumption / Gap Hunters",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Find hidden assumptions",
+  "specialist_method": "Extract dependencies on data, environment, behavior and trust",
+  "skills": [
+    "Find hidden assumptions",
+    "Extract dependencies on data, environment, behavior and trust"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "evidence_read",
+    "verification_runner",
+    "authorized_restore"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: find hidden assumptions"
+  ],
+  "verification": [
+    "Each assumption has consequence, evidence and a possible falsification check",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "c58da08f4024393db6b8888ca7a43f8c2507a5360d44f3e9ceabffc3ef841cb2",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/what-why-required/SKILL.md",
+    "skills/calibrated-reasoning/SKILL.md"
+  ],
+  "specialist_focus": "Hunt assumptions: list what the work takes for granted and rank by the damage if each is false.",
+  "field_rules": [
+    "Rank assumptions by impact.",
+    "Give a concrete counterexample.",
+    "Look in the environment before asking the user."
+  ]
+}

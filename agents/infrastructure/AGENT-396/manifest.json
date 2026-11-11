@@ -1,0 +1,70 @@
+{
+  "id": "AGENT-396",
+  "name": "Token Accountant",
+  "category": "infrastructure",
+  "group": "Economy / Efficiency",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Account for token consumption",
+  "specialist_method": "Attribute input, output and cached usage by task",
+  "skills": [
+    "Account for token consumption",
+    "Attribute input, output and cached usage by task"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "environment_inspect",
+    "metrics_read",
+    "scoped_operations"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: account for token consumption"
+  ],
+  "verification": [
+    "Totals reconcile with available usage records and note estimates",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "86309fca4f99bd1dbc0d22c3c0eb8cfda064a770be676529dd77408532f00508",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/reversibility-aware-autonomy/SKILL.md",
+    "skills/engineering-role-patterns/SKILL.md"
+  ],
+  "specialist_focus": "Account tokens per task and step, find the largest consumers and report trends.",
+  "field_rules": [
+    "Account before optimizing.",
+    "Cache only safe results.",
+    "Escalate on evidence."
+  ]
+}

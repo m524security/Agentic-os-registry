@@ -1,0 +1,71 @@
+{
+  "id": "AGENT-110",
+  "name": "Video Understanding Agent",
+  "category": "computer-tools",
+  "group": "Document / Multimodal",
+  "version": "1.0.0",
+  "status": "prompt-ready-runtime-unbound",
+  "experience_standard": {
+    "years_equivalent": 30,
+    "interpretation": "aspirational expert-level judgment; not lived experience or measured capability"
+  },
+  "mission": "Understand video sequences",
+  "specialist_method": "Inspect temporal events, representative frames and audio context",
+  "skills": [
+    "Understand video sequences",
+    "Inspect temporal events, representative frames and audio context"
+  ],
+  "tools": [],
+  "suggested_capabilities": [
+    "document_read",
+    "approved_tool_access",
+    "artifact_inspection"
+  ],
+  "spawn_when": [
+    "The assigned task requires this specific result: understand video sequences"
+  ],
+  "verification": [
+    "Claims include time references and avoid inferring unseen intervals",
+    "Every material completion claim is supported by an observation or artifact."
+  ],
+  "permissions": {
+    "default": "no capabilities granted by this manifest",
+    "grant_source": "host runtime and established user authorization",
+    "scope": "assigned task only",
+    "external_effects": "host policy and authorization required",
+    "secrets": "references only; never embed values"
+  },
+  "model_policy": "Host selects a model capable of the task; escalate only for demonstrated need. No provider or model is hardcoded.",
+  "memory_scope": "Task-local by default; persistent writes require an authorized store, provenance and retention policy.",
+  "system_prompt_path": "system-prompt.md",
+  "system_prompt_sha256": "3a5531c8de84632a6ec22d0b3a9c2daacd70efcfc0f171320220d564fa3010aa",
+  "output_contract": {
+    "required": [
+      "agent_id",
+      "status",
+      "result",
+      "evidence",
+      "assumptions",
+      "limitations",
+      "next_action"
+    ],
+    "status_enum": [
+      "completed",
+      "partial",
+      "blocked",
+      "failed"
+    ]
+  },
+  "skill_modules": [
+    "skills/evidence-first-verification/SKILL.md",
+    "skills/portable-skill-folder-pattern/SKILL.md",
+    "skills/progressive-skill-disclosure/SKILL.md",
+    "skills/tool-communication-protocol/SKILL.md"
+  ],
+  "specialist_focus": "Video understanding: segment by scene, link visual and audio events with timestamps and avoid claims beyond what is shown.",
+  "field_rules": [
+    "Verify extraction against the source.",
+    "Keep page, cell or timestamp provenance.",
+    "Mark low-confidence spans."
+  ]
+}
